@@ -282,7 +282,4 @@ Abre el archivo `bi/Retail Omnicanal.pbix` en **Power BI Desktop**. Los gráfico
 - **Rendimiento de Consultas en BI**: Vistas materializadas preagregadas (`BUILD IMMEDIATE REFRESH COMPLETE`) que reducen en más de un 95% el tiempo de respuesta en Power BI.
 - **Separación Limpia de Responsabilidades**: Estructura modular estándar de la industria que separa claramente definiciones de esquema (`ddl/`), datos maestros e históricos (`dml/`), lógica de negocio (`plsql/`), pruebas de control de calidad (`tests/`) y scripts de despliegue (`deploy/`).
 
----
 
-## Autor
-Desarrollado como proyecto profesional de portafolio en **Ingeniería de Datos, Data Warehousing y Business Intelligence**.
