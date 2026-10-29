@@ -5,6 +5,17 @@
 -- QA_RESULTADOS con PASA / FALLA: es la evidencia para el acta.
 -- Cubre: OLTP, datos de prueba, staging, calidad, divisas, DW,
 -- conciliacion de totales, idempotencia, JSON + firma, MVs, auditoria.
+-- ---------------------------------------------------------------------
+-- VERSION MULTI-ESQUEMA. EJECUTAR COMO: OMNI_DW
+-- Cambios respecto a la version de un solo esquema:
+--   T01  cuenta las tablas TRX_ en ALL_TABLES del duenio OMNI_OLTP
+--        (ya no estan en USER_TABLES de quien ejecuta).
+--   T28  ya no modifica TRX_VENTAS: OMNI_DW no tiene UPDATE sobre el
+--        OLTP (y eso es justamente lo que se quiere). Ahora prueba que
+--        (a) si el total cambiara, la firma recalculada seria distinta y
+--        (b) si se altera la firma guardada, FN_VERIFICAR_FIRMA lo detecta.
+--   T37-T40  NUEVAS pruebas de seguridad (minimo privilegio).
+-- Total: 40 pruebas.
 -- =====================================================================
 SET SERVEROUTPUT ON SIZE UNLIMITED
 SET LINESIZE 220
@@ -69,7 +80,7 @@ BEGIN
   SELECT NVL(MAX(CORRIDA), 0) + 1 INTO v_corrida FROM QA_RESULTADOS;
 
   -- ---------------- OLTP y datos de prueba ----------------------------
-  SELECT COUNT(*) INTO v_n1 FROM USER_TABLES WHERE TABLE_NAME LIKE 'TRX\_%' ESCAPE '\';
+  SELECT COUNT(*) INTO v_n1 FROM ALL_TABLES WHERE OWNER = 'OMNI_OLTP' AND TABLE_NAME LIKE 'TRX\_%' ESCAPE '\';
   chk('T01', 'OLTP', 'Existen las 17 tablas TRX_', v_n1 = 17, 'tablas=' || v_n1);
 
   SELECT COUNT(DISTINCT c.CODIGO_CANAL) INTO v_n1 FROM TRX_VENTAS v JOIN TRX_CANALES c ON c.ID_CANAL = v.ID_CANAL;
@@ -188,12 +199,24 @@ BEGIN
   chk('T27', 'JSON', 'Todas las firmas SHA256 se verifican', v_n1 = 0, 'firmas invalidas=' || v_n1);
 
   SELECT MIN(CODIGO_FACTURA_NEGOCIO) INTO v_txt FROM FACTURAS_JSON;
+  -- (a) Firma recalculada como si el total del OLTP hubiera subido 1 unidad
+  SELECT CASE WHEN f.FIRMA_SHA256 <> LOWER(RAWTOHEX(STANDARD_HASH(
+                     FN_CADENA_FIRMA(f.CODIGO_FACTURA_NEGOCIO, cn.CODIGO_CANAL, v.FECHA_TRANSACCION,
+                                     ROUND((v.TOTAL + 1) * PKG_DIVISAS.FN_OBTENER_TASA(v.MONEDA_ORIGEN, CAST(v.FECHA_TRANSACCION AS DATE)), 2),
+                                     v.MONEDA_ORIGEN, v.ID_CLIENTE), 'SHA256')))
+              THEN 1 ELSE 0 END
+    INTO v_n1
+    FROM FACTURAS_JSON f
+    JOIN TRX_VENTAS v   ON v.ID_TRANSACCION = f.ID_TRANSACCION_FK
+    JOIN TRX_CANALES cn ON cn.ID_CANAL = v.ID_CANAL
+   WHERE f.CODIGO_FACTURA_NEGOCIO = v_txt;
+  -- (b) Se altera la firma guardada (tabla propia del DW) y se verifica
   SAVEPOINT sp_firma;
-  UPDATE TRX_VENTAS SET TOTAL = TOTAL + 1
-   WHERE ID_TRANSACCION = (SELECT ID_TRANSACCION_FK FROM FACTURAS_JSON WHERE CODIGO_FACTURA_NEGOCIO = v_txt);
-  v_ok := FN_VERIFICAR_FIRMA(v_txt) = 'ALTERADA';
+  UPDATE FACTURAS_JSON SET FIRMA_SHA256 = LPAD('0', 64, '0') WHERE CODIGO_FACTURA_NEGOCIO = v_txt;
+  v_ok := v_n1 = 1 AND FN_VERIFICAR_FIRMA(v_txt) = 'ALTERADA';
   ROLLBACK TO sp_firma;
-  chk('T28', 'JSON', 'Si se altera el total, la firma lo detecta', v_ok, 'factura=' || v_txt);
+  chk('T28', 'JSON', 'Si se altera el total o la firma, la verificacion lo detecta', v_ok,
+      'factura=' || v_txt || ' firma distinta con total+1=' || v_n1);
 
   SELECT COUNT(*) INTO v_n1 FROM FACTURAS_JSON
    WHERE NOT REGEXP_LIKE(CODIGO_FACTURA_NEGOCIO, '^TX-(POS|WEB|MOB)-[0-9]{8}-[0-9]{6}$');
@@ -276,6 +299,41 @@ BEGIN
          MENSAJE = 'Prueba QA: inyeccion de datos sucios en staging'
    WHERE ID_EJECUCION = v_qa_ejec;
   COMMIT;
+
+  -- ---------------- Seguridad multi-esquema (NUEVO) --------------------
+  SELECT COUNT(*) INTO v_n1 FROM USER_TAB_PRIVS_RECD
+   WHERE OWNER = 'OMNI_OLTP' AND PRIVILEGE = 'SELECT' AND TABLE_NAME LIKE 'TRX\_%' ESCAPE '\';
+  SELECT COUNT(*) INTO v_n2 FROM USER_TAB_PRIVS_RECD
+   WHERE OWNER = 'OMNI_OLTP' AND PRIVILEGE NOT IN ('SELECT', 'REFERENCES', 'EXECUTE');
+  chk('T37', 'SEGURIDAD', 'OMNI_DW lee las 17 tablas del OLTP y no recibio permisos de escritura',
+      v_n1 = 17 AND v_n2 = 0, 'SELECT=' || v_n1 || ' permisos de escritura=' || v_n2);
+
+  -- Se intenta escribir en el OLTP: Oracle debe bloquearlo (ORA-01031 o ORA-41900).
+  -- Las sentencias afectan 0 filas (WHERE 1 = 0), asi que son inofensivas.
+  v_n1 := 0; v_txt := NULL;
+  FOR s IN (SELECT 'UPDATE OMNI_OLTP.TRX_VENTAS SET TOTAL = TOTAL WHERE 1 = 0' AS sql_txt FROM DUAL
+            UNION ALL SELECT 'DELETE FROM OMNI_OLTP.TRX_DETALLE WHERE 1 = 0' FROM DUAL
+            UNION ALL SELECT 'INSERT INTO OMNI_OLTP.TRX_CANALES (CODIGO_CANAL, NOMBRE_CANAL) SELECT ''X'', ''X'' FROM DUAL WHERE 1 = 0' FROM DUAL) LOOP
+    BEGIN
+      EXECUTE IMMEDIATE s.sql_txt;
+      v_txt := v_txt || ' PERMITIDO: ' || SUBSTR(s.sql_txt, 1, 30);
+    EXCEPTION WHEN OTHERS THEN
+      IF SQLCODE IN (-1031, -41900) THEN v_n1 := v_n1 + 1;
+      ELSE v_txt := SUBSTR(v_txt || ' ' || SQLERRM, 1, 900); END IF;
+    END;
+  END LOOP;
+  chk('T38', 'SEGURIDAD', 'UPDATE, DELETE e INSERT del DW sobre el OLTP son rechazados por Oracle',
+      v_n1 = 3, 'sentencias bloqueadas=' || v_n1 || ' de 3' || v_txt);
+
+  SELECT COUNT(*), NVL(SUM(CASE WHEN PRIVILEGE <> 'SELECT' THEN 1 ELSE 0 END), 0) INTO v_n1, v_n2
+    FROM USER_TAB_PRIVS_MADE WHERE GRANTEE = 'ROL_OMNI_LECTURA_BI';
+  chk('T39', 'SEGURIDAD', 'El rol de BI solo tiene SELECT sobre los 14 objetos analiticos',
+      v_n1 = 14 AND v_n2 = 0, 'permisos=' || v_n1 || ' distintos de SELECT=' || v_n2);
+
+  SELECT COUNT(*) INTO v_n1 FROM USER_TAB_PRIVS_MADE
+   WHERE REGEXP_LIKE(TABLE_NAME, '^(STG_|AUDITORIA_|ERRORES_|FACTURAS_|QA_)');
+  chk('T40', 'SEGURIDAD', 'Staging, auditoria, errores, facturas y QA no se exponen a nadie',
+      v_n1 = 0, 'objetos internos expuestos=' || v_n1);
 
   -- ---------------- Resumen --------------------------------------------
   SELECT COUNT(*), SUM(CASE WHEN RESULTADO = 'PASA' THEN 1 ELSE 0 END) INTO v_n1, v_n2

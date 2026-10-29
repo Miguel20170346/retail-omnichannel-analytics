@@ -1,13 +1,21 @@
--- Ejecutar con SQL*Plus 12.2+; CSV decimal punto, fecha ISO.
+-- =====================================================================
+-- 03 - EXPORTAR CSV PARA POWER BI DESDE CUENTA DE SOLO LECTURA
+-- ---------------------------------------------------------------------
+-- EJECUTAR COMO: OMNI_BI  (con SQL*Plus 12.2+ o SQLcl)
+-- A diferencia de la version de un solo esquema:
+--   * No ejecuta PR_REFRESCAR_MVS_KEYLA (refrescar es responsabilidad
+--     del ETL en OMNI_DW, no del consumidor de reportes).
+--   * No exporta tablas internas de auditoria/errores del ETL.
+-- =====================================================================
 SET DEFINE OFF
 WHENEVER SQLERROR EXIT SQL.SQLCODE ROLLBACK
 SET FEEDBACK OFF
 SET VERIFY OFF
 SET ECHO OFF
+ALTER SESSION SET CURRENT_SCHEMA = OMNI_DW;
 ALTER SESSION SET NLS_DATE_FORMAT='YYYY-MM-DD';
 ALTER SESSION SET NLS_TIMESTAMP_FORMAT='YYYY-MM-DD HH24:MI:SS';
 ALTER SESSION SET NLS_NUMERIC_CHARACTERS='.,';
-EXEC PR_REFRESCAR_MVS_KEYLA;
 SET MARKUP CSV ON DELIMITER , QUOTE ON
 SET TERMOUT OFF
 SET HEADING ON
@@ -36,13 +44,6 @@ SPOOL mv_promociones_usadas.csv
 SELECT * FROM MV_PROMOCIONES_USADAS;
 SPOOL OFF
 
-SPOOL errores_etl_ventas.csv
-SELECT * FROM ERRORES_ETL_VENTAS;
-SPOOL OFF
-
-SPOOL auditoria_etl_ventas.csv
-SELECT * FROM AUDITORIA_ETL_VENTAS;
-SPOOL OFF
 SPOOL resumen_mensual.csv
 SELECT a.*,ROUND(VENTA_NETA_USD-LAG(VENTA_NETA_USD) OVER (ORDER BY FECHA_MES),2) AS VARIACION_USD,
  ROUND(100.0*(VENTA_NETA_USD-LAG(VENTA_NETA_USD) OVER (ORDER BY FECHA_MES))/NULLIF(LAG(VENTA_NETA_USD) OVER (ORDER BY FECHA_MES),0),2) AS VARIACION_MOM_PCT
@@ -53,6 +54,7 @@ SELECT a.*,ROUND(VENTA_NETA_USD-LAG(VENTA_NETA_USD) OVER (ORDER BY FECHA_MES),2)
  ROUND(100.0*SUM(MARGEN_BRUTO_USD)/NULLIF(SUM(MONTO_NETO_USD),0),2) AS MARGEN_BRUTO_PCT
  FROM V_BI_LINEAS GROUP BY FECHA_MES,PERIOD_TX) a ORDER BY FECHA_MES;
 SPOOL OFF
+
 SET TERMOUT ON
 SET MARKUP CSV OFF
-PROMPT CSV exportados.
+PROMPT 7 archivos CSV de negocio exportados desde OMNI_BI.

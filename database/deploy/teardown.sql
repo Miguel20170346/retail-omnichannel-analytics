@@ -1,21 +1,21 @@
 -- =====================================================================
--- 99 - DESINSTALAR (borra TODOS los objetos del proyecto del esquema)
--- Usar solo en el entorno de pruebas para reinstalar desde cero.
+-- 99 - ELIMINAR EL LABORATORIO MULTI-ESQUEMA (reinicio limpio)
+-- ---------------------------------------------------------------------
+-- EJECUTAR COMO: SYS (AS SYSDBA) o SYSTEM, conectado al PDB FREEPDB1.
+-- Borra SOLO los objetos OMNI_*. La instalacion original en RETAIL_OLTP
+-- no se toca.
+-- ATENCION: antes de ejecutar, desconecte las sesiones de OMNI_OLTP,
+-- OMNI_DW y OMNI_BI en SQL Developer (si no, DROP USER falla con ORA-01940).
 -- =====================================================================
-SET SERVEROUTPUT ON
-BEGIN
-  FOR o IN (SELECT OBJECT_NAME, OBJECT_TYPE FROM USER_OBJECTS
-             WHERE OBJECT_TYPE IN ('MATERIALIZED VIEW','PACKAGE','PROCEDURE','FUNCTION')
-             ORDER BY DECODE(OBJECT_TYPE, 'MATERIALIZED VIEW', 1, 2)) LOOP
-    BEGIN
-      EXECUTE IMMEDIATE 'DROP ' || o.OBJECT_TYPE || ' ' || o.OBJECT_NAME;
-    EXCEPTION WHEN OTHERS THEN NULL;
-    END;
-  END LOOP;
-  FOR t IN (SELECT TABLE_NAME FROM USER_TABLES
-             WHERE REGEXP_LIKE(TABLE_NAME, '^(TRX_|STG_|DIM_|HECHOS_|AUDITORIA_|ERRORES_|FACTURAS_|QA_)')) LOOP
-    EXECUTE IMMEDIATE 'DROP TABLE ' || t.TABLE_NAME || ' CASCADE CONSTRAINTS PURGE';
-  END LOOP;
-  DBMS_OUTPUT.PUT_LINE('Objetos del proyecto eliminados');
-END;
-/
+WHENEVER SQLERROR CONTINUE
+
+-- Orden inverso a la creacion: primero quien consume, al final el dueno
+DROP USER OMNI_BI   CASCADE;
+DROP USER OMNI_DW   CASCADE;
+DROP USER OMNI_OLTP CASCADE;
+DROP ROLE ROL_OMNI_LECTURA_BI;
+
+DROP TABLESPACE TS_OMNI_DW   INCLUDING CONTENTS AND DATAFILES;
+DROP TABLESPACE TS_OMNI_OLTP INCLUDING CONTENTS AND DATAFILES;
+
+PROMPT Esquemas y tablespaces OMNI_* eliminados. Puede volver a ejecutar 00_init_schemas_and_roles.sql
