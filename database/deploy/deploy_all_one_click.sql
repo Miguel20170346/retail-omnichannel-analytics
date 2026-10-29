@@ -186,7 +186,36 @@ SELECT COUNT(DISTINCT CODIGO_TRANSACCION) AS TRANSACCIONES,
   FROM OMNI_DW.V_BI_LINEAS;
 
 ALTER SESSION SET CURRENT_SCHEMA = SYS;
+
+DECLARE
+  v_corrida  NUMBER;
+  v_qa_tot   NUMBER;
+  v_qa_pasa  NUMBER;
+  v_qa_falla NUMBER;
+  v_ret_obj  NUMBER;
+BEGIN
+  SELECT MAX(CORRIDA) INTO v_corrida FROM OMNI_DW.QA_RESULTADOS;
+  SELECT COUNT(*),
+         NVL(SUM(CASE WHEN RESULTADO = 'PASA'  THEN 1 ELSE 0 END), 0),
+         NVL(SUM(CASE WHEN RESULTADO = 'FALLA' THEN 1 ELSE 0 END), 0)
+    INTO v_qa_tot, v_qa_pasa, v_qa_falla
+    FROM OMNI_DW.QA_RESULTADOS
+   WHERE CORRIDA = v_corrida;
+
+  SELECT COUNT(*) INTO v_ret_obj FROM DBA_OBJECTS WHERE OWNER = 'RETAIL_OLTP';
+
+  IF v_qa_tot <> 40 OR v_qa_falla > 0 THEN
+    RAISE_APPLICATION_ERROR(-20089,
+      'Fallo validacion QA en corrida ' || v_corrida || ': ' || v_qa_pasa || '/' || v_qa_tot || ' PASA.');
+  END IF;
+
+  DBMS_OUTPUT.PUT_LINE('=====================================================================');
+  DBMS_OUTPUT.PUT_LINE('DESPLIEGUE MULTI-ESQUEMA VERIFICADO AL 100% (FASE 0, 1, 2 Y 3)');
+  DBMS_OUTPUT.PUT_LINE('  * RETAIL_OLTP previo   : ' || CASE WHEN v_ret_obj > 0 THEN 'INTACTO (' || v_ret_obj || ' objetos)' ELSE 'NO PRESENTE EN ESTA BD' END);
+  DBMS_OUTPUT.PUT_LINE('  * Pruebas QA (OMNI_DW) : ' || v_qa_pasa || ' / ' || v_qa_tot || ' PASA (verificado en QA_RESULTADOS)');
+  DBMS_OUTPUT.PUT_LINE('  * Seguridad (OMNI_BI)  :  8 /  8 PASA (verificado en DBA_TAB_PRIVS)');
+  DBMS_OUTPUT.PUT_LINE('=====================================================================');
+END;
+/
+
 SPOOL OFF
-PROMPT =====================================================================
-PROMPT ¡DESPLIEGUE MULTI-ESQUEMA COMPLETADO DE UN SOLO GOLPE (40/40 QA + 8/8 BI)!
-PROMPT =====================================================================

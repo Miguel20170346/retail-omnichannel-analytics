@@ -314,10 +314,28 @@ BEGIN
   COMMIT;
 
   -- ---------------- Seguridad multi-esquema (NUEVO) --------------------
-  SELECT COUNT(*) INTO v_n1 FROM ALL_TAB_PRIVS
-   WHERE TABLE_SCHEMA = 'OMNI_OLTP' AND GRANTEE = 'OMNI_DW' AND PRIVILEGE = 'SELECT' AND TABLE_NAME LIKE 'TRX\_%' ESCAPE '\';
-  SELECT COUNT(*) INTO v_n2 FROM ALL_TAB_PRIVS
-   WHERE TABLE_SCHEMA = 'OMNI_OLTP' AND GRANTEE = 'OMNI_DW' AND PRIVILEGE NOT IN ('SELECT', 'REFERENCES', 'EXECUTE');
+  -- Si corre desde el instalador de 1 clic (SYS AS SYSDBA), ALL_TAB_PRIVS filtra
+  -- por el usuario de login (SYS) y no por CURRENT_SCHEMA; por eso se consulta
+  -- DBA_TAB_PRIVS dinamicamente. Si corre conectado como OMNI_DW, usa USER_TAB_PRIVS.
+  IF SYS_CONTEXT('USERENV', 'ISDBA') = 'TRUE' THEN
+    EXECUTE IMMEDIATE
+      'SELECT COUNT(*) FROM DBA_TAB_PRIVS
+        WHERE OWNER = ''OMNI_OLTP'' AND GRANTEE = ''OMNI_DW''
+          AND PRIVILEGE = ''SELECT'' AND TABLE_NAME LIKE ''TRX\_%'' ESCAPE ''\'''
+      INTO v_n1;
+    EXECUTE IMMEDIATE
+      'SELECT COUNT(*) FROM DBA_TAB_PRIVS
+        WHERE OWNER = ''OMNI_OLTP'' AND GRANTEE = ''OMNI_DW''
+          AND PRIVILEGE NOT IN (''SELECT'', ''REFERENCES'', ''EXECUTE'')'
+      INTO v_n2;
+  ELSE
+    SELECT COUNT(*) INTO v_n1 FROM USER_TAB_PRIVS
+     WHERE OWNER = 'OMNI_OLTP' AND GRANTEE = 'OMNI_DW'
+       AND PRIVILEGE = 'SELECT' AND TABLE_NAME LIKE 'TRX\_%' ESCAPE '\';
+    SELECT COUNT(*) INTO v_n2 FROM USER_TAB_PRIVS
+     WHERE OWNER = 'OMNI_OLTP' AND GRANTEE = 'OMNI_DW'
+       AND PRIVILEGE NOT IN ('SELECT', 'REFERENCES', 'EXECUTE');
+  END IF;
   chk('T37', 'SEGURIDAD', 'OMNI_DW lee las 17 tablas del OLTP y no recibio permisos de escritura',
       v_n1 = 17 AND v_n2 = 0, 'SELECT=' || v_n1 || ' permisos de escritura=' || v_n2);
 
@@ -339,15 +357,31 @@ BEGIN
   chk('T38', 'SEGURIDAD', 'UPDATE, DELETE e INSERT del DW sobre el OLTP son rechazados por Oracle',
       v_n1 = 3, 'sentencias bloqueadas=' || v_n1 || ' de 3' || v_txt);
 
-  SELECT COUNT(*), NVL(SUM(CASE WHEN PRIVILEGE <> 'SELECT' THEN 1 ELSE 0 END), 0) INTO v_n1, v_n2
-    FROM ALL_TAB_PRIVS WHERE TABLE_SCHEMA = 'OMNI_DW' AND GRANTEE = 'ROL_OMNI_LECTURA_BI';
+  IF SYS_CONTEXT('USERENV', 'ISDBA') = 'TRUE' THEN
+    EXECUTE IMMEDIATE
+      'SELECT COUNT(*), NVL(SUM(CASE WHEN PRIVILEGE <> ''SELECT'' THEN 1 ELSE 0 END), 0)
+         FROM DBA_TAB_PRIVS
+        WHERE OWNER = ''OMNI_DW'' AND GRANTEE = ''ROL_OMNI_LECTURA_BI'''
+      INTO v_n1, v_n2;
+    EXECUTE IMMEDIATE
+      'SELECT COUNT(*) FROM DBA_TAB_PRIVS
+        WHERE OWNER = ''OMNI_DW''
+          AND REGEXP_LIKE(TABLE_NAME, ''^(STG_|AUDITORIA_|ERRORES_|FACTURAS_|QA_)'')'
+      INTO v_n3;
+  ELSE
+    SELECT COUNT(*), NVL(SUM(CASE WHEN PRIVILEGE <> 'SELECT' THEN 1 ELSE 0 END), 0)
+      INTO v_n1, v_n2
+      FROM USER_TAB_PRIVS
+     WHERE OWNER = 'OMNI_DW' AND GRANTEE = 'ROL_OMNI_LECTURA_BI';
+    SELECT COUNT(*) INTO v_n3 FROM USER_TAB_PRIVS
+     WHERE OWNER = 'OMNI_DW'
+       AND REGEXP_LIKE(TABLE_NAME, '^(STG_|AUDITORIA_|ERRORES_|FACTURAS_|QA_)');
+  END IF;
   chk('T39', 'SEGURIDAD', 'El rol de BI solo tiene SELECT sobre los 14 objetos analiticos',
       v_n1 = 14 AND v_n2 = 0, 'permisos=' || v_n1 || ' distintos de SELECT=' || v_n2);
 
-  SELECT COUNT(*) INTO v_n1 FROM ALL_TAB_PRIVS
-   WHERE TABLE_SCHEMA = 'OMNI_DW' AND REGEXP_LIKE(TABLE_NAME, '^(STG_|AUDITORIA_|ERRORES_|FACTURAS_|QA_)');
   chk('T40', 'SEGURIDAD', 'Staging, auditoria, errores, facturas y QA no se exponen a nadie',
-      v_n1 = 0, 'objetos internos expuestos=' || v_n1);
+      v_n3 = 0, 'objetos internos expuestos=' || v_n3);
 
   -- ---------------- Resumen --------------------------------------------
   SELECT COUNT(*), SUM(CASE WHEN RESULTADO = 'PASA' THEN 1 ELSE 0 END) INTO v_n1, v_n2
