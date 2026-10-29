@@ -1,0 +1,1068 @@
+﻿FECHA,FECHA_MES,PERIOD_TX,CODIGO_CANAL,ID_CLIENTE_OLTP,CLIENTE,SEGMENTO,PAIS_CLIENTE,DEPARTAMENTO,ZONA,NUM_COMPRAS,VENTA_TOTAL_USD,VENTA_NETA_USD,MARGEN_BRUTO_USD,TICKET_PROMEDIO_USD
+2026-01-01,2026-01-01,202601,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,3667.98,3246.00,806.00,3667.98
+2026-01-01,2026-01-01,202601,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1965.07,1739.00,444.00,1965.07
+2026-01-01,2026-01-01,202601,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,928.30,821.50,199.50,928.30
+2026-01-02,2026-01-01,202601,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,246.32,217.99,93.99,246.32
+2026-01-02,2026-01-01,202601,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,394.37,349.00,79.00,394.37
+2026-01-02,2026-01-01,202601,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1897.27,1679.00,419.00,1897.27
+2026-01-03,2026-01-01,202601,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,281.37,249.00,79.00,281.37
+2026-01-03,2026-01-01,202601,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1837.38,1626.00,450.00,1837.38
+2026-01-03,2026-01-01,202601,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2753.81,2437.00,625.00,2753.81
+2026-01-04,2026-01-01,202601,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2760.59,2443.00,629.00,2760.59
+2026-01-04,2026-01-01,202601,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,805.13,712.50,152.50,805.13
+2026-01-04,2026-01-01,202601,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2031.74,1798.00,498.00,2031.74
+2026-01-05,2026-01-01,202601,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1817.04,1608.00,413.00,1817.04
+2026-01-05,2026-01-01,202601,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,474.60,420.00,120.00,474.60
+2026-01-05,2026-01-01,202601,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,3412.60,3020.00,800.00,3412.60
+2026-01-06,2026-01-01,202601,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,4099.64,3628.00,938.00,4099.64
+2026-01-06,2026-01-01,202601,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,676.87,599.00,169.00,676.87
+2026-01-06,2026-01-01,202601,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2471.31,2187.00,590.00,2471.31
+2026-01-07,2026-01-01,202601,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,111.87,99.00,44.00,111.87
+2026-01-07,2026-01-01,202601,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,2867.97,2538.02,703.02,2867.97
+2026-01-07,2026-01-01,202601,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2280.34,2018.00,538.00,2280.34
+2026-01-08,2026-01-01,202601,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,2483.74,2198.00,568.00,2483.74
+2026-01-08,2026-01-01,202601,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2962.86,2622.00,632.00,2962.86
+2026-01-08,2026-01-01,202601,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,768.40,680.00,180.00,768.40
+2026-01-09,2026-01-01,202601,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,4854.48,4296.00,1036.00,4854.48
+2026-01-09,2026-01-01,202601,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1862.23,1647.99,397.99,1862.23
+2026-01-09,2026-01-01,202601,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,223.74,198.00,88.00,223.74
+2026-01-10,2026-01-01,202601,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1693.87,1499.00,379.00,1693.87
+2026-01-10,2026-01-01,202601,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1784.27,1579.00,419.00,1784.27
+2026-01-10,2026-01-01,202601,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,768.40,680.00,180.00,768.40
+2026-01-11,2026-01-01,202601,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,2619.34,2318.00,618.00,2619.34
+2026-01-11,2026-01-01,202601,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2837.10,2510.70,430.70,2837.10
+2026-01-11,2026-01-01,202601,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,2650.96,2345.99,555.99,2650.96
+2026-01-12,2026-01-01,202601,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1297.24,1148.00,328.00,1297.24
+2026-01-12,2026-01-01,202601,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1467.87,1299.00,319.00,1467.87
+2026-01-12,2026-01-01,202601,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1086.50,961.50,231.50,1086.50
+2026-01-13,2026-01-01,202601,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,791.00,700.00,240.00,791.00
+2026-01-13,2026-01-01,202601,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,3681.71,3258.15,806.15,3681.71
+2026-01-13,2026-01-01,202601,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1661.83,1470.65,310.65,1661.83
+2026-01-14,2026-01-01,202601,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2370.85,2098.10,458.10,2370.85
+2026-01-14,2026-01-01,202601,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2606.91,2307.00,622.00,2606.91
+2026-01-14,2026-01-01,202601,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,67.80,60.00,25.00,67.80
+2026-01-15,2026-01-01,202601,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1086.50,961.50,231.50,1086.50
+2026-01-15,2026-01-01,202601,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1294.98,1146.00,351.00,1294.98
+2026-01-15,2026-01-01,202601,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,3306.78,2926.35,476.35,3306.78
+2026-01-16,2026-01-01,202601,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,111.87,99.00,44.00,111.87
+2026-01-16,2026-01-01,202601,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,67.80,60.00,25.00,67.80
+2026-01-16,2026-01-01,202601,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2755.11,2438.15,628.15,2755.11
+2026-01-17,2026-01-01,202601,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1081.41,957.00,147.00,1081.41
+2026-01-17,2026-01-01,202601,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2156.04,1908.00,568.00,2156.04
+2026-01-17,2026-01-01,202601,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1749.25,1548.00,398.00,1749.25
+2026-01-18,2026-01-01,202601,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,5461.63,4833.30,933.30,5461.63
+2026-01-18,2026-01-01,202601,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,4304.97,3809.70,749.70,4304.97
+2026-01-18,2026-01-01,202601,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,3204.12,2835.50,670.50,3204.12
+2026-01-19,2026-01-01,202601,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,2255.71,1996.20,366.20,2255.71
+2026-01-19,2026-01-01,202601,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1249.78,1106.00,365.00,1249.78
+2026-01-19,2026-01-01,202601,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1536.80,1360.00,360.00,1536.80
+2026-01-20,2026-01-01,202601,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1297.24,1148.00,328.00,1297.24
+2026-01-20,2026-01-01,202601,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2525.66,2235.10,450.10,2525.66
+2026-01-20,2026-01-01,202601,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,123.17,109.00,47.00,123.17
+2026-01-21,2026-01-01,202601,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,3432.94,3038.00,833.00,3432.94
+2026-01-21,2026-01-01,202601,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2088.24,1848.00,568.00,2088.24
+2026-01-21,2026-01-01,202601,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3004.67,2659.00,679.00,3004.67
+2026-01-22,2026-01-01,202601,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,2313.10,2046.99,576.99,2313.10
+2026-01-22,2026-01-01,202601,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,3383.22,2994.00,824.00,3383.22
+2026-01-22,2026-01-01,202601,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,223.74,198.00,88.00,223.74
+2026-01-23,2026-01-01,202601,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1549.80,1371.50,346.50,1549.80
+2026-01-23,2026-01-01,202601,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1128.87,999.00,239.00,1128.87
+2026-01-23,2026-01-01,202601,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3256.65,2881.99,736.99,3256.65
+2026-01-24,2026-01-01,202601,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1128.87,999.00,239.00,1128.87
+2026-01-24,2026-01-01,202601,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,923.21,817.00,207.00,923.21
+2026-01-24,2026-01-01,202601,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,3217.11,2847.00,777.00,3217.11
+2026-01-25,2026-01-01,202601,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,3160.61,2797.00,857.00,3160.61
+2026-01-25,2026-01-01,202601,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1934.00,1711.50,391.50,1934.00
+2026-01-25,2026-01-01,202601,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,958.24,848.00,248.00,958.24
+2026-01-26,2026-01-01,202601,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,3570.23,3159.50,859.50,3570.23
+2026-01-26,2026-01-01,202601,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,3047.61,2697.00,747.00,3047.61
+2026-01-26,2026-01-01,202601,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,394.37,349.00,79.00,394.37
+2026-01-27,2026-01-01,202601,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1592.17,1409.00,384.00,1592.17
+2026-01-27,2026-01-01,202601,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1934.00,1711.50,391.50,1934.00
+2026-01-27,2026-01-01,202601,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,676.87,599.00,199.00,676.87
+2026-01-28,2026-01-01,202601,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,872.93,772.50,177.50,872.93
+2026-01-28,2026-01-01,202601,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,768.40,680.00,180.00,768.40
+2026-01-28,2026-01-01,202601,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,3521.08,3116.00,786.00,3521.08
+2026-01-29,2026-01-01,202601,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,67.80,60.00,25.00,67.80
+2026-01-29,2026-01-01,202601,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,395.50,350.00,120.00,395.50
+2026-01-29,2026-01-01,202601,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,731.12,647.01,252.01,731.12
+2026-01-30,2026-01-01,202601,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,4705.32,4164.00,1050.00,4705.32
+2026-01-30,2026-01-01,202601,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,676.87,599.00,169.00,676.87
+2026-01-30,2026-01-01,202601,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,847.50,750.00,190.00,847.50
+2026-01-31,2026-01-01,202601,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1003.44,888.00,271.00,1003.44
+2026-01-31,2026-01-01,202601,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1757.15,1555.00,483.00,1757.15
+2026-02-01,2026-02-01,202602,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1806.89,1599.01,389.01,1806.89
+2026-02-01,2026-02-01,202602,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,743.54,658.00,183.00,743.54
+2026-02-01,2026-02-01,202602,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1734.53,1534.99,493.99,1734.53
+2026-02-01,2026-02-01,202602,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,5868.09,5193.00,1383.00,5868.09
+2026-02-02,2026-02-01,202602,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1298.38,1149.01,289.01,1298.38
+2026-02-02,2026-02-01,202602,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2455.49,2173.00,498.00,2455.49
+2026-02-02,2026-02-01,202602,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2519.34,2229.50,555.50,2519.34
+2026-02-02,2026-02-01,202602,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,788.75,698.01,158.01,788.75
+2026-02-03,2026-02-01,202602,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2348.14,2078.00,543.00,2348.14
+2026-02-03,2026-02-01,202602,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2606.92,2307.01,592.01,2606.92
+2026-02-03,2026-02-01,202602,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,675.74,598.00,158.00,675.74
+2026-02-03,2026-02-01,202602,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2949.87,2610.50,640.50,2949.87
+2026-02-04,2026-02-01,202602,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1127.74,998.00,228.00,1127.74
+2026-02-04,2026-02-01,202602,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,768.40,680.00,180.00,768.40
+2026-02-04,2026-02-01,202602,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,4741.48,4196.00,1046.00,4741.48
+2026-02-04,2026-02-01,202602,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2448.71,2167.00,565.00,2448.71
+2026-02-05,2026-02-01,202602,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,3328.98,2946.00,726.00,3328.98
+2026-02-05,2026-02-01,202602,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,394.37,349.00,79.00,394.37
+2026-02-05,2026-02-01,202602,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,789.87,699.00,184.00,789.87
+2026-02-05,2026-02-01,202602,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2718.78,2406.00,659.00,2718.78
+2026-02-06,2026-02-01,202602,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,135.60,120.00,50.00,135.60
+2026-02-06,2026-02-01,202602,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,3496.22,3094.00,840.00,3496.22
+2026-02-06,2026-02-01,202602,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1817.04,1608.00,423.00,1817.04
+2026-02-06,2026-02-01,202602,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3683.24,3259.51,789.51,3683.24
+2026-02-07,2026-02-01,202602,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1163.90,1030.00,300.00,1163.90
+2026-02-07,2026-02-01,202602,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,2,5552.82,4914.00,1277.00,2776.41
+2026-02-07,2026-02-01,202602,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1784.27,1579.00,429.00,1784.27
+2026-02-08,2026-02-01,202602,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,2291.64,2028.00,556.00,2291.64
+2026-02-08,2026-02-01,202602,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,5917.81,5237.00,1347.00,5917.81
+2026-02-08,2026-02-01,202602,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1467.87,1299.00,319.00,1467.87
+2026-02-08,2026-02-01,202602,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1482.00,1311.50,321.50,1482.00
+2026-02-09,2026-02-01,202602,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,2101.24,1859.50,505.50,2101.24
+2026-02-09,2026-02-01,202602,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,2731.21,2417.00,687.00,2731.21
+2026-02-09,2026-02-01,202602,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,393.24,348.00,123.00,393.24
+2026-02-09,2026-02-01,202602,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,2113.67,1870.50,460.50,2113.67
+2026-02-10,2026-02-01,202602,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1431.71,1267.00,357.00,1431.71
+2026-02-10,2026-02-01,202602,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2004.62,1774.00,384.00,2004.62
+2026-02-10,2026-02-01,202602,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,857.67,759.00,209.00,857.67
+2026-02-10,2026-02-01,202602,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1467.87,1299.00,319.00,1467.87
+2026-02-11,2026-02-01,202602,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,597.77,529.00,167.00,597.77
+2026-02-11,2026-02-01,202602,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2608.04,2308.00,608.00,2608.04
+2026-02-11,2026-02-01,202602,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,4402.48,3896.00,1001.00,4402.48
+2026-02-11,2026-02-01,202602,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1601.21,1417.00,400.00,1601.21
+2026-02-12,2026-02-01,202602,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2028.35,1795.00,515.00,2028.35
+2026-02-12,2026-02-01,202602,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1478.04,1308.00,343.00,1478.04
+2026-02-12,2026-02-01,202602,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1467.87,1299.00,319.00,1467.87
+2026-02-12,2026-02-01,202602,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1538.49,1361.50,301.50,1538.49
+2026-02-13,2026-02-01,202602,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1985.41,1757.00,445.00,1985.41
+2026-02-13,2026-02-01,202602,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1015.87,899.00,249.00,1015.87
+2026-02-13,2026-02-01,202602,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2595.05,2296.50,526.50,2595.05
+2026-02-13,2026-02-01,202602,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,450.87,399.00,114.00,450.87
+2026-02-14,2026-02-01,202602,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,123.17,109.00,47.00,123.17
+2026-02-14,2026-02-01,202602,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,3151.57,2789.00,680.00,3151.57
+2026-02-14,2026-02-01,202602,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1128.87,999.00,239.00,1128.87
+2026-02-14,2026-02-01,202602,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,618.11,547.00,167.00,618.11
+2026-02-15,2026-02-01,202602,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,2126.26,1881.65,396.65,2126.26
+2026-02-15,2026-02-01,202602,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,788.74,698.00,158.00,788.74
+2026-02-15,2026-02-01,202602,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1939.19,1716.10,346.10,1939.19
+2026-02-15,2026-02-01,202602,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,3228.42,2857.01,752.01,3228.42
+2026-02-16,2026-02-01,202602,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1015.87,899.00,249.00,1015.87
+2026-02-16,2026-02-01,202602,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,2,2212.65,1958.10,393.10,1106.33
+2026-02-16,2026-02-01,202602,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2879.35,2548.10,578.10,2879.35
+2026-02-17,2026-02-01,202602,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,281.37,249.00,79.00,281.37
+2026-02-17,2026-02-01,202602,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1117.57,989.00,284.00,1117.57
+2026-02-17,2026-02-01,202602,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1591.04,1408.00,366.00,1591.04
+2026-02-17,2026-02-01,202602,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2844.32,2517.10,507.10,2844.32
+2026-02-18,2026-02-01,202602,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,847.50,750.00,190.00,847.50
+2026-02-18,2026-02-01,202602,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,3047.71,2697.09,637.09,3047.71
+2026-02-18,2026-02-01,202602,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1015.98,899.10,139.10,1015.98
+2026-02-18,2026-02-01,202602,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1200.63,1062.50,272.50,1200.63
+2026-02-19,2026-02-01,202602,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,3271.58,2895.20,605.20,3271.58
+2026-02-19,2026-02-01,202602,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,865.58,766.00,216.00,865.58
+2026-02-19,2026-02-01,202602,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2144.74,1898.00,488.00,2144.74
+2026-02-19,2026-02-01,202602,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1956.60,1731.50,441.50,1956.60
+2026-02-20,2026-02-01,202602,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1376.45,1218.10,188.10,1376.45
+2026-02-20,2026-02-01,202602,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,2144.74,1898.00,488.00,2144.74
+2026-02-20,2026-02-01,202602,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,6478.29,5733.00,1393.00,6478.29
+2026-02-20,2026-02-01,202602,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1274.64,1128.00,346.00,1274.64
+2026-02-21,2026-02-01,202602,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2032.29,1798.49,511.49,2032.29
+2026-02-21,2026-02-01,202602,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,123.17,109.00,47.00,123.17
+2026-02-21,2026-02-01,202602,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1268.43,1122.50,297.50,1268.43
+2026-02-21,2026-02-01,202602,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1012.48,896.00,331.00,1012.48
+2026-02-22,2026-02-01,202602,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1602.32,1418.00,441.00,1602.32
+2026-02-22,2026-02-01,202602,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1863.37,1649.00,439.00,1863.37
+2026-02-22,2026-02-01,202602,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,123.17,109.00,47.00,123.17
+2026-02-23,2026-02-01,202602,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,3736.91,3307.00,872.00,3736.91
+2026-02-23,2026-02-01,202602,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,923.21,817.00,263.00,923.21
+2026-02-23,2026-02-01,202602,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1647.55,1458.00,388.00,1647.55
+2026-02-24,2026-02-01,202602,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1275.77,1129.00,344.00,1275.77
+2026-02-24,2026-02-01,202602,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,654.27,579.00,217.00,654.27
+2026-02-24,2026-02-01,202602,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1476.92,1307.01,432.01,1476.92
+2026-02-25,2026-02-01,202602,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,2,2501.82,2214.00,532.00,1250.91
+2026-02-25,2026-02-01,202602,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1015.87,899.00,249.00,1015.87
+2026-02-26,2026-02-01,202602,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,562.74,498.00,158.00,562.74
+2026-02-26,2026-02-01,202602,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1481.99,1311.50,351.50,1481.99
+2026-02-26,2026-02-01,202602,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,360.47,319.00,49.00,360.47
+2026-02-27,2026-02-01,202602,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,5079.35,4495.00,1135.00,5079.35
+2026-02-27,2026-02-01,202602,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,2,2947.04,2608.00,713.00,1473.52
+2026-02-28,2026-02-01,202602,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2765.11,2447.00,707.00,2765.11
+2026-02-28,2026-02-01,202602,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,3180.95,2815.00,695.00,3180.95
+2026-02-28,2026-02-01,202602,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2608.60,2308.49,593.49,2608.60
+2026-03-01,2026-03-01,202603,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,3950.48,3496.00,896.00,3950.48
+2026-03-01,2026-03-01,202603,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2709.74,2398.00,638.00,2709.74
+2026-03-01,2026-03-01,202603,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,246.34,218.00,94.00,246.34
+2026-03-01,2026-03-01,202603,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2326.67,2059.00,584.00,2326.67
+2026-03-02,2026-03-01,202603,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,394.37,349.00,79.00,394.37
+2026-03-02,2026-03-01,202603,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,111.87,99.00,44.00,111.87
+2026-03-02,2026-03-01,202603,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1137.91,1007.00,321.00,1137.91
+2026-03-02,2026-03-01,202603,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3951.60,3496.99,886.99,3951.60
+2026-03-03,2026-03-01,202603,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,67.80,60.00,25.00,67.80
+2026-03-03,2026-03-01,202603,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1388.77,1229.00,329.00,1388.77
+2026-03-03,2026-03-01,202603,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1535.67,1359.00,344.00,1535.67
+2026-03-03,2026-03-01,202603,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1241.87,1099.00,269.00,1241.87
+2026-03-04,2026-03-01,202603,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1689.35,1495.00,430.00,1689.35
+2026-03-04,2026-03-01,202603,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1023.78,906.00,304.00,1023.78
+2026-03-04,2026-03-01,202603,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1467.87,1299.00,319.00,1467.87
+2026-03-04,2026-03-01,202603,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2257.74,1998.00,518.00,2257.74
+2026-03-05,2026-03-01,202603,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,3345.37,2960.50,760.50,3345.37
+2026-03-05,2026-03-01,202603,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1806.87,1599.00,389.00,1806.87
+2026-03-05,2026-03-01,202603,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1396.68,1236.00,394.00,1396.68
+2026-03-05,2026-03-01,202603,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,872.92,772.50,177.50,872.92
+2026-03-06,2026-03-01,202603,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,4118.85,3645.00,985.00,4118.85
+2026-03-06,2026-03-01,202603,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,3704.14,3278.00,818.00,3704.14
+2026-03-06,2026-03-01,202603,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1805.74,1598.00,408.00,1805.74
+2026-03-06,2026-03-01,202603,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1015.87,899.00,249.00,1015.87
+2026-03-07,2026-03-01,202603,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1669.02,1477.01,437.01,1669.02
+2026-03-07,2026-03-01,202603,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,2234.01,1977.00,507.00,2234.01
+2026-03-07,2026-03-01,202603,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,3345.37,2960.50,760.50,3345.37
+2026-03-07,2026-03-01,202603,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2370.73,2098.00,568.00,2370.73
+2026-03-08,2026-03-01,202603,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,2,3110.89,2753.00,736.00,1555.44
+2026-03-08,2026-03-01,202603,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,4253.34,3764.02,980.02,4253.34
+2026-03-08,2026-03-01,202603,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1497.25,1325.00,424.00,1497.25
+2026-03-09,2026-03-01,202603,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1898.40,1680.00,455.00,1898.40
+2026-03-09,2026-03-01,202603,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,2,1839.64,1628.00,428.00,919.82
+2026-03-09,2026-03-01,202603,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,394.37,349.00,79.00,394.37
+2026-03-10,2026-03-01,202603,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1579.74,1398.00,363.00,1579.74
+2026-03-10,2026-03-01,202603,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,123.17,109.00,47.00,123.17
+2026-03-10,2026-03-01,202603,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,3287.74,2909.50,729.50,3287.74
+2026-03-10,2026-03-01,202603,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,450.87,399.00,114.00,450.87
+2026-03-11,2026-03-01,202603,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1409.11,1247.00,362.00,1409.11
+2026-03-11,2026-03-01,202603,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1932.87,1710.50,380.50,1932.87
+2026-03-11,2026-03-01,202603,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,4020.07,3557.59,777.59,4020.07
+2026-03-11,2026-03-01,202603,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1410.24,1248.00,328.00,1410.24
+2026-03-12,2026-03-01,202603,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,3282.99,2905.30,508.30,3282.99
+2026-03-12,2026-03-01,202603,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2674.88,2367.15,602.15,2674.88
+2026-03-12,2026-03-01,202603,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1745.86,1545.00,355.00,1745.86
+2026-03-12,2026-03-01,202603,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,394.37,349.00,79.00,394.37
+2026-03-13,2026-03-01,202603,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,291.53,257.99,112.99,291.53
+2026-03-13,2026-03-01,202603,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,786.48,696.00,246.00,786.48
+2026-03-13,2026-03-01,202603,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,2,698.51,618.15,126.15,349.25
+2026-03-14,2026-03-01,202603,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1196.67,1059.00,264.00,1196.67
+2026-03-14,2026-03-01,202603,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2765.23,2447.10,537.10,2765.23
+2026-03-14,2026-03-01,202603,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1015.87,899.00,249.00,1015.87
+2026-03-14,2026-03-01,202603,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1536.80,1360.00,360.00,1536.80
+2026-03-15,2026-03-01,202603,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,3612.61,3197.00,807.00,3612.61
+2026-03-15,2026-03-01,202603,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2031.74,1798.00,498.00,2031.74
+2026-03-15,2026-03-01,202603,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1533.41,1357.00,375.00,1533.41
+2026-03-15,2026-03-01,202603,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,4513.56,3994.30,799.30,4513.56
+2026-03-16,2026-03-01,202603,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,4493.22,3976.30,796.30,4493.22
+2026-03-16,2026-03-01,202603,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2609.74,2309.50,614.50,2609.74
+2026-03-16,2026-03-01,202603,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1847.55,1635.00,426.00,1847.55
+2026-03-16,2026-03-01,202603,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1503.64,1330.65,278.65,1503.64
+2026-03-17,2026-03-01,202603,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2031.74,1798.00,498.00,2031.74
+2026-03-17,2026-03-01,202603,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2460.01,2177.00,587.00,2460.01
+2026-03-17,2026-03-01,202603,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,914.17,809.00,287.00,914.17
+2026-03-17,2026-03-01,202603,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,768.41,680.00,180.00,768.41
+2026-03-18,2026-03-01,202603,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1692.74,1498.00,418.00,1692.74
+2026-03-18,2026-03-01,202603,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,4087.32,3617.10,827.10,4087.32
+2026-03-18,2026-03-01,202603,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2336.84,2068.00,576.00,2336.84
+2026-03-18,2026-03-01,202603,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,847.50,750.00,190.00,847.50
+2026-03-19,2026-03-01,202603,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2536.85,2245.00,655.00,2536.85
+2026-03-19,2026-03-01,202603,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1771.84,1568.00,418.00,1771.84
+2026-03-19,2026-03-01,202603,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2294.47,2030.50,430.50,2294.47
+2026-03-19,2026-03-01,202603,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,3734.87,3305.20,688.20,3734.87
+2026-03-20,2026-03-01,202603,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1252.04,1108.00,286.00,1252.04
+2026-03-20,2026-03-01,202603,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,3083.32,2728.60,634.60,3083.32
+2026-03-20,2026-03-01,202603,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,3295.08,2916.00,696.00,3295.08
+2026-03-20,2026-03-01,202603,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1536.80,1360.00,360.00,1536.80
+2026-03-21,2026-03-01,202603,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,67.80,60.00,25.00,67.80
+2026-03-21,2026-03-01,202603,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,720.94,638.00,98.00,720.94
+2026-03-21,2026-03-01,202603,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,517.54,458.00,126.00,517.54
+2026-03-21,2026-03-01,202603,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1896.14,1678.00,473.00,1896.14
+2026-03-22,2026-03-01,202603,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,3047.61,2697.00,682.00,3047.61
+2026-03-22,2026-03-01,202603,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1601.21,1417.00,332.00,1601.21
+2026-03-22,2026-03-01,202603,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,2,291.54,258.00,113.00,145.77
+2026-03-23,2026-03-01,202603,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1692.74,1498.00,418.00,1692.74
+2026-03-23,2026-03-01,202603,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2366.22,2094.00,474.00,2366.22
+2026-03-23,2026-03-01,202603,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2030.61,1797.00,477.00,2030.61
+2026-03-23,2026-03-01,202603,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,394.36,349.00,79.00,394.36
+2026-03-24,2026-03-01,202603,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,3948.24,3494.02,929.02,3948.24
+2026-03-24,2026-03-01,202603,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1015.87,899.00,249.00,1015.87
+2026-03-24,2026-03-01,202603,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,2,1362.78,1206.00,404.00,681.39
+2026-03-25,2026-03-01,202603,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,2,4999.12,4424.00,1209.00,2499.56
+2026-03-25,2026-03-01,202603,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,2,6331.39,5603.00,1466.00,3165.70
+2026-03-26,2026-03-01,202603,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2143.61,1897.00,513.00,2143.61
+2026-03-26,2026-03-01,202603,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,281.37,249.00,79.00,281.37
+2026-03-26,2026-03-01,202603,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,2,3921.10,3470.00,956.00,1960.55
+2026-03-27,2026-03-01,202603,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1891.61,1673.99,383.99,1891.61
+2026-03-27,2026-03-01,202603,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,2,2849.86,2522.00,777.00,1424.93
+2026-03-27,2026-03-01,202603,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,788.74,698.00,158.00,788.74
+2026-03-28,2026-03-01,202603,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2200.11,1947.00,517.00,2200.11
+2026-03-28,2026-03-01,202603,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1128.87,999.00,239.00,1128.87
+2026-03-28,2026-03-01,202603,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,4289.48,3796.00,976.00,4289.48
+2026-03-29,2026-03-01,202603,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,3217.12,2847.01,717.01,3217.12
+2026-03-29,2026-03-01,202603,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,111.87,99.00,44.00,111.87
+2026-03-29,2026-03-01,202603,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,2088.24,1848.00,503.00,2088.24
+2026-03-30,2026-03-01,202603,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1976.37,1749.00,429.00,1976.37
+2026-03-30,2026-03-01,202603,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,959.37,849.00,234.00,959.37
+2026-03-30,2026-03-01,202603,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1592.17,1409.00,384.00,1592.17
+2026-03-31,2026-03-01,202603,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1533.41,1357.00,365.00,1533.41
+2026-03-31,2026-03-01,202603,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,281.37,249.00,79.00,281.37
+2026-03-31,2026-03-01,202603,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,2481.48,2196.00,596.00,2481.48
+2026-04-01,2026-04-01,202604,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1071.24,948.00,248.00,1071.24
+2026-04-01,2026-04-01,202604,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1872.41,1657.00,432.00,1872.41
+2026-04-01,2026-04-01,202604,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1805.74,1598.00,408.00,1805.74
+2026-04-01,2026-04-01,202604,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,67.81,60.00,25.00,67.81
+2026-04-02,2026-04-01,202604,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,2633.46,2330.50,610.50,2633.46
+2026-04-02,2026-04-01,202604,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2370.74,2098.00,568.00,2370.74
+2026-04-02,2026-04-01,202604,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,2,5383.32,4764.00,1242.00,2691.66
+2026-04-03,2026-04-01,202604,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,281.37,249.00,79.00,281.37
+2026-04-03,2026-04-01,202604,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,3753.86,3322.00,782.00,3753.86
+2026-04-03,2026-04-01,202604,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,4956.18,4386.00,1104.00,4956.18
+2026-04-03,2026-04-01,202604,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,506.24,448.00,123.00,506.24
+2026-04-04,2026-04-01,202604,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,768.40,680.00,180.00,768.40
+2026-04-04,2026-04-01,202604,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,3738.61,3308.50,798.50,3738.61
+2026-04-04,2026-04-01,202604,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1015.87,899.00,249.00,1015.87
+2026-04-04,2026-04-01,202604,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1467.87,1299.00,309.00,1467.87
+2026-04-05,2026-04-01,202604,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1083.67,959.00,274.00,1083.67
+2026-04-05,2026-04-01,202604,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1483.13,1312.50,292.50,1483.13
+2026-04-05,2026-04-01,202604,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,4335.81,3837.00,1017.00,4335.81
+2026-04-05,2026-04-01,202604,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,3215.98,2846.00,726.00,3215.98
+2026-04-06,2026-04-01,202604,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2236.27,1979.00,499.00,2236.27
+2026-04-06,2026-04-01,202604,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1931.17,1709.00,439.00,1931.17
+2026-04-06,2026-04-01,202604,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2327.23,2059.50,514.50,2327.23
+2026-04-06,2026-04-01,202604,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,281.37,249.00,79.00,281.37
+2026-04-07,2026-04-01,202604,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,4212.64,3728.00,958.00,4212.64
+2026-04-07,2026-04-01,202604,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2845.34,2518.00,668.00,2845.34
+2026-04-07,2026-04-01,202604,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2251.53,1992.50,472.50,2251.53
+2026-04-07,2026-04-01,202604,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2426.11,2147.00,567.00,2426.11
+2026-04-08,2026-04-01,202604,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,2,5878.26,5202.00,1405.00,2939.13
+2026-04-08,2026-04-01,202604,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,2,2232.88,1976.00,557.00,1116.44
+2026-04-09,2026-04-01,202604,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3892.84,3444.99,839.99,3892.84
+2026-04-09,2026-04-01,202604,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,805.12,712.49,152.49,805.12
+2026-04-09,2026-04-01,202604,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,2325.54,2058.00,503.00,2325.54
+2026-04-09,2026-04-01,202604,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,67.80,60.00,25.00,67.80
+2026-04-10,2026-04-01,202604,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1578.72,1397.10,297.10,1578.72
+2026-04-10,2026-04-01,202604,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,805.12,712.50,152.50,805.12
+2026-04-10,2026-04-01,202604,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1049.77,929.00,259.00,1049.77
+2026-04-10,2026-04-01,202604,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1817.04,1608.00,423.00,1817.04
+2026-04-11,2026-04-01,202604,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,394.37,349.00,79.00,394.37
+2026-04-11,2026-04-01,202604,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,111.87,99.00,44.00,111.87
+2026-04-11,2026-04-01,202604,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,3227.28,2856.00,816.00,3227.28
+2026-04-11,2026-04-01,202604,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,462.17,409.00,104.00,462.17
+2026-04-12,2026-04-01,202604,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,2,2224.41,1968.50,552.50,1112.20
+2026-04-12,2026-04-01,202604,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2144.74,1898.00,488.00,2144.74
+2026-04-12,2026-04-01,202604,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,235.04,208.00,91.00,235.04
+2026-04-13,2026-04-01,202604,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2753.98,2437.15,587.15,2753.98
+2026-04-13,2026-04-01,202604,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,911.91,807.00,205.00,911.91
+2026-04-13,2026-04-01,202604,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,135.60,120.00,50.00,135.60
+2026-04-13,2026-04-01,202604,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2265.93,2005.25,420.25,2265.93
+2026-04-14,2026-04-01,202604,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2408.60,2131.50,521.50,2408.60
+2026-04-14,2026-04-01,202604,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1714.21,1517.00,413.00,1714.21
+2026-04-14,2026-04-01,202604,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,2438.54,2158.00,603.00,2438.54
+2026-04-14,2026-04-01,202604,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,394.37,349.00,79.00,394.37
+2026-04-15,2026-04-01,202604,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,2,4139.36,3663.15,931.15,2069.68
+2026-04-15,2026-04-01,202604,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,2529.49,2238.48,612.48,2529.49
+2026-04-15,2026-04-01,202604,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1365.03,1207.99,352.99,1365.03
+2026-04-16,2026-04-01,202604,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,4018.51,3556.20,764.20,4018.51
+2026-04-16,2026-04-01,202604,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1015.98,899.10,139.10,1015.98
+2026-04-16,2026-04-01,202604,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2178.64,1928.00,508.00,2178.64
+2026-04-16,2026-04-01,202604,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,463.30,410.00,145.00,463.30
+2026-04-17,2026-04-01,202604,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,630.53,557.99,210.99,630.53
+2026-04-17,2026-04-01,202604,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,2,3968.00,3511.50,851.50,1984.00
+2026-04-17,2026-04-01,202604,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,5172.01,4577.00,1137.00,5172.01
+2026-04-18,2026-04-01,202604,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,123.17,109.00,47.00,123.17
+2026-04-18,2026-04-01,202604,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1072.37,949.00,319.00,1072.37
+2026-04-18,2026-04-01,202604,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,123.17,109.00,47.00,123.17
+2026-04-18,2026-04-01,202604,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,67.80,60.00,25.00,67.80
+2026-04-19,2026-04-01,202604,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1083.67,959.00,274.00,1083.67
+2026-04-19,2026-04-01,202604,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1714.21,1517.00,413.00,1714.21
+2026-04-19,2026-04-01,202604,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,123.17,109.00,47.00,123.17
+2026-04-19,2026-04-01,202604,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2483.85,2198.10,458.10,2483.85
+2026-04-20,2026-04-01,202604,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1445.27,1279.00,349.00,1445.27
+2026-04-20,2026-04-01,202604,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,4417.73,3909.49,959.49,4417.73
+2026-04-20,2026-04-01,202604,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1657.71,1467.00,377.00,1657.71
+2026-04-20,2026-04-01,202604,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,3252.14,2878.00,748.00,3252.14
+2026-04-21,2026-04-01,202604,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,2663.41,2357.00,678.00,2663.41
+2026-04-21,2026-04-01,202604,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1015.87,899.00,249.00,1015.87
+2026-04-21,2026-04-01,202604,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,832.81,737.00,200.00,832.81
+2026-04-21,2026-04-01,202604,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2053.21,1817.00,467.00,2053.21
+2026-04-22,2026-04-01,202604,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2777.54,2458.00,726.00,2777.54
+2026-04-22,2026-04-01,202604,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,5314.39,4703.00,1271.00,5314.39
+2026-04-22,2026-04-01,202604,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3764.02,3330.99,828.99,3764.02
+2026-04-22,2026-04-01,202604,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1554.88,1376.00,446.00,1554.88
+2026-04-23,2026-04-01,202604,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1489.34,1318.00,288.00,1489.34
+2026-04-23,2026-04-01,202604,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1467.87,1299.00,319.00,1467.87
+2026-04-23,2026-04-01,202604,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,4403.61,3897.00,957.00,4403.61
+2026-04-23,2026-04-01,202604,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1128.88,999.01,239.01,1128.88
+2026-04-24,2026-04-01,202604,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,3740.87,3310.50,790.50,3740.87
+2026-04-24,2026-04-01,202604,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1814.76,1605.98,485.98,1814.76
+2026-04-24,2026-04-01,202604,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,5261.28,4656.00,1211.00,5261.28
+2026-04-24,2026-04-01,202604,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,3965.74,3509.50,889.50,3965.74
+2026-04-25,2026-04-01,202604,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,463.30,410.00,145.00,463.30
+2026-04-25,2026-04-01,202604,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2596.74,2298.00,588.00,2596.74
+2026-04-25,2026-04-01,202604,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,3025.01,2677.00,632.00,3025.01
+2026-04-26,2026-04-01,202604,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1375.21,1217.00,333.00,1375.21
+2026-04-26,2026-04-01,202604,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,360.47,319.00,49.00,360.47
+2026-04-26,2026-04-01,202604,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1287.07,1139.00,347.00,1287.07
+2026-04-27,2026-04-01,202604,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,4545.99,4023.00,943.00,4545.99
+2026-04-27,2026-04-01,202604,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2256.61,1997.00,477.00,2256.61
+2026-04-27,2026-04-01,202604,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2820.48,2496.00,711.00,2820.48
+2026-04-28,2026-04-01,202604,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1579.74,1398.00,363.00,1579.74
+2026-04-28,2026-04-01,202604,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,3447.63,3051.00,739.00,3447.63
+2026-04-28,2026-04-01,202604,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3488.31,3087.00,785.00,3488.31
+2026-04-29,2026-04-01,202604,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2256.61,1997.00,532.00,2256.61
+2026-04-29,2026-04-01,202604,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,585.34,518.00,151.00,585.34
+2026-04-29,2026-04-01,202604,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2933.48,2596.00,646.00,2933.48
+2026-04-30,2026-04-01,202604,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,2,4774.24,4224.99,1089.99,2387.12
+2026-04-30,2026-04-01,202604,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,123.17,109.00,47.00,123.17
+2026-05-01,2026-05-01,202605,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1749.24,1548.00,398.00,1749.24
+2026-05-01,2026-05-01,202605,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,4143.71,3667.00,975.00,4143.71
+2026-05-01,2026-05-01,202605,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2783.20,2463.00,611.00,2783.20
+2026-05-01,2026-05-01,202605,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2311.98,2046.00,586.00,2311.98
+2026-05-01,2026-05-01,202605,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2890.54,2558.00,716.00,2890.54
+2026-05-02,2026-05-01,202605,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,788.74,698.00,158.00,788.74
+2026-05-02,2026-05-01,202605,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,3760.64,3328.00,858.00,3760.64
+2026-05-02,2026-05-01,202605,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1963.94,1738.00,546.00,1963.94
+2026-05-02,2026-05-01,202605,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,805.12,712.50,152.50,805.12
+2026-05-02,2026-05-01,202605,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2935.74,2598.00,638.00,2935.74
+2026-05-03,2026-05-01,202605,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1049.77,929.00,259.00,1049.77
+2026-05-03,2026-05-01,202605,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,4422.82,3914.00,1015.00,4422.82
+2026-05-03,2026-05-01,202605,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1678.05,1485.00,449.00,1678.05
+2026-05-03,2026-05-01,202605,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1759.41,1557.00,445.00,1759.41
+2026-05-03,2026-05-01,202605,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,111.87,99.00,44.00,111.87
+2026-05-04,2026-05-01,202605,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1862.24,1648.00,398.00,1862.24
+2026-05-04,2026-05-01,202605,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2383.17,2109.00,534.00,2383.17
+2026-05-04,2026-05-01,202605,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1966.77,1740.50,455.50,1966.77
+2026-05-04,2026-05-01,202605,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1988.23,1759.50,459.50,1988.23
+2026-05-04,2026-05-01,202605,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,5993.52,5304.00,1332.00,5993.52
+2026-05-05,2026-05-01,202605,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1578.61,1397.00,407.00,1578.61
+2026-05-05,2026-05-01,202605,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1015.87,899.00,249.00,1015.87
+2026-05-05,2026-05-01,202605,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1083.67,959.00,274.00,1083.67
+2026-05-05,2026-05-01,202605,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,339.00,300.00,70.00,339.00
+2026-05-05,2026-05-01,202605,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,768.40,680.00,180.00,768.40
+2026-05-06,2026-05-01,202605,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,506.24,448.00,123.00,506.24
+2026-05-06,2026-05-01,202605,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,67.80,60.00,25.00,67.80
+2026-05-06,2026-05-01,202605,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2031.74,1798.00,498.00,2031.74
+2026-05-06,2026-05-01,202605,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1485.95,1315.00,431.00,1485.95
+2026-05-06,2026-05-01,202605,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,393.24,348.00,123.00,393.24
+2026-05-07,2026-05-01,202605,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,123.17,109.00,47.00,123.17
+2026-05-07,2026-05-01,202605,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1297.24,1148.00,328.00,1297.24
+2026-05-07,2026-05-01,202605,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1749.24,1548.00,398.00,1749.24
+2026-05-07,2026-05-01,202605,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,3295.08,2916.00,776.00,3295.08
+2026-05-08,2026-05-01,202605,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,2,8295.34,7341.01,1911.01,4147.67
+2026-05-08,2026-05-01,202605,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,4960.14,4389.50,1049.50,4960.14
+2026-05-08,2026-05-01,202605,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,4289.48,3796.00,976.00,4289.48
+2026-05-09,2026-05-01,202605,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,4199.65,3716.50,886.50,4199.65
+2026-05-09,2026-05-01,202605,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1454.31,1287.00,372.00,1454.31
+2026-05-09,2026-05-01,202605,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2878.11,2547.00,637.00,2878.11
+2026-05-09,2026-05-01,202605,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,820.38,726.00,286.00,820.38
+2026-05-10,2026-05-01,202605,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,2,3169.76,2805.10,650.10,1584.88
+2026-05-10,2026-05-01,202605,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,518.67,459.00,139.00,518.67
+2026-05-10,2026-05-01,202605,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1015.98,899.10,139.10,1015.98
+2026-05-11,2026-05-01,202605,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2313.11,2047.00,567.00,2313.11
+2026-05-11,2026-05-01,202605,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1995.58,1766.01,482.01,1995.58
+2026-05-11,2026-05-01,202605,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,768.40,680.00,180.00,768.40
+2026-05-11,2026-05-01,202605,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2031.74,1798.00,498.00,2031.74
+2026-05-12,2026-05-01,202605,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,3110.33,2752.50,692.50,3110.33
+2026-05-12,2026-05-01,202605,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,3498.48,3096.00,826.00,3498.48
+2026-05-12,2026-05-01,202605,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1973.09,1746.10,376.10,1973.09
+2026-05-12,2026-05-01,202605,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,123.17,109.00,47.00,123.17
+2026-05-13,2026-05-01,202605,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,575.34,509.15,79.15,575.34
+2026-05-13,2026-05-01,202605,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1015.98,899.10,139.10,1015.98
+2026-05-13,2026-05-01,202605,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1151.47,1019.00,299.00,1151.47
+2026-05-13,2026-05-01,202605,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1685.40,1491.50,376.50,1685.40
+2026-05-14,2026-05-01,202605,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,2123.38,1879.10,389.10,2123.38
+2026-05-14,2026-05-01,202605,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2108.75,1866.15,444.15,2108.75
+2026-05-14,2026-05-01,202605,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3047.61,2697.00,747.00,3047.61
+2026-05-14,2026-05-01,202605,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,575.34,509.15,79.15,575.34
+2026-05-15,2026-05-01,202605,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,2,3217.11,2847.00,717.00,1608.56
+2026-05-15,2026-05-01,202605,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2278.53,2016.40,341.40,2278.53
+2026-05-15,2026-05-01,202605,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,111.87,99.00,44.00,111.87
+2026-05-16,2026-05-01,202605,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,959.37,849.00,234.00,959.37
+2026-05-16,2026-05-01,202605,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,3498.48,3096.00,796.00,3498.48
+2026-05-16,2026-05-01,202605,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,720.94,638.00,98.00,720.94
+2026-05-16,2026-05-01,202605,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2830.82,2505.15,665.15,2830.82
+2026-05-17,2026-05-01,202605,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1739.07,1539.00,417.00,1739.07
+2026-05-17,2026-05-01,202605,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,4244.53,3756.21,791.21,4244.53
+2026-05-17,2026-05-01,202605,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1240.74,1098.00,283.00,1240.74
+2026-05-17,2026-05-01,202605,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,111.87,99.00,44.00,111.87
+2026-05-18,2026-05-01,202605,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2062.25,1825.00,503.00,2062.25
+2026-05-18,2026-05-01,202605,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2908.62,2574.00,709.00,2908.62
+2026-05-18,2026-05-01,202605,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,562.74,498.00,158.00,562.74
+2026-05-18,2026-05-01,202605,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,4175.58,3695.20,815.20,4175.58
+2026-05-19,2026-05-01,202605,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,2,1556.12,1377.10,257.10,778.06
+2026-05-19,2026-05-01,202605,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2610.87,2310.50,560.50,2610.87
+2026-05-19,2026-05-01,202605,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2876.98,2546.00,691.00,2876.98
+2026-05-20,2026-05-01,202605,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1821.10,1611.60,291.60,1821.10
+2026-05-20,2026-05-01,202605,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1376.34,1218.00,298.00,1376.34
+2026-05-20,2026-05-01,202605,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2153.78,1906.00,570.00,2153.78
+2026-05-20,2026-05-01,202605,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2423.85,2145.00,660.00,2423.85
+2026-05-21,2026-05-01,202605,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,2,4021.11,3558.50,918.50,2010.56
+2026-05-21,2026-05-01,202605,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3048.75,2698.00,708.00,3048.75
+2026-05-21,2026-05-01,202605,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,235.04,208.00,91.00,235.04
+2026-05-22,2026-05-01,202605,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,3870.25,3425.00,929.00,3870.25
+2026-05-22,2026-05-01,202605,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1659.97,1469.00,407.00,1659.97
+2026-05-22,2026-05-01,202605,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1027.17,909.00,277.00,1027.17
+2026-05-22,2026-05-01,202605,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1015.87,899.00,249.00,1015.87
+2026-05-23,2026-05-01,202605,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,2,2891.11,2558.50,723.50,1445.56
+2026-05-23,2026-05-01,202605,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1128.87,999.00,239.00,1128.87
+2026-05-23,2026-05-01,202605,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,791.00,700.00,240.00,791.00
+2026-05-24,2026-05-01,202605,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1037.34,918.00,334.00,1037.34
+2026-05-24,2026-05-01,202605,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,2935.74,2598.00,638.00,2935.74
+2026-05-24,2026-05-01,202605,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,360.47,319.00,49.00,360.47
+2026-05-24,2026-05-01,202605,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,4920.03,4354.00,1192.00,4920.03
+2026-05-25,2026-05-01,202605,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2031.74,1798.00,498.00,2031.74
+2026-05-25,2026-05-01,202605,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3026.12,2677.99,657.99,3026.12
+2026-05-25,2026-05-01,202605,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2257.74,1998.00,468.00,2257.74
+2026-05-25,2026-05-01,202605,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3273.62,2897.01,717.01,3273.62
+2026-05-26,2026-05-01,202605,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1636.24,1448.00,403.00,1636.24
+2026-05-26,2026-05-01,202605,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1763.37,1560.50,400.50,1763.37
+2026-05-26,2026-05-01,202605,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1410.24,1248.00,318.00,1410.24
+2026-05-26,2026-05-01,202605,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,5169.75,4575.00,1200.00,5169.75
+2026-05-27,2026-05-01,202605,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,676.87,599.00,169.00,676.87
+2026-05-27,2026-05-01,202605,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,3878.16,3432.00,840.00,3878.16
+2026-05-27,2026-05-01,202605,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,111.87,99.00,44.00,111.87
+2026-05-27,2026-05-01,202605,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1128.87,999.00,239.00,1128.87
+2026-05-28,2026-05-01,202605,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2417.64,2139.50,477.50,2417.64
+2026-05-28,2026-05-01,202605,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1884.84,1668.00,408.00,1884.84
+2026-05-28,2026-05-01,202605,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1897.27,1679.00,419.00,1897.27
+2026-05-28,2026-05-01,202605,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,933.37,825.99,240.99,933.37
+2026-05-29,2026-05-01,202605,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,2699.57,2389.00,619.00,2699.57
+2026-05-29,2026-05-01,202605,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2821.61,2497.00,657.00,2821.61
+2026-05-29,2026-05-01,202605,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1128.87,999.00,239.00,1128.87
+2026-05-29,2026-05-01,202605,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1015.87,899.00,249.00,1015.87
+2026-05-30,2026-05-01,202605,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,3554.98,3146.00,806.00,3554.98
+2026-05-30,2026-05-01,202605,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3114.29,2756.01,751.01,3114.29
+2026-05-30,2026-05-01,202605,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,2,1985.41,1757.00,517.00,992.71
+2026-05-31,2026-05-01,202605,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2728.95,2415.00,671.00,2728.95
+2026-05-31,2026-05-01,202605,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,3941.44,3488.00,943.00,3941.44
+2026-05-31,2026-05-01,202605,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1976.38,1749.01,459.01,1976.38
+2026-05-31,2026-05-01,202605,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1128.87,999.00,239.00,1128.87
+2026-06-01,2026-06-01,202606,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2087.11,1847.00,497.00,2087.11
+2026-06-01,2026-06-01,202606,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1015.87,899.00,249.00,1015.87
+2026-06-01,2026-06-01,202606,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,880.27,778.99,223.99,880.27
+2026-06-01,2026-06-01,202606,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,3791.15,3355.00,830.00,3791.15
+2026-06-01,2026-06-01,202606,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1897.28,1679.00,419.00,1897.28
+2026-06-02,2026-06-01,202606,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1592.17,1409.00,384.00,1592.17
+2026-06-02,2026-06-01,202606,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,805.13,712.50,152.50,805.13
+2026-06-02,2026-06-01,202606,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,123.17,109.00,47.00,123.17
+2026-06-02,2026-06-01,202606,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1749.24,1548.00,398.00,1749.24
+2026-06-02,2026-06-01,202606,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1830.05,1619.50,427.50,1830.05
+2026-06-03,2026-06-01,202606,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2396.17,2120.50,518.50,2396.17
+2026-06-03,2026-06-01,202606,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,3365.14,2978.00,738.00,3365.14
+2026-06-03,2026-06-01,202606,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,281.37,249.00,79.00,281.37
+2026-06-03,2026-06-01,202606,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,4142.58,3666.00,936.00,4142.58
+2026-06-03,2026-06-01,202606,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1467.87,1299.00,319.00,1467.87
+2026-06-04,2026-06-01,202606,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,2,3382.09,2993.00,871.00,1691.05
+2026-06-04,2026-06-01,202606,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,2,2661.15,2355.00,705.00,1330.58
+2026-06-04,2026-06-01,202606,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,67.80,60.00,25.00,67.80
+2026-06-05,2026-06-01,202606,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2075.81,1837.00,532.00,2075.81
+2026-06-05,2026-06-01,202606,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,2,1446.40,1280.00,320.00,723.20
+2026-06-05,2026-06-01,202606,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3137.99,2776.98,701.98,3137.99
+2026-06-05,2026-06-01,202606,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,4357.28,3856.00,1001.00,4357.28
+2026-06-06,2026-06-01,202606,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1839.64,1628.00,443.00,1839.64
+2026-06-06,2026-06-01,202606,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,3004.67,2659.00,679.00,3004.67
+2026-06-06,2026-06-01,202606,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,3397.91,3007.00,792.00,3397.91
+2026-06-06,2026-06-01,202606,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,4006.98,3546.00,916.00,4006.98
+2026-06-07,2026-06-01,202606,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,798.91,707.00,205.00,798.91
+2026-06-07,2026-06-01,202606,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1523.24,1348.00,333.00,1523.24
+2026-06-07,2026-06-01,202606,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1805.74,1598.00,438.00,1805.74
+2026-06-07,2026-06-01,202606,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,678.00,600.00,140.00,678.00
+2026-06-08,2026-06-01,202606,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,3713.18,3286.00,884.00,3713.18
+2026-06-08,2026-06-01,202606,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1467.87,1299.00,319.00,1467.87
+2026-06-08,2026-06-01,202606,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,395.50,350.00,120.00,395.50
+2026-06-08,2026-06-01,202606,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2606.91,2307.00,615.00,2606.91
+2026-06-09,2026-06-01,202606,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2650.98,2346.00,556.00,2650.98
+2026-06-09,2026-06-01,202606,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1294.98,1146.00,281.00,1294.98
+2026-06-09,2026-06-01,202606,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,2,4255.57,3765.99,1031.99,2127.78
+2026-06-10,2026-06-01,202606,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1445.27,1279.00,349.00,1445.27
+2026-06-10,2026-06-01,202606,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2143.72,1897.10,422.10,2143.72
+2026-06-10,2026-06-01,202606,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,3378.14,2989.50,739.50,3378.14
+2026-06-10,2026-06-01,202606,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,676.87,599.00,199.00,676.87
+2026-06-11,2026-06-01,202606,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,281.37,249.00,79.00,281.37
+2026-06-11,2026-06-01,202606,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1083.78,959.10,164.10,1083.78
+2026-06-11,2026-06-01,202606,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1195.54,1058.00,336.00,1195.54
+2026-06-11,2026-06-01,202606,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2143.84,1897.20,322.20,2143.84
+2026-06-12,2026-06-01,202606,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1150.68,1018.30,158.30,1150.68
+2026-06-12,2026-06-01,202606,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,4799.11,4247.00,1077.00,4799.11
+2026-06-12,2026-06-01,202606,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,394.37,349.00,79.00,394.37
+2026-06-12,2026-06-01,202606,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1573.53,1392.50,332.50,1573.53
+2026-06-13,2026-06-01,202606,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2340.79,2071.50,496.50,2340.79
+2026-06-13,2026-06-01,202606,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2184.29,1933.00,453.00,2184.29
+2026-06-13,2026-06-01,202606,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,3271.35,2895.00,835.00,3271.35
+2026-06-13,2026-06-01,202606,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1514.20,1340.00,345.00,1514.20
+2026-06-14,2026-06-01,202606,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,395.50,350.00,120.00,395.50
+2026-06-14,2026-06-01,202606,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,394.37,349.00,79.00,394.37
+2026-06-14,2026-06-01,202606,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,123.17,109.00,47.00,123.17
+2026-06-14,2026-06-01,202606,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2820.48,2496.00,636.00,2820.48
+2026-06-15,2026-06-01,202606,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1341.31,1187.00,247.00,1341.31
+2026-06-15,2026-06-01,202606,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2622.16,2320.50,575.50,2622.16
+2026-06-15,2026-06-01,202606,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,3808.67,3370.50,815.50,3808.67
+2026-06-15,2026-06-01,202606,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3973.19,3516.10,736.10,3973.19
+2026-06-16,2026-06-01,202606,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,360.47,319.00,49.00,360.47
+2026-06-16,2026-06-01,202606,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1230.57,1089.00,284.00,1230.57
+2026-06-16,2026-06-01,202606,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,4525.10,4004.51,990.51,4525.10
+2026-06-16,2026-06-01,202606,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1198.37,1060.51,275.51,1198.37
+2026-06-17,2026-06-01,202606,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1411.37,1249.00,369.00,1411.37
+2026-06-17,2026-06-01,202606,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,4454.57,3942.10,812.10,4454.57
+2026-06-17,2026-06-01,202606,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1567.32,1387.00,385.00,1567.32
+2026-06-17,2026-06-01,202606,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,676.87,599.00,169.00,676.87
+2026-06-18,2026-06-01,202606,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,3993.99,3534.50,864.50,3993.99
+2026-06-18,2026-06-01,202606,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1511.94,1338.00,363.00,1511.94
+2026-06-18,2026-06-01,202606,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1411.37,1249.00,369.00,1411.37
+2026-06-18,2026-06-01,202606,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1784.27,1579.00,429.00,1784.27
+2026-06-19,2026-06-01,202606,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,2,5326.81,4713.99,1328.99,2663.41
+2026-06-19,2026-06-01,202606,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,7564.22,6694.00,1694.00,7564.22
+2026-06-19,2026-06-01,202606,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,4591.19,4063.00,1059.00,4591.19
+2026-06-20,2026-06-01,202606,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,223.74,198.00,88.00,223.74
+2026-06-20,2026-06-01,202606,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1297.35,1148.10,218.10,1297.35
+2026-06-20,2026-06-01,202606,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,2935.74,2598.00,638.00,2935.74
+2026-06-20,2026-06-01,202606,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2181.58,1930.60,340.60,2181.58
+2026-06-21,2026-06-01,202606,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1128.87,999.00,239.00,1128.87
+2026-06-21,2026-06-01,202606,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,3090.55,2735.00,800.00,3090.55
+2026-06-21,2026-06-01,202606,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,3951.62,3497.01,887.01,3951.62
+2026-06-21,2026-06-01,202606,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,3057.78,2706.00,694.00,3057.78
+2026-06-22,2026-06-01,202606,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2799.01,2477.00,657.00,2799.01
+2026-06-22,2026-06-01,202606,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1297.24,1148.00,328.00,1297.24
+2026-06-22,2026-06-01,202606,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2788.29,2467.51,605.51,2788.29
+2026-06-22,2026-06-01,202606,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2536.85,2245.00,563.00,2536.85
+2026-06-23,2026-06-01,202606,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1592.17,1409.00,384.00,1592.17
+2026-06-23,2026-06-01,202606,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,507.37,449.00,164.00,507.37
+2026-06-23,2026-06-01,202606,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,3011.45,2665.00,741.00,3011.45
+2026-06-23,2026-06-01,202606,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1071.24,948.00,248.00,1071.24
+2026-06-24,2026-06-01,202606,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,540.14,478.00,118.00,540.14
+2026-06-24,2026-06-01,202606,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,2,1821.00,1611.50,401.50,910.50
+2026-06-24,2026-06-01,202606,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,2708.62,2397.01,752.01,2708.62
+2026-06-25,2026-06-01,202606,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,531.10,470.00,170.00,531.10
+2026-06-25,2026-06-01,202606,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,2,5712.15,5055.00,1360.00,2856.07
+2026-06-25,2026-06-01,202606,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2540.24,2248.00,608.00,2540.24
+2026-06-26,2026-06-01,202606,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1579.74,1398.00,363.00,1579.74
+2026-06-26,2026-06-01,202606,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,676.87,599.00,169.00,676.87
+2026-06-26,2026-06-01,202606,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1928.91,1707.00,455.00,1928.91
+2026-06-26,2026-06-01,202606,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,880.27,779.00,224.00,880.27
+2026-06-27,2026-06-01,202606,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,2,6547.22,5794.00,1499.00,3273.61
+2026-06-27,2026-06-01,202606,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1128.87,999.00,229.00,1128.87
+2026-06-27,2026-06-01,202606,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2247.57,1989.00,574.00,2247.57
+2026-06-28,2026-06-01,202606,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,4545.99,4023.00,943.00,4545.99
+2026-06-28,2026-06-01,202606,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,6412.75,5675.00,1410.00,6412.75
+2026-06-28,2026-06-01,202606,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,2,2923.31,2587.00,725.00,1461.65
+2026-06-29,2026-06-01,202606,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,2741.38,2426.00,690.00,2741.38
+2026-06-29,2026-06-01,202606,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1264.47,1119.00,289.00,1264.47
+2026-06-29,2026-06-01,202606,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2438.54,2158.00,556.00,2438.54
+2026-06-29,2026-06-01,202606,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1161.64,1028.00,303.00,1161.64
+2026-06-30,2026-06-01,202606,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1015.87,899.00,249.00,1015.87
+2026-06-30,2026-06-01,202606,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,915.30,810.00,215.00,915.30
+2026-06-30,2026-06-01,202606,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,4853.35,4295.00,1090.00,4853.35
+2026-06-30,2026-06-01,202606,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,2452.12,2170.02,575.02,2452.12
+2026-07-01,2026-07-01,202607,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2311.98,2046.00,531.00,2311.98
+2026-07-01,2026-07-01,202607,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2673.58,2366.00,712.00,2673.58
+2026-07-01,2026-07-01,202607,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,791.00,700.00,240.00,791.00
+2026-07-01,2026-07-01,202607,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1482.00,1311.50,321.50,1482.00
+2026-07-01,2026-07-01,202607,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2497.88,2210.51,570.51,2497.88
+2026-07-02,2026-07-01,202607,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1916.48,1696.00,451.00,1916.48
+2026-07-02,2026-07-01,202607,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,3228.98,2857.50,727.50,3228.98
+2026-07-02,2026-07-01,202607,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,3217.11,2847.00,717.00,3217.11
+2026-07-02,2026-07-01,202607,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,281.37,249.00,79.00,281.37
+2026-07-02,2026-07-01,202607,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2663.41,2357.00,637.00,2663.41
+2026-07-03,2026-07-01,202607,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,2,2644.20,2340.00,610.00,1322.10
+2026-07-03,2026-07-01,202607,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1917.61,1697.00,452.00,1917.61
+2026-07-03,2026-07-01,202607,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,743.54,658.00,183.00,743.54
+2026-07-03,2026-07-01,202607,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,2315.37,2049.00,509.00,2315.37
+2026-07-04,2026-07-01,202607,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,3140.27,2779.00,729.00,3140.27
+2026-07-04,2026-07-01,202607,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,6120.08,5416.00,1386.00,6120.08
+2026-07-04,2026-07-01,202607,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,67.80,60.00,25.00,67.80
+2026-07-04,2026-07-01,202607,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,123.17,109.00,47.00,123.17
+2026-07-04,2026-07-01,202607,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2000.10,1770.00,505.00,2000.10
+2026-07-05,2026-07-01,202607,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1071.24,948.00,248.00,1071.24
+2026-07-05,2026-07-01,202607,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,801.17,709.00,187.00,801.17
+2026-07-05,2026-07-01,202607,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2821.61,2497.00,657.00,2821.61
+2026-07-05,2026-07-01,202607,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,2212.54,1958.00,513.00,2212.54
+2026-07-05,2026-07-01,202607,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,812.47,719.00,219.00,812.47
+2026-07-06,2026-07-01,202607,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1467.87,1299.00,319.00,1467.87
+2026-07-06,2026-07-01,202607,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1806.87,1599.00,424.00,1806.87
+2026-07-06,2026-07-01,202607,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,4008.11,3547.00,927.00,4008.11
+2026-07-06,2026-07-01,202607,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,3286.03,2907.99,747.99,3286.03
+2026-07-06,2026-07-01,202607,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,3175.87,2810.50,710.50,3175.87
+2026-07-07,2026-07-01,202607,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2626.12,2324.00,554.00,2626.12
+2026-07-07,2026-07-01,202607,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,628.28,556.00,214.00,628.28
+2026-07-07,2026-07-01,202607,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1872.41,1657.00,445.00,1872.41
+2026-07-07,2026-07-01,202607,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,800.04,708.00,216.00,800.04
+2026-07-07,2026-07-01,202607,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2069.61,1831.51,441.51,2069.61
+2026-07-08,2026-07-01,202607,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1758.28,1556.00,476.00,1758.28
+2026-07-08,2026-07-01,202607,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,2,3625.61,3208.50,788.50,1812.81
+2026-07-08,2026-07-01,202607,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2236.27,1979.00,499.00,2236.27
+2026-07-08,2026-07-01,202607,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,4436.38,3926.00,1076.00,4436.38
+2026-07-09,2026-07-01,202607,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1520.99,1346.00,397.00,1520.99
+2026-07-09,2026-07-01,202607,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2439.67,2159.00,574.00,2439.67
+2026-07-09,2026-07-01,202607,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1342.45,1188.00,328.00,1342.45
+2026-07-09,2026-07-01,202607,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,3385.48,2996.00,836.00,3385.48
+2026-07-09,2026-07-01,202607,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,4755.61,4208.50,1048.50,4755.61
+2026-07-10,2026-07-01,202607,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1015.98,899.10,139.10,1015.98
+2026-07-10,2026-07-01,202607,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1985.41,1757.00,445.00,1985.41
+2026-07-10,2026-07-01,202607,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1536.79,1359.99,359.99,1536.79
+2026-07-10,2026-07-01,202607,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,678.00,600.00,140.00,678.00
+2026-07-10,2026-07-01,202607,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1959.42,1734.00,409.00,1959.42
+2026-07-11,2026-07-01,202607,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1015.98,899.10,139.10,1015.98
+2026-07-11,2026-07-01,202607,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,959.37,849.00,252.00,959.37
+2026-07-11,2026-07-01,202607,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,900.60,796.99,201.99,900.60
+2026-07-11,2026-07-01,202607,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1691.61,1497.00,407.00,1691.61
+2026-07-11,2026-07-01,202607,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1015.87,899.00,249.00,1015.87
+2026-07-12,2026-07-01,202607,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3047.95,2697.31,417.31,3047.95
+2026-07-12,2026-07-01,202607,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1251.02,1107.10,230.10,1251.02
+2026-07-12,2026-07-01,202607,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,281.37,249.00,79.00,281.37
+2026-07-12,2026-07-01,202607,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,2,3060.15,2708.10,663.10,1530.08
+2026-07-13,2026-07-01,202607,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,872.92,772.50,177.50,872.92
+2026-07-13,2026-07-01,202607,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,281.37,249.00,79.00,281.37
+2026-07-13,2026-07-01,202607,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1306.28,1156.00,339.00,1306.28
+2026-07-13,2026-07-01,202607,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,394.37,349.00,79.00,394.37
+2026-07-13,2026-07-01,202607,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,575.33,509.14,79.14,575.33
+2026-07-14,2026-07-01,202607,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2215.37,1960.50,480.50,2215.37
+2026-07-14,2026-07-01,202607,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,4428.42,3918.95,648.95,4428.42
+2026-07-14,2026-07-01,202607,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2272.99,2011.50,471.50,2272.99
+2026-07-14,2026-07-01,202607,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,3252.14,2878.00,748.00,3252.14
+2026-07-14,2026-07-01,202607,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2202.37,1949.00,509.00,2202.37
+2026-07-15,2026-07-01,202607,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,620.37,549.00,149.00,620.37
+2026-07-15,2026-07-01,202607,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1049.77,929.00,259.00,1049.77
+2026-07-15,2026-07-01,202607,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,2,5870.46,5195.10,1210.10,2935.23
+2026-07-15,2026-07-01,202607,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2299.55,2035.00,505.00,2299.55
+2026-07-16,2026-07-01,202607,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,235.04,208.00,91.00,235.04
+2026-07-16,2026-07-01,202607,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1467.87,1299.00,319.00,1467.87
+2026-07-16,2026-07-01,202607,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1411.48,1249.10,259.10,1411.48
+2026-07-16,2026-07-01,202607,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1231.70,1090.00,325.00,1231.70
+2026-07-16,2026-07-01,202607,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2384.30,2110.00,550.00,2384.30
+2026-07-17,2026-07-01,202607,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,507.37,449.00,164.00,507.37
+2026-07-17,2026-07-01,202607,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,2606.91,2307.00,615.00,2606.91
+2026-07-17,2026-07-01,202607,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2957.21,2617.00,607.00,2957.21
+2026-07-17,2026-07-01,202607,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,836.20,740.00,205.00,836.20
+2026-07-17,2026-07-01,202607,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2889.41,2557.00,677.00,2889.41
+2026-07-18,2026-07-01,202607,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,111.87,99.00,44.00,111.87
+2026-07-18,2026-07-01,202607,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2736.29,2421.50,616.50,2736.29
+2026-07-18,2026-07-01,202607,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,823.77,729.00,194.00,823.77
+2026-07-18,2026-07-01,202607,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3567.53,3157.10,732.10,3567.53
+2026-07-18,2026-07-01,202607,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,3577.58,3166.00,852.00,3577.58
+2026-07-19,2026-07-01,202607,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2220.45,1965.00,535.00,2220.45
+2026-07-19,2026-07-01,202607,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,7079.56,6265.10,1503.10,7079.56
+2026-07-19,2026-07-01,202607,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1796.14,1589.50,440.50,1796.14
+2026-07-19,2026-07-01,202607,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,2888.39,2556.10,584.10,2888.39
+2026-07-19,2026-07-01,202607,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,5883.35,5206.50,1406.50,5883.35
+2026-07-20,2026-07-01,202607,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,281.37,249.00,79.00,281.37
+2026-07-20,2026-07-01,202607,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,404.54,358.00,126.00,404.54
+2026-07-20,2026-07-01,202607,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1863.37,1649.00,439.00,1863.37
+2026-07-20,2026-07-01,202607,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1524.37,1349.00,359.00,1524.37
+2026-07-20,2026-07-01,202607,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,4706.46,4165.01,1091.01,4706.46
+2026-07-21,2026-07-01,202607,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1015.87,899.00,249.00,1015.87
+2026-07-21,2026-07-01,202607,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,3905.28,3456.00,916.00,3905.28
+2026-07-21,2026-07-01,202607,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,812.47,719.00,219.00,812.47
+2026-07-21,2026-07-01,202607,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,2935.75,2598.01,638.01,2935.75
+2026-07-21,2026-07-01,202607,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,2664.56,2358.00,573.00,2664.56
+2026-07-22,2026-07-01,202607,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,3795.67,3359.00,919.00,3795.67
+2026-07-22,2026-07-01,202607,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,3,6308.80,5583.00,1532.00,2102.93
+2026-07-23,2026-07-01,202607,MOB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,1692.73,1498.00,418.00,1692.73
+2026-07-23,2026-07-01,202607,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1297.24,1148.00,328.00,1297.24
+2026-07-23,2026-07-01,202607,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2143.61,1897.00,513.00,2143.61
+2026-07-23,2026-07-01,202607,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,4176.49,3696.01,921.01,4176.49
+2026-07-24,2026-07-01,202607,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,3464.58,3066.00,876.00,3464.58
+2026-07-24,2026-07-01,202607,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,805.14,712.51,152.51,805.14
+2026-07-24,2026-07-01,202607,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,3400.17,3009.00,799.00,3400.17
+2026-07-24,2026-07-01,202607,WEB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,2505.19,2216.99,636.99,2505.19
+2026-07-25,2026-07-01,202607,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,2,3278.13,2901.00,706.00,1639.07
+2026-07-25,2026-07-01,202607,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,676.87,599.00,169.00,676.87
+2026-07-25,2026-07-01,202607,POS,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,111.87,99.00,44.00,111.87
+2026-07-26,2026-07-01,202607,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1805.74,1598.00,438.00,1805.74
+2026-07-26,2026-07-01,202607,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1556.01,1377.00,385.00,1556.01
+2026-07-26,2026-07-01,202607,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3330.11,2947.00,717.00,3330.11
+2026-07-26,2026-07-01,202607,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,67.80,60.00,25.00,67.80
+2026-07-27,2026-07-01,202607,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,2119.88,1876.00,471.00,2119.88
+2026-07-27,2026-07-01,202607,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,675.74,598.00,158.00,675.74
+2026-07-27,2026-07-01,202607,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2913.14,2578.00,668.00,2913.14
+2026-07-27,2026-07-01,202607,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,744.67,659.00,224.00,744.67
+2026-07-28,2026-07-01,202607,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1128.87,999.00,239.00,1128.87
+2026-07-28,2026-07-01,202607,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1105.14,978.00,243.00,1105.14
+2026-07-28,2026-07-01,202607,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,676.87,599.00,169.00,676.87
+2026-07-28,2026-07-01,202607,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,67.80,60.00,25.00,67.80
+2026-07-29,2026-07-01,202607,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,3286.04,2908.00,746.00,3286.04
+2026-07-29,2026-07-01,202607,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,3330.11,2947.00,767.00,3330.11
+2026-07-29,2026-07-01,202607,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,2188.81,1937.00,555.00,2188.81
+2026-07-29,2026-07-01,202607,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,788.74,698.00,158.00,788.74
+2026-07-30,2026-07-01,202607,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1071.24,948.00,278.00,1071.24
+2026-07-30,2026-07-01,202607,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1655.45,1465.00,466.00,1655.45
+2026-07-30,2026-07-01,202607,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,179.67,159.00,69.00,179.67
+2026-07-30,2026-07-01,202607,WEB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,3047.61,2697.00,747.00,3047.61
+2026-07-31,2026-07-01,202607,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,3,11072.87,9799.00,2474.00,3690.96
+2026-07-31,2026-07-01,202607,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,395.50,350.00,120.00,395.50
+2026-08-01,2026-08-01,202608,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1987.11,1758.50,433.50,1987.11
+2026-08-01,2026-08-01,202608,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2662.28,2356.00,604.00,2662.28
+2026-08-01,2026-08-01,202608,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,768.40,680.00,180.00,768.40
+2026-08-01,2026-08-01,202608,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,4132.41,3657.00,902.00,4132.41
+2026-08-01,2026-08-01,202608,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,5757.35,5095.00,1295.00,5757.35
+2026-08-02,2026-08-01,202608,MOB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,805.13,712.50,152.50,805.13
+2026-08-02,2026-08-01,202608,MOB,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,2031.74,1798.00,498.00,2031.74
+2026-08-02,2026-08-01,202608,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,836.20,740.00,205.00,836.20
+2026-08-02,2026-08-01,202608,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1308.52,1157.98,365.98,1308.52
+2026-08-02,2026-08-01,202608,WEB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,2775.27,2455.99,693.99,2775.27
+2026-08-03,2026-08-01,202608,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1199.50,1061.50,231.50,1199.50
+2026-08-03,2026-08-01,202608,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1806.87,1599.00,389.00,1806.87
+2026-08-03,2026-08-01,202608,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1533.41,1357.00,375.00,1533.41
+2026-08-03,2026-08-01,202608,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,339.00,300.00,70.00,339.00
+2026-08-03,2026-08-01,202608,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,3890.59,3443.00,938.00,3890.59
+2026-08-04,2026-08-01,202608,POS,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,2281.45,2018.99,553.99,2281.45
+2026-08-04,2026-08-01,202608,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,7641.06,6762.00,1642.00,7641.06
+2026-08-04,2026-08-01,202608,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1859.98,1646.00,521.00,1859.98
+2026-08-04,2026-08-01,202608,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,2,1429.45,1265.00,388.00,714.73
+2026-08-05,2026-08-01,202608,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,358.21,317.00,138.00,358.21
+2026-08-05,2026-08-01,202608,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2170.17,1920.50,505.50,2170.17
+2026-08-05,2026-08-01,202608,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,2,3950.48,3496.00,902.00,1975.24
+2026-08-05,2026-08-01,202608,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1107.97,980.50,268.50,1107.97
+2026-08-06,2026-08-01,202608,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,768.40,680.00,180.00,768.40
+2026-08-06,2026-08-01,202608,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,67.80,60.00,25.00,67.80
+2026-08-06,2026-08-01,202608,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2540.24,2248.00,631.00,2540.24
+2026-08-06,2026-08-01,202608,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2236.27,1979.00,499.00,2236.27
+2026-08-06,2026-08-01,202608,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,281.37,249.00,79.00,281.37
+2026-08-07,2026-08-01,202608,MOB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,2,5173.14,4578.01,1136.01,2586.57
+2026-08-07,2026-08-01,202608,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1467.87,1299.00,319.00,1467.87
+2026-08-07,2026-08-01,202608,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1476.90,1307.00,360.00,1476.90
+2026-08-07,2026-08-01,202608,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,135.61,120.01,50.01,135.61
+2026-08-08,2026-08-01,202608,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2604.65,2305.00,668.00,2604.65
+2026-08-08,2026-08-01,202608,POS,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,67.80,60.00,25.00,67.80
+2026-08-08,2026-08-01,202608,POS,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,291.54,258.00,113.00,291.54
+2026-08-08,2026-08-01,202608,WEB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,394.37,349.00,79.00,394.37
+2026-08-08,2026-08-01,202608,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,393.24,348.00,123.00,393.24
+2026-08-09,2026-08-01,202608,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1128.87,999.00,239.00,1128.87
+2026-08-09,2026-08-01,202608,MOB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,462.17,409.00,117.00,462.17
+2026-08-09,2026-08-01,202608,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1928.91,1707.00,455.00,1928.91
+2026-08-09,2026-08-01,202608,WEB,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,3046.48,2696.00,636.00,3046.48
+2026-08-09,2026-08-01,202608,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2945.91,2607.00,672.00,2945.91
+2026-08-10,2026-08-01,202608,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1669.01,1477.00,425.00,1669.01
+2026-08-10,2026-08-01,202608,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,2,3735.78,3306.00,854.00,1867.89
+2026-08-10,2026-08-01,202608,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1657.82,1467.10,312.10,1657.82
+2026-08-10,2026-08-01,202608,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,3352.71,2967.00,827.00,3352.71
+2026-08-11,2026-08-01,202608,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,3499.84,3097.20,597.20,3499.84
+2026-08-11,2026-08-01,202608,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2144.74,1898.00,518.00,2144.74
+2026-08-11,2026-08-01,202608,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1863.48,1649.10,329.10,1863.48
+2026-08-11,2026-08-01,202608,WEB,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,67.80,60.00,25.00,67.80
+2026-08-11,2026-08-01,202608,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,676.87,599.00,169.00,676.87
+2026-08-12,2026-08-01,202608,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,575.34,509.15,79.15,575.34
+2026-08-12,2026-08-01,202608,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,2045.87,1810.50,450.50,2045.87
+2026-08-12,2026-08-01,202608,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1014.74,898.00,228.00,1014.74
+2026-08-12,2026-08-01,202608,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2087.11,1847.00,527.00,2087.11
+2026-08-12,2026-08-01,202608,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,653.14,578.00,176.00,653.14
+2026-08-13,2026-08-01,202608,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,2935.74,2598.00,638.00,2935.74
+2026-08-13,2026-08-01,202608,MOB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,2236.27,1979.00,499.00,2236.27
+2026-08-13,2026-08-01,202608,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,3414.86,3022.00,757.00,3414.86
+2026-08-13,2026-08-01,202608,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,4978.96,4406.16,1036.16,4978.96
+2026-08-13,2026-08-01,202608,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1322.67,1170.50,278.50,1322.67
+2026-08-14,2026-08-01,202608,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1049.77,929.00,259.00,1049.77
+2026-08-14,2026-08-01,202608,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,836.20,740.00,205.00,836.20
+2026-08-14,2026-08-01,202608,WEB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,1144.12,1012.50,222.50,1144.12
+2026-08-14,2026-08-01,202608,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,67.80,60.00,25.00,67.80
+2026-08-14,2026-08-01,202608,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,339.00,300.00,70.00,339.00
+2026-08-15,2026-08-01,202608,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2530.18,2239.10,484.10,2530.18
+2026-08-15,2026-08-01,202608,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,3101.85,2745.00,623.00,3101.85
+2026-08-15,2026-08-01,202608,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,3035.35,2686.15,666.15,3035.35
+2026-08-15,2026-08-01,202608,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,2,4083.99,3614.15,887.15,2041.99
+2026-08-16,2026-08-01,202608,MOB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,2348.14,2078.00,543.00,2348.14
+2026-08-16,2026-08-01,202608,POS,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,1263.34,1118.00,333.00,1263.34
+2026-08-16,2026-08-01,202608,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,4967.71,4396.21,916.21,4967.71
+2026-08-16,2026-08-01,202608,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,2,3002.58,2657.15,697.15,1501.29
+2026-08-17,2026-08-01,202608,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,2426.11,2147.00,567.00,2426.11
+2026-08-17,2026-08-01,202608,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,957.11,847.00,237.00,957.11
+2026-08-17,2026-08-01,202608,POS,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,805.13,712.50,152.50,805.13
+2026-08-17,2026-08-01,202608,WEB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,2539.11,2247.00,557.00,2539.11
+2026-08-17,2026-08-01,202608,WEB,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,928.30,821.50,199.50,928.30
+2026-08-18,2026-08-01,202608,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,948.07,839.00,249.00,948.07
+2026-08-18,2026-08-01,202608,WEB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,3510.90,3106.99,826.99,3510.90
+2026-08-18,2026-08-01,202608,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2065.64,1828.00,473.00,2065.64
+2026-08-18,2026-08-01,202608,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1413.07,1250.50,353.50,1413.07
+2026-08-18,2026-08-01,202608,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,3768.54,3334.99,779.99,3768.54
+2026-08-19,2026-08-01,202608,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,3566.28,3156.00,941.00,3566.28
+2026-08-19,2026-08-01,202608,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,847.50,750.00,190.00,847.50
+2026-08-19,2026-08-01,202608,WEB,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,562.74,498.00,158.00,562.74
+2026-08-19,2026-08-01,202608,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1186.50,1050.00,360.00,1186.50
+2026-08-19,2026-08-01,202608,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,4813.24,4259.50,1079.50,4813.24
+2026-08-20,2026-08-01,202608,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,281.37,249.00,79.00,281.37
+2026-08-20,2026-08-01,202608,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3951.72,3497.10,777.10,3951.72
+2026-08-20,2026-08-01,202608,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,2551.53,2257.99,682.99,2551.53
+2026-08-20,2026-08-01,202608,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,2,3046.48,2696.00,756.00,1523.24
+2026-08-21,2026-08-01,202608,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,2,4343.72,3844.00,1125.00,2171.86
+2026-08-21,2026-08-01,202608,POS,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,872.92,772.49,177.49,872.92
+2026-08-21,2026-08-01,202608,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,768.40,680.00,180.00,768.40
+2026-08-21,2026-08-01,202608,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2521.60,2231.50,581.50,2521.60
+2026-08-22,2026-08-01,202608,MOB,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,805.13,712.50,152.50,805.13
+2026-08-22,2026-08-01,202608,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,281.37,249.00,79.00,281.37
+2026-08-22,2026-08-01,202608,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1536.80,1360.00,360.00,1536.80
+2026-08-22,2026-08-01,202608,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1783.13,1577.99,453.99,1783.13
+2026-08-22,2026-08-01,202608,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1083.67,959.00,274.00,1083.67
+2026-08-23,2026-08-01,202608,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,2,3846.52,3404.00,942.00,1923.26
+2026-08-23,2026-08-01,202608,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,676.87,599.00,169.00,676.87
+2026-08-23,2026-08-01,202608,POS,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,507.37,449.00,164.00,507.37
+2026-08-23,2026-08-01,202608,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,809.08,716.00,252.00,809.08
+2026-08-24,2026-08-01,202608,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,2606.91,2307.00,615.00,2606.91
+2026-08-24,2026-08-01,202608,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2879.24,2548.00,688.00,2879.24
+2026-08-24,2026-08-01,202608,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,3475.88,3076.00,756.00,3475.88
+2026-08-24,2026-08-01,202608,WEB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,2031.75,1798.01,498.01,2031.75
+2026-08-24,2026-08-01,202608,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,3739.74,3309.50,799.50,3739.74
+2026-08-25,2026-08-01,202608,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,395.50,350.00,120.00,395.50
+2026-08-25,2026-08-01,202608,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2102.37,1860.50,480.50,2102.37
+2026-08-25,2026-08-01,202608,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,996.10,881.50,224.50,996.10
+2026-08-25,2026-08-01,202608,WEB,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,1863.37,1649.00,439.00,1863.37
+2026-08-25,2026-08-01,202608,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,111.88,99.00,44.00,111.88
+2026-08-26,2026-08-01,202608,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,4352.76,3852.00,972.00,4352.76
+2026-08-26,2026-08-01,202608,MOB,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,1209.67,1070.50,278.50,1209.67
+2026-08-26,2026-08-01,202608,POS,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,1318.71,1167.00,365.00,1318.71
+2026-08-26,2026-08-01,202608,WEB,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,123.17,109.00,47.00,123.17
+2026-08-26,2026-08-01,202608,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2088.81,1848.50,464.50,2088.81
+2026-08-27,2026-08-01,202608,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1535.67,1359.00,344.00,1535.67
+2026-08-27,2026-08-01,202608,POS,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,6942.72,6144.00,1514.00,6942.72
+2026-08-27,2026-08-01,202608,WEB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,676.87,599.00,169.00,676.87
+2026-08-27,2026-08-01,202608,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,676.87,599.00,169.00,676.87
+2026-08-27,2026-08-01,202608,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,5715.54,5058.00,1308.00,5715.54
+2026-08-28,2026-08-01,202608,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,6395.80,5660.00,1280.00,6395.80
+2026-08-28,2026-08-01,202608,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,876.88,776.00,277.00,876.88
+2026-08-28,2026-08-01,202608,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,2,2531.77,2240.50,610.50,1265.88
+2026-08-28,2026-08-01,202608,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,111.87,99.00,44.00,111.87
+2026-08-29,2026-08-01,202608,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1986.54,1758.00,493.00,1986.54
+2026-08-29,2026-08-01,202608,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,3386.61,2997.00,757.00,3386.61
+2026-08-29,2026-08-01,202608,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2969.65,2628.01,683.01,2969.65
+2026-08-29,2026-08-01,202608,WEB,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,507.37,449.00,164.00,507.37
+2026-08-29,2026-08-01,202608,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,4165.18,3686.00,954.00,4165.18
+2026-08-30,2026-08-01,202608,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,2989.98,2646.00,661.00,2989.98
+2026-08-30,2026-08-01,202608,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,5584.46,4942.00,1382.00,5584.46
+2026-08-30,2026-08-01,202608,MOB,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,1241.87,1099.00,269.00,1241.87
+2026-08-30,2026-08-01,202608,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,5485.02,4854.00,1282.00,5485.02
+2026-08-30,2026-08-01,202608,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,2267.91,2007.00,535.00,2267.91
+2026-08-31,2026-08-01,202608,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,675.74,598.00,158.00,675.74
+2026-08-31,2026-08-01,202608,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,2236.27,1979.00,499.00,2236.27
+2026-08-31,2026-08-01,202608,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,4811.55,4258.01,1168.01,4811.55
+2026-08-31,2026-08-01,202608,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,2,1644.15,1455.00,444.00,822.08
+2026-09-01,2026-09-01,202609,MOB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,1951.50,1726.99,514.99,1951.50
+2026-09-01,2026-09-01,202609,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,2325.54,2058.00,503.00,2325.54
+2026-09-01,2026-09-01,202609,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,3004.67,2659.00,674.00,3004.67
+2026-09-01,2026-09-01,202609,WEB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,1467.86,1299.00,319.00,1467.86
+2026-09-01,2026-09-01,202609,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,4806.46,4253.50,1039.50,4806.46
+2026-09-01,2026-09-01,202609,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2102.37,1860.50,470.50,2102.37
+2026-09-02,2026-09-01,202609,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,4342.59,3843.00,1063.00,4342.59
+2026-09-02,2026-09-01,202609,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,6742.71,5967.00,1527.00,6742.71
+2026-09-02,2026-09-01,202609,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1974.11,1747.00,442.00,1974.11
+2026-09-02,2026-09-01,202609,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,4004.72,3544.00,894.00,4004.72
+2026-09-02,2026-09-01,202609,POS,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,67.80,60.00,25.00,67.80
+2026-09-02,2026-09-01,202609,POS,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,394.37,349.00,79.00,394.37
+2026-09-03,2026-09-01,202609,MOB,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,339.00,300.00,70.00,339.00
+2026-09-03,2026-09-01,202609,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2595.61,2297.00,612.00,2595.61
+2026-09-03,2026-09-01,202609,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1467.87,1299.00,319.00,1467.87
+2026-09-04,2026-09-01,202609,MOB,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,2236.27,1979.00,499.00,2236.27
+2026-09-04,2026-09-01,202609,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,3794.54,3358.00,838.00,3794.54
+2026-09-04,2026-09-01,202609,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2359.44,2088.00,523.00,2359.44
+2026-09-04,2026-09-01,202609,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,3047.61,2697.00,747.00,3047.61
+2026-09-04,2026-09-01,202609,WEB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,5295.19,4686.01,1184.01,5295.19
+2026-09-05,2026-09-01,202609,MOB,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,4323.38,3826.00,996.00,4323.38
+2026-09-05,2026-09-01,202609,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,4074.22,3605.50,848.50,4074.22
+2026-09-05,2026-09-01,202609,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1128.87,999.00,239.00,1128.87
+2026-09-06,2026-09-01,202609,MOB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,4853.37,4295.01,1090.01,4853.37
+2026-09-06,2026-09-01,202609,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2200.11,1947.00,487.00,2200.11
+2026-09-06,2026-09-01,202609,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,4756.74,4209.50,1039.50,4756.74
+2026-09-06,2026-09-01,202609,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,2935.74,2598.00,628.00,2935.74
+2026-09-07,2026-09-01,202609,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,3779.85,3345.00,840.00,3779.85
+2026-09-07,2026-09-01,202609,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1577.48,1396.00,386.00,1577.48
+2026-09-07,2026-09-01,202609,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,2,2098.41,1857.00,507.00,1049.20
+2026-09-07,2026-09-01,202609,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2742.51,2427.00,677.00,2742.51
+2026-09-07,2026-09-01,202609,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,111.87,99.00,44.00,111.87
+2026-09-08,2026-09-01,202609,MOB,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,3386.61,2997.00,717.00,3386.61
+2026-09-08,2026-09-01,202609,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,2221.58,1966.00,579.00,2221.58
+2026-09-08,2026-09-01,202609,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1984.28,1756.00,489.00,1984.28
+2026-09-08,2026-09-01,202609,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,2313.11,2047.00,512.00,2313.11
+2026-09-08,2026-09-01,202609,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,517.54,458.00,126.00,517.54
+2026-09-09,2026-09-01,202609,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,179.67,159.00,69.00,179.67
+2026-09-09,2026-09-01,202609,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,1015.87,899.00,239.00,1015.87
+2026-09-09,2026-09-01,202609,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1015.89,899.01,239.01,1015.89
+2026-09-09,2026-09-01,202609,WEB,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,394.37,349.00,79.00,394.37
+2026-09-09,2026-09-01,202609,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1464.48,1296.00,371.00,1464.48
+2026-09-09,2026-09-01,202609,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,246.34,218.00,94.00,246.34
+2026-09-10,2026-09-01,202609,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1534.54,1358.00,413.00,1534.54
+2026-09-11,2026-09-01,202609,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,2,3736.35,3306.50,831.50,1868.17
+2026-09-11,2026-09-01,202609,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,2,4939.57,4371.30,801.30,2469.78
+2026-09-12,2026-09-01,202609,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1918.74,1698.00,433.00,1918.74
+2026-09-12,2026-09-01,202609,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,2,4920.02,4354.00,1127.00,2460.01
+2026-09-12,2026-09-01,202609,POS,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,5417.06,4793.85,893.85,5417.06
+2026-09-12,2026-09-01,202609,POS,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,223.74,198.00,88.00,223.74
+2026-09-12,2026-09-01,202609,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1183.11,1047.00,237.00,1183.11
+2026-09-12,2026-09-01,202609,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,3801.66,3364.30,784.30,3801.66
+2026-09-13,2026-09-01,202609,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1944.17,1720.50,448.50,1944.17
+2026-09-13,2026-09-01,202609,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1826.09,1616.01,457.01,1826.09
+2026-09-13,2026-09-01,202609,POS,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,2313.11,2047.00,512.00,2313.11
+2026-09-13,2026-09-01,202609,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,3964.95,3508.80,613.80,3964.95
+2026-09-13,2026-09-01,202609,POS,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,3127.84,2768.00,726.00,3127.84
+2026-09-13,2026-09-01,202609,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,2269.04,2008.00,493.00,2269.04
+2026-09-13,2026-09-01,202609,WEB,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,281.37,249.00,79.00,281.37
+2026-09-13,2026-09-01,202609,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,8580.08,7592.99,1942.99,8580.08
+2026-09-14,2026-09-01,202609,MOB,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,1015.87,899.00,249.00,1015.87
+2026-09-14,2026-09-01,202609,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,394.37,349.00,79.00,394.37
+2026-09-14,2026-09-01,202609,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1863.48,1649.10,329.10,1863.48
+2026-09-14,2026-09-01,202609,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1128.88,999.01,254.01,1128.88
+2026-09-14,2026-09-01,202609,WEB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,2143.61,1897.00,542.00,2143.61
+2026-09-15,2026-09-01,202609,POS,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,1794.44,1588.00,453.00,1794.44
+2026-09-15,2026-09-01,202609,POS,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,778.74,689.15,154.15,778.74
+2026-09-15,2026-09-01,202609,POS,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,768.40,680.00,180.00,768.40
+2026-09-15,2026-09-01,202609,WEB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,1613.63,1427.99,402.99,1613.63
+2026-09-15,2026-09-01,202609,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,4115.43,3641.98,841.98,4115.43
+2026-09-16,2026-09-01,202609,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,3092.25,2736.50,656.50,3092.25
+2026-09-16,2026-09-01,202609,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,800.03,707.99,245.99,800.03
+2026-09-16,2026-09-01,202609,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1477.02,1307.10,287.10,1477.02
+2026-09-16,2026-09-01,202609,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,3600.29,3186.10,676.10,3600.29
+2026-09-17,2026-09-01,202609,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,3149.35,2787.03,777.03,3149.35
+2026-09-17,2026-09-01,202609,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,606.81,537.00,143.00,606.81
+2026-09-17,2026-09-01,202609,POS,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1127.85,998.10,183.10,1127.85
+2026-09-17,2026-09-01,202609,WEB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,2,2957.79,2617.51,688.51,1478.89
+2026-09-17,2026-09-01,202609,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,1536.80,1360.00,360.00,1536.80
+2026-09-17,2026-09-01,202609,WEB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1015.87,899.00,249.00,1015.87
+2026-09-17,2026-09-01,202609,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,3396.78,3006.00,774.00,3396.78
+2026-09-18,2026-09-01,202609,MOB,5,Sofia Hernandez,Premium,El Salvador,San Salvador,Oriental,1,1499.51,1327.00,345.00,1499.51
+2026-09-18,2026-09-01,202609,MOB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,2143.60,1896.99,541.99,2143.60
+2026-09-18,2026-09-01,202609,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,676.87,599.00,169.00,676.87
+2026-09-18,2026-09-01,202609,WEB,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,1479.17,1309.00,394.00,1479.17
+2026-09-18,2026-09-01,202609,WEB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,4122.24,3648.00,963.00,4122.24
+2026-09-19,2026-09-01,202609,MOB,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,4990.08,4416.00,1149.00,4990.08
+2026-09-19,2026-09-01,202609,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,2,753.71,667.00,172.00,376.86
+2026-09-19,2026-09-01,202609,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1940.21,1717.00,412.00,1940.21
+2026-09-19,2026-09-01,202609,WEB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,2538.53,2246.49,504.49,2538.53
+2026-09-20,2026-09-01,202609,MOB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,1596.12,1412.49,392.49,1596.12
+2026-09-20,2026-09-01,202609,MOB,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,395.50,350.00,120.00,395.50
+2026-09-20,2026-09-01,202609,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,2,2405.75,2128.99,708.99,1202.88
+2026-09-21,2026-09-01,202609,MOB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,2073.55,1835.00,450.00,2073.55
+2026-09-21,2026-09-01,202609,MOB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,1975.24,1748.00,483.00,1975.24
+2026-09-21,2026-09-01,202609,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,911.91,807.00,260.00,911.91
+2026-09-21,2026-09-01,202609,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,2,5802.55,5135.00,1303.00,2901.28
+2026-09-21,2026-09-01,202609,POS,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,1479.17,1309.00,419.00,1479.17
+2026-09-21,2026-09-01,202609,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,437.29,386.98,165.98,437.29
+2026-09-21,2026-09-01,202609,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,1578.61,1397.00,407.00,1578.61
+2026-09-21,2026-09-01,202609,WEB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,800.04,708.00,216.00,800.04
+2026-09-21,2026-09-01,202609,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1749.24,1548.00,398.00,1749.24
+2026-09-22,2026-09-01,202609,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,2770.20,2451.50,596.50,2770.20
+2026-09-22,2026-09-01,202609,MOB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2396.17,2120.50,518.50,2396.17
+2026-09-23,2026-09-01,202609,MOB,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,1817.04,1608.00,423.00,1817.04
+2026-09-23,2026-09-01,202609,MOB,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,3499.61,3097.00,817.00,3499.61
+2026-09-23,2026-09-01,202609,MOB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1986.53,1758.00,486.00,1986.53
+2026-09-23,2026-09-01,202609,POS,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,2645.89,2341.50,621.50,2645.89
+2026-09-23,2026-09-01,202609,POS,2,Jorge Castillo,Regular,Guatemala,Guatemala,Oriental,1,1726.64,1528.00,428.00,1726.64
+2026-09-23,2026-09-01,202609,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,2661.72,2355.50,551.50,2661.72
+2026-09-23,2026-09-01,202609,WEB,13,Cliente Geo Inconsistente,Regular,Guatemala,Guatemala,Central,1,123.17,109.00,47.00,123.17
+2026-09-23,2026-09-01,202609,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,2043.03,1808.00,508.00,2043.03
+2026-09-24,2026-09-01,202609,MOB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,5442.09,4816.00,1244.00,5442.09
+2026-09-24,2026-09-01,202609,MOB,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,235.04,208.00,91.00,235.04
+2026-09-24,2026-09-01,202609,POS,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,676.87,599.00,169.00,676.87
+2026-09-24,2026-09-01,202609,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,63.00,60.00,25.00,63.00
+2026-09-24,2026-09-01,202609,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,1297.24,1148.00,328.00,1297.24
+2026-09-24,2026-09-01,202609,WEB,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1784.27,1579.00,429.00,1784.27
+2026-09-25,2026-09-01,202609,WEB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,1254.30,1110.00,385.00,1254.30
+2026-09-26,2026-09-01,202609,MOB,3,Maria Lopez,Premium,Guatemala,Sacatepequez,Occidental,1,404.54,358.00,126.00,404.54
+2026-09-26,2026-09-01,202609,MOB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,395.50,350.00,120.00,395.50
+2026-09-26,2026-09-01,202609,WEB,7,Tecnologias Rivas,Corporativo,El Salvador,San Salvador,Central,1,5315.52,4704.00,1282.00,5315.52
+2026-09-26,2026-09-01,202609,WEB,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,768.40,680.00,180.00,768.40
+2026-09-28,2026-09-01,202609,MOB,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,2505.21,2217.00,537.00,2505.21
+2026-09-28,2026-09-01,202609,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,586.47,519.00,192.00,586.47
+2026-09-28,2026-09-01,202609,POS,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,4054.43,3587.99,997.99,4054.43
+2026-09-28,2026-09-01,202609,POS,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,1,2878.11,2547.00,627.00,2878.11
+2026-09-28,2026-09-01,202609,POS,12,Diego Ramirez,Nuevo,El Salvador,La Libertad,Occidental,1,2364.53,2092.50,572.50,2364.53
+2026-09-29,2026-09-01,202609,MOB,11,Andrea Morales,Corporativo,Guatemala,Guatemala,Oriental,2,2844.21,2517.00,740.00,1422.11
+2026-09-29,2026-09-01,202609,MOB,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,1240.74,1098.00,283.00,1240.74
+2026-09-29,2026-09-01,202609,POS,9,Pablo Garcia,Regular,Espana,Barcelona,Occidental,1,1925.48,1703.97,383.97,1925.48
+2026-09-29,2026-09-01,202609,WEB,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,1,586.47,519.00,192.00,586.47
+2026-09-29,2026-09-01,202609,WEB,4,Kevin Ajanel,Nuevo,Guatemala,Quetzaltenango,Central,1,1467.87,1299.00,319.00,1467.87
+2026-09-30,2026-09-01,202609,POS,1,Laura Restrepo,Premium,Guatemala,Guatemala,Central,2,2031.74,1798.00,523.00,1015.87
+2026-09-30,2026-09-01,202609,POS,8,Lucia Fernandez,Premium,Espana,Madrid,Oriental,1,1573.52,1392.50,332.50,1573.52
+2026-09-30,2026-09-01,202609,WEB,10,Elena Ruiz,Nuevo,Espana,Madrid,Central,1,1342.44,1188.00,328.00,1342.44
+2026-09-30,2026-09-01,202609,WEB,6,Carlos Mejia,Regular,El Salvador,La Libertad,Occidental,1,2483.74,2198.00,568.00,2483.74

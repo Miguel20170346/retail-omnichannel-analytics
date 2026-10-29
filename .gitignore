@@ -1,0 +1,26 @@
+# Operating System Files
+Thumbs.db
+desktop.ini
+ehthumbs.db
+.DS_Store
+
+# Temporary & Swap Files
+*.tmp
+*.temp
+*~
+~*
+
+# Power BI Lock & Cache Files
+~$*.pbix
+*.pbix.cache
+
+# SQL Execution Logs & Spools
+*.log
+*.spool
+deploy_retail_bi.log
+instalacion_completa.log
+conciliacion_*.log
+
+# IDE & Editor Settings (Optional local overrides)
+.vscode/
+.idea/

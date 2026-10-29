@@ -1,0 +1,325 @@
+﻿FECHA_MES,PERIOD_TX,CODIGO_CANAL,NOMBRE_PRODUCTO,CATEGORIA,SUBCATEGORIA,MARCA,NUM_TRANSACCIONES_PRODUCTO,UNIDADES,VENTA_NETA_USD,VENTA_TOTAL_USD,MARGEN_BRUTO_USD,RANKING_UNIDADES,RANKING_VENTAS
+2026-01-01,202601,MOB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,6,12,4000.00,4520.00,1240.00,2,6
+2026-01-01,202601,MOB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,5,6,360.00,406.80,150.00,6,12
+2026-01-01,202601,MOB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,4,6,4080.00,4610.40,1080.00,6,5
+2026-01-01,202601,MOB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,5,6,4275.00,4830.77,915.00,6,4
+2026-01-01,202601,MOB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,4,5,6495.00,7339.35,1595.00,11,3
+2026-01-01,202601,MOB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,5,6,594.00,671.22,264.00,6,11
+2026-01-01,202601,MOB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,5,9,2931.00,3312.03,501.00,4,8
+2026-01-01,202601,MOB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,9,10,8989.99,10158.69,2489.99,3,2
+2026-01-01,202601,MOB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,5,5,2995.00,3384.35,845.00,11,7
+2026-01-01,202601,MOB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,4,7,762.99,862.17,328.99,5,10
+2026-01-01,202601,MOB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,6,6,1494.00,1688.22,474.00,6,9
+2026-01-01,202601,MOB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,9,16,15084.90,17045.94,2924.90,1,1
+2026-01-01,202601,POS,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,8,9,2900.00,3277.00,830.00,2,7
+2026-01-01,202601,POS,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,6,7,420.01,474.62,175.01,5,11
+2026-01-01,202601,POS,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,9,12,8160.00,9220.80,2160.00,1,1
+2026-01-01,202601,POS,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,6,9,6412.49,7246.13,1372.49,2,4
+2026-01-01,202601,POS,MacBook Air M3 13,Tecnologia,Computadoras,Apple,5,6,7794.00,8807.22,1914.00,8,2
+2026-01-01,202601,POS,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,4,4,396.00,447.48,176.00,10,12
+2026-01-01,202601,POS,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,3,3,1016.99,1149.20,206.99,12,9
+2026-01-01,202601,POS,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,6,7,6293.01,7111.10,1743.01,5,5
+2026-01-01,202601,POS,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,5,6,3414.30,3858.16,834.30,8,6
+2026-01-01,202601,POS,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,2,4,436.00,492.68,188.00,10,10
+2026-01-01,202601,POS,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,5,9,2241.00,2532.33,711.00,2,8
+2026-01-01,202601,POS,iPhone 16 128GB,Tecnologia,Smartphones,Apple,7,7,6993.00,7902.09,1673.00,5,3
+2026-01-01,202601,WEB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,8,8,2650.00,2994.50,810.00,7,8
+2026-01-01,202601,WEB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,4,6,360.00,406.80,150.00,11,12
+2026-01-01,202601,WEB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,7,9,6120.00,6915.60,1620.00,5,5
+2026-01-01,202601,WEB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,8,10,7200.00,8136.01,1600.00,3,2
+2026-01-01,202601,WEB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,8,8,10392.00,11742.96,2552.00,7,1
+2026-01-01,202601,WEB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,9,18,1782.01,2013.67,792.01,1,10
+2026-01-01,202601,WEB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,7,9,3050.99,3447.62,620.99,5,7
+2026-01-01,202601,WEB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,4,7,6293.00,7111.09,1743.00,10,4
+2026-01-01,202601,WEB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,9,12,7008.30,7919.38,1848.30,2,3
+2026-01-01,202601,WEB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,6,8,872.00,985.36,376.00,7,11
+2026-01-01,202601,WEB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,7,10,2490.00,2813.70,790.00,3,9
+2026-01-01,202601,WEB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,4,6,5594.40,6321.68,1034.40,11,6
+2026-02-01,202602,MOB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,9,12,3850.02,4350.51,1090.02,1,6
+2026-02-01,202602,MOB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,7,10,600.01,678.01,250.01,2,12
+2026-02-01,202602,MOB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,7,8,5440.00,6147.20,1440.00,6,3
+2026-02-01,202602,MOB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,5,5,3637.49,4110.36,837.49,11,7
+2026-02-01,202602,MOB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,4,4,5196.00,5871.49,1276.00,12,4
+2026-02-01,202602,MOB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,4,7,693.00,783.09,308.00,9,11
+2026-02-01,202602,MOB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,8,9,3081.00,3481.53,651.00,4,8
+2026-02-01,202602,MOB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,6,7,6293.00,7111.08,1743.00,9,2
+2026-02-01,202602,MOB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,7,8,4702.15,5313.43,1262.15,6,5
+2026-02-01,202602,MOB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,8,9,981.00,1108.53,423.00,4,10
+2026-02-01,202602,MOB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,5,8,1992.00,2250.96,632.00,6,9
+2026-02-01,202602,MOB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,6,10,9490.49,10724.25,1890.49,2,1
+2026-02-01,202602,POS,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,14,19,6200.00,7006.01,1830.00,1,7
+2026-02-01,202602,POS,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,14,17,1020.00,1152.60,425.00,3,12
+2026-02-01,202602,POS,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,7,10,6800.00,7684.00,1800.00,10,5
+2026-02-01,202602,POS,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,8,14,10050.00,11356.51,2210.00,7,3
+2026-02-01,202602,POS,MacBook Air M3 13,Tecnologia,Computadoras,Apple,12,16,20784.00,23485.93,5104.00,4,1
+2026-02-01,202602,POS,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,10,16,1584.00,1789.92,704.00,4,11
+2026-02-01,202602,POS,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,14,19,6451.01,7289.64,1321.01,1,6
+2026-02-01,202602,POS,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,7,8,7192.02,8126.98,1992.02,11,4
+2026-02-01,202602,POS,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,7,8,4792.00,5414.96,1352.00,11,8
+2026-02-01,202602,POS,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,10,15,1634.98,1847.52,704.98,6,10
+2026-02-01,202602,POS,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,9,11,2739.00,3095.07,869.00,8,9
+2026-02-01,202602,POS,iPhone 16 128GB,Tecnologia,Smartphones,Apple,8,11,10689.30,12078.90,2329.30,8,2
+2026-02-01,202602,WEB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,7,8,2500.00,2825.00,660.00,8,6
+2026-02-01,202602,WEB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,6,7,420.00,474.60,175.00,9,12
+2026-02-01,202602,WEB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,1,1,680.00,768.40,180.00,11,9
+2026-02-01,202602,WEB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,9,10,7125.00,8051.27,1525.00,2,4
+2026-02-01,202602,WEB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,8,9,11691.00,13210.83,2871.00,5,1
+2026-02-01,202602,WEB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,9,11,1089.00,1230.57,484.00,1,8
+2026-02-01,202602,WEB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,9,10,3400.01,3842.01,700.01,2,5
+2026-02-01,202602,WEB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,8,10,8990.00,10158.70,2490.00,2,2
+2026-02-01,202602,WEB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,1,1,599.00,676.87,169.00,11,10
+2026-02-01,202602,WEB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,4,5,545.00,615.85,235.00,10,11
+2026-02-01,202602,WEB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,7,9,2241.00,2532.33,711.00,5,7
+2026-02-01,202602,WEB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,8,9,8891.10,10046.93,2051.10,5,3
+2026-03-01,202603,MOB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,3,3,950.00,1073.50,260.00,11,9
+2026-03-01,202603,MOB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,7,11,660.00,745.81,275.00,4,11
+2026-03-01,202603,MOB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,4,5,3400.00,3842.00,900.00,9,6
+2026-03-01,202603,MOB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,6,9,6562.49,7415.62,1522.49,5,4
+2026-03-01,202603,MOB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,5,9,11691.01,13210.84,2871.01,5,1
+2026-03-01,202603,MOB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,9,12,1187.99,1342.43,527.99,2,8
+2026-03-01,202603,MOB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,2,2,698.00,788.74,158.00,12,10
+2026-03-01,202603,MOB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,7,9,8091.00,9142.83,2241.00,5,3
+2026-03-01,202603,MOB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,7,8,4702.15,5313.43,1262.15,8,5
+2026-03-01,202603,MOB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,4,4,436.00,492.68,188.00,10,12
+2026-03-01,202603,MOB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,8,13,3237.01,3657.82,1027.01,1,7
+2026-03-01,202603,MOB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,7,12,11288.71,12756.24,2168.71,2,2
+2026-03-01,202603,POS,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,5,7,2350.00,2655.50,740.00,9,8
+2026-03-01,202603,POS,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,1,1,60.00,67.80,25.00,12,12
+2026-03-01,202603,POS,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,8,9,6120.00,6915.61,1620.00,8,5
+2026-03-01,202603,POS,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,5,6,4275.00,4830.77,915.00,10,6
+2026-03-01,202603,POS,MacBook Air M3 13,Tecnologia,Computadoras,Apple,10,15,19485.00,22018.05,4785.00,3,1
+2026-03-01,202603,POS,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,10,13,1287.01,1454.32,572.01,5,11
+2026-03-01,202603,POS,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,10,12,3948.01,4461.25,708.01,6,7
+2026-03-01,202603,POS,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,9,12,10788.00,12190.44,2988.00,6,3
+2026-03-01,202603,POS,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,12,15,8985.00,10153.05,2535.00,3,4
+2026-03-01,202603,POS,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,12,19,2071.01,2340.24,893.01,1,9
+2026-03-01,202603,POS,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,5,6,1494.00,1688.22,474.00,10,10
+2026-03-01,202603,POS,iPhone 16 128GB,Tecnologia,Smartphones,Apple,15,17,16583.40,18739.24,3663.40,2,2
+2026-03-01,202603,WEB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,14,15,4950.00,5593.49,1500.00,3,7
+2026-03-01,202603,WEB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,6,6,360.00,406.80,150.00,12,12
+2026-03-01,202603,WEB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,6,7,4760.00,5378.80,1260.00,10,8
+2026-03-01,202603,WEB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,10,12,8737.50,9873.39,2017.50,5,3
+2026-03-01,202603,WEB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,6,7,9092.99,10275.08,2232.99,10,2
+2026-03-01,202603,WEB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,15,18,1782.00,2013.66,792.00,2,10
+2026-03-01,202603,WEB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,15,20,6919.99,7819.57,1519.99,1,5
+2026-03-01,202603,WEB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,10,11,9889.00,11174.57,2739.00,6,1
+2026-03-01,202603,WEB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,8,9,5211.30,5888.77,1341.30,8,6
+2026-03-01,202603,WEB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,8,11,1199.00,1354.87,517.00,6,11
+2026-03-01,202603,WEB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,9,14,3486.00,3939.18,1106.00,4,9
+2026-03-01,202603,WEB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,6,8,7592.40,8579.41,1512.40,9,4
+2026-04-01,202604,MOB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,5,8,2800.00,3164.00,960.00,9,8
+2026-04-01,202604,MOB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,5,6,360.00,406.80,150.00,11,12
+2026-04-01,202604,MOB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,8,10,6800.00,7684.00,1800.00,5,4
+2026-04-01,202604,MOB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,11,13,9449.99,10678.52,2169.99,2,2
+2026-04-01,202604,MOB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,14,18,23381.99,26421.65,5741.99,1,1
+2026-04-01,202604,MOB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,9,10,989.98,1118.68,439.98,5,11
+2026-04-01,202604,MOB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,9,13,4476.99,5059.00,966.99,2,7
+2026-04-01,202604,MOB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,8,10,8990.00,10158.70,2490.00,5,3
+2026-04-01,202604,MOB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,8,9,5301.14,5990.29,1431.14,8,6
+2026-04-01,202604,MOB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,9,13,1417.00,1601.21,611.00,2,10
+2026-04-01,202604,MOB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,6,6,1494.00,1688.22,474.00,11,9
+2026-04-01,202604,MOB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,4,7,6793.19,7676.31,1473.19,10,5
+2026-04-01,202604,POS,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,6,7,2150.00,2429.50,540.00,11,8
+2026-04-01,202604,POS,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,8,10,600.00,678.00,250.00,6,12
+2026-04-01,202604,POS,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,7,10,6800.00,7684.00,1800.00,6,5
+2026-04-01,202604,POS,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,9,13,9337.49,10551.37,2057.49,3,4
+2026-04-01,202604,POS,MacBook Air M3 13,Tecnologia,Computadoras,Apple,11,14,18186.00,20550.18,4466.00,2,1
+2026-04-01,202604,POS,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,7,8,792.00,894.96,352.00,9,11
+2026-04-01,202604,POS,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,10,13,4447.00,5025.11,937.00,3,6
+2026-04-01,202604,POS,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,9,13,11686.99,13206.30,3236.99,3,2
+2026-04-01,202604,POS,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,4,7,4103.15,4636.56,1093.15,11,7
+2026-04-01,202604,POS,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,12,16,1743.99,1970.71,751.99,1,10
+2026-04-01,202604,POS,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,6,8,1992.00,2250.96,632.00,9,9
+2026-04-01,202604,POS,iPhone 16 128GB,Tecnologia,Smartphones,Apple,10,10,9790.20,11062.92,2190.20,6,3
+2026-04-01,202604,WEB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,5,6,1950.00,2203.50,570.00,10,9
+2026-04-01,202604,WEB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,10,12,720.00,813.61,300.00,2,11
+2026-04-01,202604,WEB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,7,11,7480.00,8452.40,1980.00,4,3
+2026-04-01,202604,WEB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,4,4,2887.50,3262.88,647.50,12,8
+2026-04-01,202604,WEB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,7,11,14289.00,16146.57,3509.00,4,1
+2026-04-01,202604,WEB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,7,7,693.00,783.09,308.00,8,12
+2026-04-01,202604,WEB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,9,9,3081.00,3481.53,651.00,6,6
+2026-04-01,202604,WEB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,4,5,4494.99,5079.34,1244.99,11,5
+2026-04-01,202604,WEB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,7,8,4702.15,5313.43,1262.15,7,4
+2026-04-01,202604,WEB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,6,7,763.00,862.19,329.00,8,10
+2026-04-01,202604,WEB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,9,12,2988.00,3376.44,948.00,2,7
+2026-04-01,202604,WEB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,11,13,12787.21,14449.54,2907.21,1,2
+2026-05-01,202605,MOB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,10,12,4000.01,4520.01,1240.01,10,9
+2026-05-01,202605,MOB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,6,6,360.00,406.80,150.00,12,12
+2026-05-01,202605,MOB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,12,16,10880.00,12294.41,2880.00,5,6
+2026-05-01,202605,MOB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,13,17,12337.50,13941.40,2817.50,4,4
+2026-05-01,202605,MOB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,13,14,18186.00,20550.18,4466.00,8,2
+2026-05-01,202605,MOB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,9,11,1089.00,1230.57,484.00,11,11
+2026-05-01,202605,MOB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,12,15,5085.00,5746.05,1035.00,7,7
+2026-05-01,202605,MOB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,12,16,14384.01,16253.93,3984.01,5,3
+2026-05-01,202605,MOB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,14,19,11021.60,12454.41,2851.60,2,5
+2026-05-01,202605,MOB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,10,14,1526.01,1724.39,658.01,8,10
+2026-05-01,202605,MOB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,16,20,4980.01,5627.41,1580.01,1,8
+2026-05-01,202605,MOB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,17,19,18481.48,20884.04,4041.48,2,1
+2026-05-01,202605,POS,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,5,8,2700.00,3051.00,860.00,8,8
+2026-05-01,202605,POS,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,6,8,480.00,542.40,200.00,8,12
+2026-05-01,202605,POS,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,9,13,8840.00,9989.20,2340.00,2,3
+2026-05-01,202605,POS,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,7,10,7237.51,8178.40,1637.51,6,5
+2026-05-01,202605,POS,MacBook Air M3 13,Tecnologia,Computadoras,Apple,5,6,7794.00,8807.23,1914.00,10,4
+2026-05-01,202605,POS,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,9,10,990.00,1118.70,440.00,6,10
+2026-05-01,202605,POS,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,3,3,987.00,1115.31,177.00,12,11
+2026-05-01,202605,POS,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,9,11,9889.00,11174.57,2739.00,4,2
+2026-05-01,202605,POS,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,4,5,2995.00,3384.35,845.00,11,6
+2026-05-01,202605,POS,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,10,16,1744.00,1970.72,752.00,1,9
+2026-05-01,202605,POS,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,10,12,2988.00,3376.44,948.00,3,7
+2026-05-01,202605,POS,iPhone 16 128GB,Tecnologia,Smartphones,Apple,10,11,10589.41,11966.03,2229.41,4,1
+2026-05-01,202605,WEB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,7,9,3000.00,3390.00,930.00,5,7
+2026-05-01,202605,WEB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,4,7,420.00,474.60,175.00,8,12
+2026-05-01,202605,WEB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,6,6,4080.00,4610.40,1080.00,10,5
+2026-05-01,202605,WEB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,4,5,3637.50,4110.38,837.50,12,6
+2026-05-01,202605,WEB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,7,10,12990.01,14678.71,3190.01,4,3
+2026-05-01,202605,WEB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,15,22,2177.99,2461.13,967.99,1,9
+2026-05-01,202605,WEB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,7,8,2612.00,2951.56,452.00,7,8
+2026-05-01,202605,WEB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,10,15,13485.00,15238.06,3735.00,3,2
+2026-05-01,202605,WEB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,6,9,5211.30,5888.77,1341.30,5,4
+2026-05-01,202605,WEB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,5,6,654.00,739.02,282.00,10,11
+2026-05-01,202605,WEB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,7,7,1743.00,1969.59,553.00,8,10
+2026-05-01,202605,WEB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,11,18,17682.30,19981.00,4002.30,2,1
+2026-06-01,202606,MOB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,12,15,4950.00,5593.50,1500.00,3,6
+2026-06-01,202606,MOB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,12,14,840.00,949.20,350.00,5,12
+2026-06-01,202606,MOB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,11,13,8840.00,9989.20,2340.00,7,4
+2026-06-01,202606,MOB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,9,14,10087.50,11398.89,2247.50,5,3
+2026-06-01,202606,MOB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,11,16,20784.01,23485.93,5104.01,2,1
+2026-06-01,202606,MOB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,7,9,891.00,1006.83,396.00,8,10
+2026-06-01,202606,MOB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,8,9,3141.00,3549.33,711.00,8,9
+2026-06-01,202606,MOB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,9,9,8091.00,9142.83,2241.00,8,5
+2026-06-01,202606,MOB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,13,18,10602.29,11980.59,2862.29,1,2
+2026-06-01,202606,MOB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,6,8,872.00,985.36,376.00,11,11
+2026-06-01,202606,MOB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,11,15,3735.00,4220.55,1185.00,3,8
+2026-06-01,202606,MOB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,4,4,3896.10,4402.59,856.10,12,7
+2026-06-01,202606,POS,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,8,10,3350.01,3785.51,1050.01,9,8
+2026-06-01,202606,POS,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,6,6,360.00,406.80,150.00,12,12
+2026-06-01,202606,POS,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,11,13,8839.99,9989.20,2339.99,6,4
+2026-06-01,202606,POS,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,9,12,8700.02,9831.03,1980.02,7,5
+2026-06-01,202606,POS,MacBook Air M3 13,Tecnologia,Computadoras,Apple,15,22,28578.00,32293.14,7018.00,1,1
+2026-06-01,202606,POS,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,13,18,1781.99,2013.65,791.99,2,10
+2026-06-01,202606,POS,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,12,17,5723.01,6467.00,1133.01,3,6
+2026-06-01,202606,POS,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,11,14,12586.00,14222.18,3486.00,4,3
+2026-06-01,202606,POS,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,6,7,4193.00,4738.09,1183.00,11,7
+2026-06-01,202606,POS,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,8,11,1198.99,1354.87,516.99,8,11
+2026-06-01,202606,POS,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,9,10,2490.00,2813.70,790.00,9,9
+2026-06-01,202606,POS,iPhone 16 128GB,Tecnologia,Smartphones,Apple,10,14,13686.29,15465.50,3046.29,4,2
+2026-06-01,202606,WEB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,7,9,2900.00,3277.00,830.00,6,7
+2026-06-01,202606,WEB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,8,9,540.01,610.21,225.01,6,12
+2026-06-01,202606,WEB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,8,9,6120.01,6915.61,1620.01,6,5
+2026-06-01,202606,WEB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,8,10,7312.51,8263.15,1712.51,5,3
+2026-06-01,202606,WEB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,8,12,15587.99,17614.43,3827.99,1,1
+2026-06-01,202606,WEB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,6,6,594.00,671.23,264.00,11,11
+2026-06-01,202606,WEB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,7,12,4038.00,4562.94,798.00,1,6
+2026-06-01,202606,WEB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,3,3,2697.00,3047.61,747.00,12,8
+2026-06-01,202606,WEB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,10,11,6589.00,7445.57,1859.00,3,4
+2026-06-01,202606,WEB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,7,8,872.00,985.36,376.00,9,10
+2026-06-01,202606,WEB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,6,8,1992.00,2250.97,632.00,9,9
+2026-06-01,202606,WEB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,8,11,10589.40,11966.02,2229.40,3,2
+2026-07-01,202607,MOB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,15,18,6000.00,6780.00,1860.00,3,7
+2026-07-01,202607,MOB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,12,14,840.00,949.20,350.00,8,12
+2026-07-01,202607,MOB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,10,18,12239.99,13831.19,3239.99,3,4
+2026-07-01,202607,MOB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,10,14,10200.00,11526.00,2360.00,8,5
+2026-07-01,202607,MOB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,15,20,25980.01,29357.41,6380.01,2,1
+2026-07-01,202607,MOB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,10,13,1287.00,1454.31,572.00,11,11
+2026-07-01,202607,MOB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,14,16,5404.00,6106.53,1084.00,6,8
+2026-07-01,202607,MOB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,13,16,14384.00,16253.93,3984.00,6,3
+2026-07-01,202607,MOB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,12,13,7787.00,8799.30,2197.00,11,6
+2026-07-01,202607,MOB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,11,14,1526.00,1724.38,658.00,8,10
+2026-07-01,202607,MOB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,12,17,4233.00,4783.29,1343.00,5,9
+2026-07-01,202607,MOB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,17,22,21278.71,24044.92,4558.71,1,2
+2026-07-01,202607,POS,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,5,6,1949.99,2203.49,569.99,10,8
+2026-07-01,202607,POS,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,10,13,780.00,881.40,325.00,1,12
+2026-07-01,202607,POS,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,8,11,7479.99,8452.39,1979.99,4,3
+2026-07-01,202607,POS,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,6,6,4350.01,4915.53,990.01,10,6
+2026-07-01,202607,POS,MacBook Air M3 13,Tecnologia,Computadoras,Apple,8,12,15588.02,17614.46,3828.02,2,1
+2026-07-01,202607,POS,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,9,10,990.00,1118.70,440.00,7,11
+2026-07-01,202607,POS,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,9,11,3778.99,4270.27,808.99,4,7
+2026-07-01,202607,POS,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,5,6,5394.00,6095.22,1494.00,10,5
+2026-07-01,202607,POS,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,10,11,6499.15,7344.04,1769.15,4,4
+2026-07-01,202607,POS,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,9,12,1308.00,1478.04,564.00,2,10
+2026-07-01,202607,POS,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,7,7,1743.00,1969.59,553.00,9,9
+2026-07-01,202607,POS,iPhone 16 128GB,Tecnologia,Smartphones,Apple,6,8,7492.50,8466.53,1412.50,8,2
+2026-07-01,202607,WEB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,12,15,4900.00,5537.00,1450.00,4,7
+2026-07-01,202607,WEB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,12,15,900.00,1017.01,375.00,4,10
+2026-07-01,202607,WEB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,9,14,9520.00,10757.61,2520.00,6,4
+2026-07-01,202607,WEB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,11,12,8662.50,9788.65,1942.50,7,5
+2026-07-01,202607,WEB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,13,16,20784.01,23485.93,5104.01,3,1
+2026-07-01,202607,WEB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,5,6,594.00,671.22,264.00,11,12
+2026-07-01,202607,WEB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,7,9,3021.00,3413.73,591.00,9,8
+2026-07-01,202607,WEB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,13,20,17980.00,20317.40,4980.00,1,2
+2026-07-01,202607,WEB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,12,17,10093.15,11405.25,2783.15,2,3
+2026-07-01,202607,WEB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,6,8,872.00,985.36,376.00,10,11
+2026-07-01,202607,WEB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,10,11,2739.00,3095.07,869.00,8,9
+2026-07-01,202607,WEB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,6,6,5694.30,6434.55,1134.30,11,6
+2026-08-01,202608,MOB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,12,17,5650.00,6384.50,1740.00,5,9
+2026-08-01,202608,MOB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,11,12,720.00,813.61,300.00,10,12
+2026-08-01,202608,MOB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,13,14,9520.00,10757.59,2520.00,8,5
+2026-08-01,202608,MOB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,18,23,16762.51,18941.68,3882.51,2,2
+2026-08-01,202608,MOB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,16,22,28578.00,32293.14,7018.00,4,1
+2026-08-01,202608,MOB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,11,12,1188.00,1342.44,528.00,10,11
+2026-08-01,202608,MOB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,15,23,7877.00,8900.98,1667.00,2,6
+2026-08-01,202608,MOB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,11,17,15283.01,17269.80,4233.01,5,3
+2026-08-01,202608,MOB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,7,10,5900.15,6667.17,1600.15,12,8
+2026-08-01,202608,MOB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,14,17,1853.00,2093.89,799.00,5,10
+2026-08-01,202608,MOB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,20,30,7470.01,8441.11,2370.01,1,7
+2026-08-01,202608,MOB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,11,13,12587.40,14223.76,2707.40,9,4
+2026-08-01,202608,POS,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,8,11,3749.98,4237.48,1219.98,3,5
+2026-08-01,202608,POS,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,9,9,540.00,610.20,225.00,5,12
+2026-08-01,202608,POS,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,8,15,10200.00,11525.99,2700.00,1,2
+2026-08-01,202608,POS,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,5,6,4274.99,4830.76,914.99,8,4
+2026-08-01,202608,POS,MacBook Air M3 13,Tecnologia,Computadoras,Apple,8,13,16887.01,19082.32,4147.01,2,1
+2026-08-01,202608,POS,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,7,9,891.00,1006.83,396.00,5,10
+2026-08-01,202608,POS,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,5,6,1974.00,2230.62,354.00,8,8
+2026-08-01,202608,POS,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,4,4,3596.00,4063.48,996.00,10,6
+2026-08-01,202608,POS,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,4,4,2216.29,2504.41,496.29,10,7
+2026-08-01,202608,POS,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,8,10,1089.98,1231.68,469.98,4,9
+2026-08-01,202608,POS,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,2,3,747.00,844.11,237.00,12,11
+2026-08-01,202608,POS,iPhone 16 128GB,Tecnologia,Smartphones,Apple,4,7,6993.00,7902.09,1673.00,7,3
+2026-08-01,202608,WEB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,14,18,5950.00,6723.50,1810.00,4,7
+2026-08-01,202608,WEB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,14,22,1320.01,1491.61,550.01,1,12
+2026-08-01,202608,WEB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,7,9,6120.01,6915.61,1620.01,12,6
+2026-08-01,202608,WEB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,14,15,10874.99,12288.78,2474.99,9,4
+2026-08-01,202608,WEB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,14,20,25979.98,29357.38,6379.98,2,1
+2026-08-01,202608,WEB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,14,17,1683.00,1901.80,748.00,6,11
+2026-08-01,202608,WEB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,14,16,5464.00,6174.32,1144.00,8,8
+2026-08-01,202608,WEB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,11,14,12586.01,14222.19,3486.01,11,3
+2026-08-01,202608,WEB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,14,17,10003.30,11303.73,2693.30,6,5
+2026-08-01,202608,WEB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,16,19,2070.99,2340.22,892.99,3,10
+2026-08-01,202608,WEB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,12,18,4482.00,5064.66,1422.00,4,9
+2026-08-01,202608,WEB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,9,15,14585.41,16481.50,3185.41,9,2
+2026-09-01,202609,MOB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,15,18,6149.97,6949.48,2009.97,4,7
+2026-09-01,202609,MOB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,11,15,899.99,1016.99,374.99,8,12
+2026-09-01,202609,MOB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,9,14,9520.01,10757.60,2520.01,9,5
+2026-09-01,202609,MOB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,11,17,12150.00,13729.54,2630.00,5,3
+2026-09-01,202609,MOB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,15,21,27279.01,30825.28,6699.01,1,1
+2026-09-01,202609,MOB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,17,17,1683.00,1901.79,748.00,5,11
+2026-09-01,202609,MOB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,11,12,4098.00,4630.74,858.00,11,9
+2026-09-01,202609,MOB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,10,13,11686.99,13206.30,3236.99,10,4
+2026-09-01,202609,MOB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,8,11,6589.00,7445.57,1859.00,12,6
+2026-09-01,202609,MOB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,15,16,1744.01,1970.73,752.01,7,10
+2026-09-01,202609,MOB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,12,21,5229.02,5908.80,1659.02,1,8
+2026-09-01,202609,MOB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,13,21,20979.00,23706.27,5019.00,1,2
+2026-09-01,202609,POS,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,11,14,4550.02,5141.53,1330.02,5,7
+2026-09-01,202609,POS,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,11,15,900.00,1017.00,375.00,4,12
+2026-09-01,202609,POS,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,13,16,10880.00,12294.40,2880.00,1,2
+2026-09-01,202609,POS,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,8,14,10125.00,11441.26,2285.00,5,3
+2026-09-01,202609,POS,MacBook Air M3 13,Tecnologia,Computadoras,Apple,6,6,7794.00,8807.22,1914.00,12,5
+2026-09-01,202609,POS,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,9,10,990.00,1118.70,440.00,9,11
+2026-09-01,202609,POS,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,8,12,4037.99,4562.93,797.99,7,8
+2026-09-01,202609,POS,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,5,7,6293.00,7111.09,1743.00,11,6
+2026-09-01,202609,POS,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,13,16,9404.29,10626.85,2524.29,1,4
+2026-09-01,202609,POS,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,8,12,1307.98,1478.02,563.98,7,10
+2026-09-01,202609,POS,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,6,8,1991.98,2250.93,631.98,10,9
+2026-09-01,202609,POS,iPhone 16 128GB,Tecnologia,Smartphones,Apple,10,16,15284.70,17271.71,3124.70,1,1
+2026-09-01,202609,WEB,Audifonos Sony WH-1000XM5,Tecnologia,Audio,Sony,9,11,3650.00,4124.50,1120.00,8,8
+2026-09-01,202609,WEB,Bocina Sony SRS-XB100,Tecnologia,Audio,Sony,12,16,960.00,1080.00,400.00,3,12
+2026-09-01,202609,WEB,Laptop HP Pavilion 15,Tecnologia,Computadoras,HP,8,11,7480.00,8452.40,1980.00,8,5
+2026-09-01,202609,WEB,Laptop Lenovo IdeaPad 5,Tecnologia,Computadoras,Lenovo,6,12,8549.98,9661.48,1829.98,7,4
+2026-09-01,202609,WEB,MacBook Air M3 13,Tecnologia,Computadoras,Apple,16,20,25980.00,29357.38,6380.00,1,1
+2026-09-01,202609,WEB,Mouse Logitech MX Master 3S,Tecnologia,Accesorios,Logitech,8,10,990.00,1118.70,440.00,10,11
+2026-09-01,202609,WEB,Nintendo Switch OLED,Tecnologia,Gaming,Nintendo,11,15,5115.00,5779.95,1065.00,4,6
+2026-09-01,202609,WEB,Samsung Galaxy S25,Tecnologia,Smartphones,Samsung,12,17,15282.98,17269.77,4232.98,2,2
+2026-09-01,202609,WEB,Smart TV Samsung 55 Crystal,Tecnologia,Televisores,Samsung,5,6,3414.30,3858.16,834.30,12,9
+2026-09-01,202609,WEB,Teclado Logitech MX Keys,Tecnologia,Accesorios,Logitech,12,14,1526.00,1724.38,658.00,6,10
+2026-09-01,202609,WEB,Xiaomi Redmi Note 14,Tecnologia,Smartphones,Xiaomi,11,15,3735.01,4220.56,1185.01,4,7
+2026-09-01,202609,WEB,iPhone 16 128GB,Tecnologia,Smartphones,Apple,8,10,9490.50,10724.26,1890.50,10,3
