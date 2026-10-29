@@ -32,6 +32,19 @@ CREATE TABLE IF NOT EXISTS QA_RESULTADOS (
   DETALLE      VARCHAR2(1000)
 );
 
+-- Funcion con derechos del dueno (OMNI_DW): garantiza que la prueba T38 se
+-- ejecute siempre con los privilegios exactos de OMNI_DW, incluso si el
+-- instalador de 1 clic corre desde SYS con CURRENT_SCHEMA = OMNI_DW.
+CREATE OR REPLACE FUNCTION FN_QA_INTENTAR_DML (p_sql VARCHAR2)
+RETURN NUMBER AUTHID DEFINER IS
+BEGIN
+  EXECUTE IMMEDIATE p_sql;
+  RETURN 0;
+EXCEPTION
+  WHEN OTHERS THEN RETURN SQLCODE;
+END;
+/
+
 DECLARE
   v_corrida NUMBER;
   v_n1 NUMBER; v_n2 NUMBER; v_n3 NUMBER; v_n4 NUMBER;
@@ -238,7 +251,7 @@ BEGIN
   SELECT SUM(MONTO_NETO_USD) INTO v_n4 FROM HECHOS_VENTAS;
   chk('T32', 'MV', 'MV promociones cuadra con HECHOS_VENTAS', v_n3 = v_n4, 'hechos=' || v_n4 || ' mv=' || v_n3);
 
-  SELECT COUNT(*) INTO v_n1 FROM USER_MVIEWS WHERE STALENESS NOT IN ('FRESH','UNKNOWN') AND MVIEW_NAME LIKE 'MV\_%' ESCAPE '\';
+  SELECT COUNT(*) INTO v_n1 FROM ALL_MVIEWS WHERE OWNER = 'OMNI_DW' AND STALENESS NOT IN ('FRESH','UNKNOWN') AND MVIEW_NAME LIKE 'MV\_%' ESCAPE '\';
   chk('T33', 'MV', 'Las 5 MVs estan actualizadas', v_n1 = 0, 'desactualizadas=' || v_n1);
 
   -- ---------------- Auditoria -----------------------------------------
@@ -301,37 +314,38 @@ BEGIN
   COMMIT;
 
   -- ---------------- Seguridad multi-esquema (NUEVO) --------------------
-  SELECT COUNT(*) INTO v_n1 FROM USER_TAB_PRIVS_RECD
-   WHERE OWNER = 'OMNI_OLTP' AND PRIVILEGE = 'SELECT' AND TABLE_NAME LIKE 'TRX\_%' ESCAPE '\';
-  SELECT COUNT(*) INTO v_n2 FROM USER_TAB_PRIVS_RECD
-   WHERE OWNER = 'OMNI_OLTP' AND PRIVILEGE NOT IN ('SELECT', 'REFERENCES', 'EXECUTE');
+  SELECT COUNT(*) INTO v_n1 FROM ALL_TAB_PRIVS
+   WHERE TABLE_SCHEMA = 'OMNI_OLTP' AND GRANTEE = 'OMNI_DW' AND PRIVILEGE = 'SELECT' AND TABLE_NAME LIKE 'TRX\_%' ESCAPE '\';
+  SELECT COUNT(*) INTO v_n2 FROM ALL_TAB_PRIVS
+   WHERE TABLE_SCHEMA = 'OMNI_OLTP' AND GRANTEE = 'OMNI_DW' AND PRIVILEGE NOT IN ('SELECT', 'REFERENCES', 'EXECUTE');
   chk('T37', 'SEGURIDAD', 'OMNI_DW lee las 17 tablas del OLTP y no recibio permisos de escritura',
       v_n1 = 17 AND v_n2 = 0, 'SELECT=' || v_n1 || ' permisos de escritura=' || v_n2);
 
-  -- Se intenta escribir en el OLTP: Oracle debe bloquearlo (ORA-01031 o ORA-41900).
-  -- Las sentencias afectan 0 filas (WHERE 1 = 0), asi que son inofensivas.
+  -- Se intenta escribir en el OLTP usando el dominio real de privilegios de OMNI_DW
+  -- (FN_QA_INTENTAR_DML es AUTHID DEFINER en OMNI_DW): Oracle debe bloquearlo (-1031 o -41900).
   v_n1 := 0; v_txt := NULL;
   FOR s IN (SELECT 'UPDATE OMNI_OLTP.TRX_VENTAS SET TOTAL = TOTAL WHERE 1 = 0' AS sql_txt FROM DUAL
             UNION ALL SELECT 'DELETE FROM OMNI_OLTP.TRX_DETALLE WHERE 1 = 0' FROM DUAL
             UNION ALL SELECT 'INSERT INTO OMNI_OLTP.TRX_CANALES (CODIGO_CANAL, NOMBRE_CANAL) SELECT ''X'', ''X'' FROM DUAL WHERE 1 = 0' FROM DUAL) LOOP
-    BEGIN
-      EXECUTE IMMEDIATE s.sql_txt;
+    v_n2 := FN_QA_INTENTAR_DML(s.sql_txt);
+    IF v_n2 IN (-1031, -41900) THEN
+      v_n1 := v_n1 + 1;
+    ELSIF v_n2 = 0 THEN
       v_txt := v_txt || ' PERMITIDO: ' || SUBSTR(s.sql_txt, 1, 30);
-    EXCEPTION WHEN OTHERS THEN
-      IF SQLCODE IN (-1031, -41900) THEN v_n1 := v_n1 + 1;
-      ELSE v_txt := SUBSTR(v_txt || ' ' || SQLERRM, 1, 900); END IF;
-    END;
+    ELSE
+      v_txt := SUBSTR(v_txt || ' cod=' || v_n2, 1, 900);
+    END IF;
   END LOOP;
   chk('T38', 'SEGURIDAD', 'UPDATE, DELETE e INSERT del DW sobre el OLTP son rechazados por Oracle',
       v_n1 = 3, 'sentencias bloqueadas=' || v_n1 || ' de 3' || v_txt);
 
   SELECT COUNT(*), NVL(SUM(CASE WHEN PRIVILEGE <> 'SELECT' THEN 1 ELSE 0 END), 0) INTO v_n1, v_n2
-    FROM USER_TAB_PRIVS_MADE WHERE GRANTEE = 'ROL_OMNI_LECTURA_BI';
+    FROM ALL_TAB_PRIVS WHERE TABLE_SCHEMA = 'OMNI_DW' AND GRANTEE = 'ROL_OMNI_LECTURA_BI';
   chk('T39', 'SEGURIDAD', 'El rol de BI solo tiene SELECT sobre los 14 objetos analiticos',
       v_n1 = 14 AND v_n2 = 0, 'permisos=' || v_n1 || ' distintos de SELECT=' || v_n2);
 
-  SELECT COUNT(*) INTO v_n1 FROM USER_TAB_PRIVS_MADE
-   WHERE REGEXP_LIKE(TABLE_NAME, '^(STG_|AUDITORIA_|ERRORES_|FACTURAS_|QA_)');
+  SELECT COUNT(*) INTO v_n1 FROM ALL_TAB_PRIVS
+   WHERE TABLE_SCHEMA = 'OMNI_DW' AND REGEXP_LIKE(TABLE_NAME, '^(STG_|AUDITORIA_|ERRORES_|FACTURAS_|QA_)');
   chk('T40', 'SEGURIDAD', 'Staging, auditoria, errores, facturas y QA no se exponen a nadie',
       v_n1 = 0, 'objetos internos expuestos=' || v_n1);
 
