@@ -73,7 +73,7 @@ PROMPT =====================================================================
 PROMPT [PASO 13/14] Ejecución del Pipeline: Extracción, Limpieza y Carga al DW
 PROMPT =====================================================================
 BEGIN
-    PKG_ETL_VENTAS.PR_EJECUTAR_ETL_COMPLETO;
+    PKG_ETL_VENTAS.PR_EJECUTAR_ETL;
 END;
 /
 
