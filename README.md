@@ -132,14 +132,24 @@ flowchart TD
         ├── 01_deploy_oltp.sql                   # [OMNI_OLTP] Despliegue transaccional + grants
         ├── 02_deploy_dw.sql                     # [OMNI_DW]   Despliegue analítico + ETL + 40 QA
         ├── 03_verify_bi_readonly.sql            # [OMNI_BI]   Auditoría 8 controles + KPIs
+        ├── deploy_all_one_click.sql             # [SYS -> *]  Instalador maestro de 1 solo clic
         └── teardown.sql                         # [SYS]       Limpieza completa de OMNI_*
 ```
 
 ---
 
-## Guía de Despliegue Paso a Paso
+## Guía de Despliegue
 
 **Requisitos:** Oracle Database 23ai (por ejemplo, 23ai Free en `FREEPDB1`), SQL Developer / SQLcl / SQL*Plus y Power BI Desktop.
+
+### Opción A — Despliegue Automático de Un Solo Clic (Recomendado)
+Conectado como `SYS AS SYSDBA` al servicio `localhost:1521/freepdb1` (conexión `dba`), abre y ejecuta con **F5**:
+```sql
+@database/deploy/deploy_all_one_click.sql
+```
+El script crea los 2 tablespaces y 3 usuarios, **cambia automáticamente de sesión** (`SYS` → `OMNI_OLTP` → `OMNI_DW` → `OMNI_BI`), instala todas las capas, corre el ETL, valida las **40 pruebas QA** y ejecuta los **8 controles de seguridad en `OMNI_BI`**, sin tocar `RETAIL_OLTP`.
+
+### Opción B — Despliegue Manual por Esquema
 
 ### Paso 0 — Crear Tablespaces, Esquemas y Rol (como `SYS AS SYSDBA`)
 ```sql
