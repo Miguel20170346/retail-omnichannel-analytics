@@ -1,7 +1,7 @@
 -- =====================================================================
 -- 01 - PRUEBA DE ACCESO Y AISLAMIENTO DE SEGURIDAD (USUARIO DE REPORTES)
 -- ---------------------------------------------------------------------
--- EJECUTAR COMO: OMNI_BI   (clave de laboratorio: bi2026)
+-- EJECUTAR COMO: OMNI_BI   (clave de laboratorio: oracle)
 -- Requisito: haber ejecutado 01_OMNI_OLTP\INSTALAR_OLTP.sql y
 --            02_OMNI_DW\INSTALAR_DW.sql
 --

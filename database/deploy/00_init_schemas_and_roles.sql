@@ -25,9 +25,9 @@ WHENEVER SQLERROR EXIT SQL.SQLCODE
 
 -- Carpeta de datafiles (la misma que usa el script original 00)
 DEFINE RUTA_DATAFILES = '/opt/oracle/oradata/FREE/FREEPDB1'
-DEFINE CLAVE_OLTP     = 'oltp2026'
-DEFINE CLAVE_DW       = 'dw2026'
-DEFINE CLAVE_BI       = 'bi2026'
+DEFINE CLAVE_OLTP     = 'oracle'
+DEFINE CLAVE_DW       = 'oracle'
+DEFINE CLAVE_BI       = 'oracle'
 
 -- ---------------------------------------------------------------------
 -- 1. Tablespaces separados: el historico del DW no compite por espacio
