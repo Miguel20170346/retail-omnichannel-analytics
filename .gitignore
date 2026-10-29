@@ -1,26 +1,27 @@
-# Operating System Files
+# Archivos del Sistema Operativo
 Thumbs.db
 desktop.ini
 ehthumbs.db
 .DS_Store
 
-# Temporary & Swap Files
+# Archivos Temporales
 *.tmp
 *.temp
 *~
 ~*
 
-# Power BI Lock & Cache Files
+# Archivos de Bloqueo y Caché de Power BI
 ~$*.pbix
 *.pbix.cache
 
-# SQL Execution Logs & Spools
+# Logs de Ejecución de Oracle y SQL
 *.log
 *.spool
+despliegue_retail_bi.log
 deploy_retail_bi.log
 instalacion_completa.log
 conciliacion_*.log
 
-# IDE & Editor Settings (Optional local overrides)
+# Configuraciones de Editores e IDEs
 .vscode/
 .idea/

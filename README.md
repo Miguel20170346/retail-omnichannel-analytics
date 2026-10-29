@@ -1,44 +1,44 @@
-# Retail Omnichannel Analytics & Data Warehouse Platform
+# Plataforma Integral de Analítica y Data Warehouse para Retail Omnicanal
 
 [![Oracle Database](https://img.shields.io/badge/Oracle-23ai%20%7C%2021c%20%7C%2019c-red.svg?logo=oracle&logoColor=white)](https://www.oracle.com/database/)
-[![PL/SQL](https://img.shields.io/badge/Language-PL%2FSQL-orange.svg)]()
-[![Kimball Star Schema](https://img.shields.io/badge/Architecture-Kimball%20Star%20Schema-blue.svg)]()
+[![PL/SQL](https://img.shields.io/badge/Lenguaje-PL%2FSQL-orange.svg)]()
+[![Modelo Estrella Kimball](https://img.shields.io/badge/Arquitectura-Modelo%20Estrella%20Kimball-blue.svg)]()
 [![Power BI](https://img.shields.io/badge/BI-Power%20BI%20Desktop-yellow.svg?logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
-[![QA Tests](https://img.shields.io/badge/QA%20Tests-36%2F36%20Passing-brightgreen.svg)]()
-[![License](https://img.shields.io/badge/License-MIT-green.svg)]()
+[![Pruebas QA](https://img.shields.io/badge/Pruebas%20QA-36%2F36%20Aprobadas-brightgreen.svg)]()
+[![Licencia](https://img.shields.io/badge/Licencia-MIT-green.svg)]()
 
-An enterprise-grade, end-to-end **Business Intelligence, Data Warehousing, and Analytics Platform** for a multinational omnichannel retail corporation operating across 4 countries (**USA, Mexico, Colombia, and Chile**) and 3 sales channels (**Physical Stores, E-Commerce, and Mobile App**).
+Plataforma empresarial de extremo a extremo para **Inteligencia de Negocios (BI), Almacén de Datos (Data Warehouse) y Analítica** diseñada para una corporación multinacional de retail omnicanal con operaciones activas en 4 países (**Estados Unidos, México, Colombia y Chile**) a través de 3 canales de venta (**Tiendas Físicas, Comercio Electrónico y Aplicación Móvil**).
 
-The platform models the entire data lifecycle: from high-concurrency transactional OLTP systems, multi-currency normalization, automated data quality validation, and Kimball-modeled dimensional data warehousing, through to pre-aggregated materialized views, JSON electronic invoicing with SHA-256 digital signatures, and executive Power BI dashboards.
+El sistema modela el ciclo de vida completo del dato: desde la captura en sistemas transaccionales OLTP de alta concurrencia, normalización multidivisa y motor de calidad de datos, hasta el modelado dimensional bajo la metodología Kimball, vistas materializadas de alto rendimiento, facturación electrónica en formato JSON con firmas criptográficas SHA-256 y paneles ejecutivos interactivos en Power BI.
 
 ---
 
-## Architecture Overview
+## Arquitectura de la Solución
 
 ```mermaid
 flowchart TD
-    subgraph OLTP ["1. Transactional Layer (OLTP - 3NF)"]
-        O1["17 Relational Tables<br/>(Sales, Customers, Products, Branches, Promotions)"]
-        O2["Multi-Currency Engine<br/>(USD, MXN, COP, CLP)"]
+    subgraph OLTP ["1. Capa Transaccional (OLTP - 3NF)"]
+        O1["17 Tablas Relacionales<br/>(Ventas, Clientes, Productos, Sucursales, Promociones)"]
+        O2["Motor de Conversión Multidivisa<br/>(USD, MXN, COP, CLP a USD)"]
     end
 
-    subgraph Governance ["2. Data Quality & Audit Pipeline"]
-        G1["PKG_CALIDAD_DATOS<br/>(Validates Constraints, Dates, Prices, Referentials)"]
-        G2["LOG_AUDITORIA & LOG_ERRORES<br/>(Quarantines Controlled Error Cases)"]
+    subgraph Gobernanza ["2. Motor de Calidad de Datos y Auditoría"]
+        G1["PKG_CALIDAD_DATOS<br/>(Valida Restricciones, Fechas, Precios e Integridad)"]
+        G2["LOG_AUDITORIA y LOG_ERRORES<br/>(Aislamiento de Casos de Error Controlados)"]
     end
 
-    subgraph DW ["3. Kimball Star Schema Data Warehouse"]
-        S1["Staging Area<br/>(STG_VENTAS)"]
-        F1["Fact Table: HECHOS_VENTAS<br/>(2,805 Sales Lines @ USD)"]
-        D1["7 Conformed Dimensions<br/>(DIM_TIEMPO, CLIENTE, PRODUCTO, SUCURSAL, CANAL, PROMOCION, EMPLEADO)"]
+    subgraph DW ["3. Data Warehouse Dimensional (Modelo Estrella Kimball)"]
+        S1["Área Intermedia Staging<br/>(STG_VENTAS)"]
+        F1["Tabla de Hechos: HECHOS_VENTAS<br/>(2,805 Líneas de Venta @ USD)"]
+        D1["7 Dimensiones Conformadas<br/>(DIM_TIEMPO, CLIENTE, PRODUCTO, SUCURSAL, CANAL, PROMOCION, EMPLEADO)"]
     end
 
-    subgraph Invoicing ["4. Compliance & Invoicing"]
-        J1["JSON Electronic Invoicing<br/>(FACTURAS_ELECTRONICAS)"]
-        J2["Cryptographic Signatures<br/>(DBMS_CRYPTO SHA-256)"]
+    subgraph Facturacion ["4. Facturación Electrónica y Cumplimiento"]
+        J1["Documentos Electrónicos JSON<br/>(FACTURAS_ELECTRONICAS)"]
+        J2["Firmas Criptográficas Digitales<br/>(DBMS_CRYPTO SHA-256)"]
     end
 
-    subgraph Semantic ["5. Pre-Aggregated Semantic Layer"]
+    subgraph Semantica ["5. Capa Semántica de Vistas Materializadas"]
         MV1["MV_VENTAS_MENSUALES"]
         MV2["MV_TOP_PRODUCTOS"]
         MV3["MV_UTILIDAD_POR_CATEGORIA"]
@@ -46,14 +46,14 @@ flowchart TD
         MV5["MV_PROMOCIONES_USADAS"]
     end
 
-    subgraph BI ["6. Analytics & Decision Support"]
-        PBI["Power BI Executive Dashboard<br/>(5 Interactive Visual Pages)"]
+    subgraph BI ["6. Analítica y Soporte a Decisiones"]
+        PBI["Tablero Ejecutivo Power BI<br/>(5 Páginas Interactivas)"]
     end
 
     O1 --> G1
     O2 --> G1
-    G1 -->|Clean Data| S1
-    G1 -->|Rejected Anomalies| G2
+    G1 -->|Datos Limpios| S1
+    G1 -->|Anomalías Rechazadas| G2
     S1 --> F1
     D1 -.-> F1
     F1 --> J1
@@ -64,73 +64,75 @@ flowchart TD
 
 ---
 
-## Key Business Metrics & Audit Baseline
+## Métricas Clave de Negocio y Resultados de Auditoría
 
-*Data span: 9 months of full enterprise history (January 1, 2026 – September 30, 2026).*
+*Línea base auditada: 9 meses completos de historia empresarial (1 de enero al 30 de septiembre de 2026).*
 
-| Metric | Verified Value | Status |
+| Métrica de Negocio | Valor Verificado | Estado |
 | :--- | :---: | :---: |
-| **Total Valid Transactions** | `1,133` orders | Verified |
-| **Loaded Fact Rows (`HECHOS_VENTAS`)** | `2,805` line items | 100% Ingested |
-| **Gross Invoiced Revenue** | **$2,222,088.30 USD** | Exact Match |
-| **Total Discounts & Promotions Applied** | **$255,637.89 USD** | Exact Match |
-| **Net Billed Revenue** | **$1,966,450.41 USD** | Exact Match |
-| **Total Cost of Goods Sold (COGS)** | **$1,459,969.00 USD** | Exact Match |
-| **Gross Margin / Operating Profit** | **$506,481.41 USD** | **25.76% Margin** |
-| **Audit Mathematical Discrepancy** | **$0.00 USD** | Zero Variance |
-| **Automated QA Integration Suite** | **36 / 36 Passing** | 100% Green |
+| **Total de Transacciones Válidas** | `1,133` pedidos | Verificado |
+| **Registros Cargados en Hechos (`HECHOS_VENTAS`)** | `2,805` líneas de detalle | 100% Ingestado |
+| **Ventas Totales Brutas Facturadas** | **$2,222,088.30 USD** | Coincidencia Exacta |
+| **Descuentos y Promociones Aplicados** | **$255,637.89 USD** | Coincidencia Exacta |
+| **Ventas Netas Facturadas** | **$1,966,450.41 USD** | Coincidencia Exacta |
+| **Costo Total de Mercancía Vendida (COGS)** | **$1,459,969.00 USD** | Coincidencia Exacta |
+| **Utilidad Bruta / Margen de Operación** | **$506,481.41 USD** | **25.76% Margen** |
+| **Discrepancia Matemática en Conciliación** | **$0.00 USD** | Varianza Cero |
+| **Batería de Pruebas QA Automatizadas** | **36 / 36 Aprobadas** | 100% Exitoso |
 
 ---
 
-## Repository Structure
+## Estructura del Repositorio
+
+El proyecto sigue los estándares profesionales de ingeniería de datos y desarrollo en base de datos:
 
 ```
-├── .gitignore
-├── README.md
-├── bi/
-│   └── Retail Omnicanal.pbix               # 5-Page Executive Power BI Report
-├── data/                                   # Bridge Data for Power BI Layer
-│   ├── bi_lineas.csv
-│   ├── mv_ventas_mensuales.csv
-│   ├── mv_top_productos.csv
-│   ├── mv_utilidad_por_categoria.csv
-│   ├── mv_frecuencia_clientes.csv
-│   ├── mv_promociones_usadas.csv
-│   ├── resumen_mensual.csv
-│   └── export_powerbi_csv.sql              # Script to re-export fresh CSVs
-└── database/
-    ├── ddl/                                # Data Definition Language
-    │   ├── 01_oltp_tables.sql              # 17 Relational 3NF Tables
-    │   ├── 02_staging_tables.sql           # ETL Staging Area
-    │   ├── 03_dw_star_schema.sql           # Kimball Fact & 7 Dimensions
-    │   ├── 04_facturas_json.sql            # JSON Relational & Hash Signatures
-    │   └── 05_materialized_views.sql       # 5 Semantic Materialized Views
-    ├── dml/                                # Data Manipulation Language
-    │   ├── 01_seed_catalog_and_september.sql
-    │   ├── 02_seed_history_jan_aug.sql     # 9-Month Historical Expansion
-    │   └── 03_controlled_error_cases.sql   # Negative Testing Anomaly Seeds
-    ├── plsql/                              # Business Logic Packages
-    │   ├── pkg_divisas.sql                 # Multi-Currency Conversion
-    │   ├── pkg_auditoria.sql               # Audit & Exception Handling
-    │   ├── pkg_calidad_datos.sql           # Data Quality Rule Engine
-    │   └── pkg_etl_ventas.sql              # Extraction, Load & Orchestration
-    ├── tests/                              # Automated QA & Audit
-    │   ├── 01_qa_integration_36_tests.sql  # 36-Point Automated Test Battery
-    │   ├── 02_reconciliation_checks.sql   # Zero-Discrepancy Mathematical Check
-    │   ├── 03_kpi_business_queries.sql     # Analytical Business Intelligence Queries
-    │   ├── 04_historical_validation.sql    # 9-Month Volume Verification
-    │   └── 05_mom_monthly_growth.sql       # Month-over-Month Growth Queries
-    └── deploy/                             # Orchestration & Deployment
-        ├── 00_init_user_tablespace.sql     # Tablespace & Grant Setup (DBA)
-        ├── deploy_all.sql                  # Automated Master Pipeline Runner
-        └── teardown.sql                    # Clean Slate / Reset Script
+├── .gitignore                              # Exclusiones de Git (temporales, logs, etc.)
+├── README.md                               # Documentación principal en español
+├── bi/                                     # Capa de Business Intelligence
+│   └── Retail Omnicanal.pbix               # Reporte interactivo de 5 páginas en Power BI
+├── data/                                   # Conjuntos de datos para Power BI
+│   ├── bi_lineas.csv                       # Líneas de venta en hechos
+│   ├── mv_ventas_mensuales.csv             # Vista materializada de ventas por mes
+│   ├── mv_top_productos.csv                # Vista de productos líderes
+│   ├── mv_utilidad_por_categoria.csv       # Vista de margen por categoría
+│   ├── mv_frecuencia_clientes.csv          # Vista de segmentación y recurrencia
+│   ├── mv_promociones_usadas.csv           # Vista de impacto de promociones
+│   ├── resumen_mensual.csv                 # Resumen consolidado mensual
+│   └── export_powerbi_csv.sql              # Script para reexportar CSVs actualizados
+└── database/                               # Base de Datos Oracle
+    ├── ddl/                                # Definición de Estructuras (DDL)
+    │   ├── 01_oltp_tables.sql              # 17 Tablas relacionales en 3NF
+    │   ├── 02_staging_tables.sql           # Tablas intermedias de extracción
+    │   ├── 03_dw_star_schema.sql           # Hechos y 7 Dimensiones Kimball
+    │   ├── 04_facturas_json.sql            # Facturación JSON y firmas digitales
+    │   └── 05_materialized_views.sql       # 5 Vistas Materializadas optimizadas
+    ├── dml/                                # Carga y Manipulación de Datos (DML)
+    │   ├── 01_seed_catalog_and_september.sql # Catálogos y ventas de septiembre
+    │   ├── 02_seed_history_jan_aug.sql     # Histórico ampliado (enero a agosto)
+    │   └── 03_controlled_error_cases.sql   # Casos de prueba con errores controlados
+    ├── plsql/                              # Paquetes y Lógica de Negocio (PL/SQL)
+    │   ├── pkg_divisas.sql                 # Conversión de monedas a USD
+    │   ├── pkg_auditoria.sql               # Manejo centralizado de excepciones y logs
+    │   ├── pkg_calidad_datos.sql           # Motor de reglas de calidad de datos
+    │   └── pkg_etl_ventas.sql              # Orquestador del proceso ETL
+    ├── tests/                              # Pruebas y Validación de Calidad
+    │   ├── 01_qa_integration_36_tests.sql  # Batería de 36 pruebas automáticas de integración
+    │   ├── 02_reconciliation_checks.sql   # Conciliación matemática de diferencias cero
+    │   ├── 03_kpi_business_queries.sql     # Consultas analíticas de KPIs gerenciales
+    │   ├── 04_historical_validation.sql    # Validación de volumen de los 9 meses
+    │   └── 05_mom_monthly_growth.sql       # Análisis de crecimiento mensual MoM
+    └── deploy/                             # Despliegue y Administración
+        ├── 00_init_user_tablespace.sql     # Creación de usuario y tablespace (DBA)
+        ├── deploy_all.sql                  # Instalador maestro automático paso a paso
+        └── teardown.sql                    # Script de desinstalación y limpieza total
 ```
 
 ---
 
-## Dimensional Data Warehouse (Kimball Model)
+## Modelo Dimensional del Data Warehouse (Metodología Kimball)
 
-The Analytical Data Warehouse is modeled following Kimball's Dimensional Architecture to optimize analytical read queries and Power BI slicing.
+El almacén de datos analítico está estructurado mediante un esquema en estrella (*Star Schema*) para maximizar el desempeño en consultas analíticas y permitir un filtrado multidimensional eficiente en Power BI.
 
 ```mermaid
 erDiagram
@@ -143,26 +145,26 @@ erDiagram
     HECHOS_VENTAS }o--|| DIM_EMPLEADO : "ID_EMPLEADO"
 
     HECHOS_VENTAS {
-        NUMBER ID_VENTA_LINEA PK
-        NUMBER ID_VENTA_ORIGEN
-        NUMBER ID_TIEMPO FK
-        NUMBER ID_CLIENTE FK
-        NUMBER ID_PRODUCTO FK
-        NUMBER ID_SUCURSAL FK
-        NUMBER ID_CANAL FK
-        NUMBER ID_PROMOCION FK
-        NUMBER ID_EMPLEADO FK
-        NUMBER CANTIDAD
-        NUMBER PRECIO_UNITARIO_USD
-        NUMBER SUBTOTAL_USD
-        NUMBER MONTO_DESCUENTO_USD
-        NUMBER MONTO_NETO_USD
-        NUMBER COSTO_UNITARIO_USD
-        NUMBER COSTO_TOTAL_USD
-        NUMBER UTILIDAD_BRUTA_USD
-        NUMBER MARGEN_PORCENTAJE
-        NUMBER MONTO_IMPUESTO_USD
-        NUMBER TOTAL_LINEA_USD
+        NUMBER ID_VENTA_LINEA PK "Clave Primaria de la Línea"
+        NUMBER ID_VENTA_ORIGEN "ID en Transaccional"
+        NUMBER ID_TIEMPO FK "Clave Foránea Tiempo"
+        NUMBER ID_CLIENTE FK "Clave Foránea Cliente"
+        NUMBER ID_PRODUCTO FK "Clave Foránea Producto"
+        NUMBER ID_SUCURSAL FK "Clave Foránea Sucursal"
+        NUMBER ID_CANAL FK "Clave Foránea Canal"
+        NUMBER ID_PROMOCION FK "Clave Foránea Promoción"
+        NUMBER ID_EMPLEADO FK "Clave Foránea Empleado"
+        NUMBER CANTIDAD "Unidades Vendidas"
+        NUMBER PRECIO_UNITARIO_USD "Precio en USD"
+        NUMBER SUBTOTAL_USD "Subtotal en USD"
+        NUMBER MONTO_DESCUENTO_USD "Descuento en USD"
+        NUMBER MONTO_NETO_USD "Neto Facturado en USD"
+        NUMBER COSTO_UNITARIO_USD "Costo Unitario en USD"
+        NUMBER COSTO_TOTAL_USD "Costo Total en USD"
+        NUMBER UTILIDAD_BRUTA_USD "Margen en Dinero USD"
+        NUMBER MARGEN_PORCENTAJE "Porcentaje de Margen"
+        NUMBER MONTO_IMPUESTO_USD "Impuesto en USD"
+        NUMBER TOTAL_LINEA_USD "Total Final en USD"
     }
 
     DIM_TIEMPO {
@@ -225,62 +227,62 @@ erDiagram
 
 ---
 
-## Power BI Executive Dashboard
+## Reporte Interactivo en Power BI
 
-The Business Intelligence presentation layer (`bi/Retail Omnicanal.pbix`) is organized into 5 executive dashboard views:
+El archivo de analítica y visualización (`bi/Retail Omnicanal.pbix`) incluye 5 vistas diseñadas para la toma de decisiones ejecutivas:
 
-1. **Overview Retail Omnicanal**: Executive snapshot featuring Gross Invoiced Sales ($2.22M USD), Net Revenue ($1.97M USD), Profit ($506.48K USD), and Total Transactions (1,133).
-2. **Resumen de Ventas**: Monthly breakdown and trend analysis across all four quarters of 2026.
-3. **Clientes y Rentabilidad**: Customer segmentation analysis, Pareto distribution, and product margin profitability matrix.
-4. **Promociones**: Discount effectiveness analysis comparing promotional sales lift vs. gross margin erosion.
-5. **Ventas por País**: Geographic distribution and multi-currency performance across United States, Mexico, Colombia, and Chile.
+1. **Overview Retail Omnicanal**: Tablero de mando principal con KPIs clave: Ventas Brutas ($2.22M USD), Ventas Netas ($1.97M USD), Utilidad Bruta ($506.48K USD), Margen Porcentual (25.76%) y conteo total de transacciones (1,133).
+2. **Resumen de Ventas**: Evolución histórica mensual, tendencias trimestrales y comportamiento de ventas a lo largo de los 9 meses de 2026.
+3. **Clientes y Rentabilidad**: Matriz de valor del cliente, segmentación (Corporativo, PYME, Individual), análisis de Pareto y rentabilidad por categoría de producto.
+4. **Promociones**: Evaluación del retorno y efectividad de cada campaña promocional contra la erosión del margen de utilidad.
+5. **Ventas por País**: Desglose geográfico del rendimiento comercial en Estados Unidos, México, Colombia y Chile, evaluando canales digitales frente a tiendas físicas.
 
 ---
 
-## Deployment Quickstart
+## Guía Rápida de Instalación y Ejecución
 
-### Prerequisites
-- **Oracle Database** 19c, 21c, or 23ai (e.g. Oracle Database 23ai Free).
-- **Oracle SQL Developer**, **SQLcl**, or **SQL*Plus**.
-- **Power BI Desktop** (latest version).
+### Requisitos Previos
+- **Oracle Database** 19c, 21c o 23ai (por ejemplo, Oracle Database 23ai Free).
+- **Oracle SQL Developer**, **SQLcl** o **SQL*Plus**.
+- **Power BI Desktop** (versión reciente).
 
-### Step 1: Initialize User & Tablespace (Run as `SYS` / `SYSTEM`)
-Connect as `SYS AS SYSDBA` or `SYSTEM` to your pluggable database (e.g. `FREEPDB1`):
+### Paso 1: Configurar Usuario y Tablespace (Ejecutar como `SYS` o `SYSTEM`)
+Conéctate a tu base de datos conectable (*PDB*, por ejemplo `FREEPDB1`) como `SYS AS SYSDBA` o `SYSTEM`:
 ```sql
 @database/deploy/00_init_user_tablespace.sql
 ```
-*This creates user `RETAIL_OLTP` (password `oracle`) with tablespace `TS_RETAIL_OMNICANAL_OLTP` and necessary grants.*
+*Este script crea el usuario `RETAIL_OLTP` (contraseña `oracle`), el tablespace `TS_RETAIL_OMNICANAL_OLTP` y otorga los privilegios necesarios.*
 
-### Step 2: Run End-to-End Automated Deployment
-Connect as `RETAIL_OLTP` to the pluggable database and execute:
+### Paso 2: Ejecutar el Despliegue Automatizado
+Conéctate como el usuario `RETAIL_OLTP` a la PDB y ejecuta el script maestro:
 ```sql
 @database/deploy/deploy_all.sql
 ```
-This single master script automatically executes:
-1. All 17 OLTP tables and relational constraints.
-2. Catalogs and full 9 months of sales data (1,133 transactions).
-3. Controlled error cases for quality testing.
-4. Currency normalization, audit, and staging infrastructure.
-5. Kimball Star Schema Data Warehouse.
-6. Data Quality engine and JSON electronic invoicing.
-7. Materialized Views.
-8. Complete ETL pipeline execution (`PKG_ETL_VENTAS.PR_EJECUTAR_ETL_COMPLETO`).
-9. Full QA integration test battery (36 tests) and mathematical zero-discrepancy reconciliation.
+Este instalador maestro ejecuta automáticamente en el orden correcto:
+1. Las 17 tablas relacionales OLTP y sus restricciones.
+2. Catálogos y la historia completa de ventas de los 9 meses (1,133 transacciones).
+3. Casos de error controlado para comprobar el motor de calidad.
+4. Motor de conversión de divisas, auditoría y tablas de Staging.
+5. Esquema en Estrella del Data Warehouse (Hechos y 7 Dimensiones).
+6. Reglas de calidad de datos y facturación electrónica JSON.
+7. Vistas materializadas de agregación rápida.
+8. Ejecución completa del proceso ETL (`PKG_ETL_VENTAS.PR_EJECUTAR_ETL_COMPLETO`).
+9. Batería de 36 pruebas de integración QA y conciliación matemática con 0 diferencias.
 
-### Step 3: Open Analytics Dashboard
-Open `bi/Retail Omnicanal.pbix` in **Power BI Desktop**. All visuals will render instantly from the packaged data model.
-
----
-
-## Technical Highlights & Best Practices
-
-- **Zero-Discrepancy Accounting**: 100% mathematical reconciliation between raw OLTP currencies, Staging calculations, Star Schema fact lines, and Materialized Views.
-- **Defensive Data Quality Engine**: Comprehensive automated validation catching negative values, future dates, orphaned foreign keys, and currency anomalies prior to DW ingestion.
-- **Cryptographic Compliance**: Electronic invoice generation storing JSON documents with SHA-256 signatures generated via Oracle `DBMS_CRYPTO`.
-- **Query Performance Optimization**: Pre-aggregated fast materialized views (`BUILD IMMEDIATE REFRESH COMPLETE`) accelerating Power BI slicing queries by over 95%.
-- **Clean Architecture & Separation of Concerns**: Rigorous separation between schema definition (`ddl/`), seed data (`dml/`), stored logic (`plsql/`), test suites (`tests/`), and deployment orchestration (`deploy/`).
+### Paso 3: Abrir el Tablero de Control
+Abre el archivo `bi/Retail Omnicanal.pbix` en **Power BI Desktop**. Los gráficos y métricas se visualizarán inmediatamente con los datos consolidados.
 
 ---
 
-## Author
-Developed as an enterprise-grade Business Intelligence & Data Engineering portfolio project.
+## Aspectos Técnicos Destacados y Buenas Prácticas
+
+- **Conciliación Matemática Cero-Diferencias**: Verificación de igualdad contable exacta ($0.00 USD de variación) entre las divisas locales del OLTP, la capa de Staging, la tabla de Hechos del Data Warehouse y las Vistas Materializadas.
+- **Motor Defensivo de Calidad de Datos**: Detección y cuarentena automática de anomalías (valores negativos, fechas futuras, claves huérfanas y monedas no registradas) antes de ingresar al Data Warehouse.
+- **Cumplimiento y Firma Criptográfica**: Generación de comprobantes de facturación electrónica en formato JSON nativo de Oracle, firmados digitalmente con algoritmos SHA-256 utilizando el paquete estándar `DBMS_CRYPTO`.
+- **Rendimiento de Consultas en BI**: Vistas materializadas preagregadas (`BUILD IMMEDIATE REFRESH COMPLETE`) que reducen en más de un 95% el tiempo de respuesta en Power BI.
+- **Separación Limpia de Responsabilidades**: Estructura modular estándar de la industria que separa claramente definiciones de esquema (`ddl/`), datos maestros e históricos (`dml/`), lógica de negocio (`plsql/`), pruebas de control de calidad (`tests/`) y scripts de despliegue (`deploy/`).
+
+---
+
+## Autor
+Desarrollado como proyecto profesional de portafolio en **Ingeniería de Datos, Data Warehousing y Business Intelligence**.
