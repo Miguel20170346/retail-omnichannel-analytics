@@ -95,10 +95,11 @@ flowchart TD
 ├── README.md
 ├── .gitignore
 ├── bi/
-│   └── Retail Omnicanal.pbix                    # Tablero Power BI (5 páginas)
+│   ├── Retail Omnicanal.pbix                    # Tablero Power BI conectado directo a Oracle (5 páginas)
+│   └── Conexion_PowerBI_Oracle_Evidencias.pdf   # Evidencia técnica de conexión Power Query -> Oracle.Database
 ├── data/
-│   ├── *.csv                                    # 7 datasets exportados para Power BI
-│   └── export_powerbi_csv.sql                   # Exportación desde cuenta de solo lectura OMNI_BI
+│   ├── *.csv                                    # 7 datasets exportados de muestra/respaldo
+│   └── export_powerbi_csv.sql                   # Exportación opcional desde cuenta de solo lectura OMNI_BI
 └── database/
     ├── ddl/
     │   ├── 01_oltp_tables.sql                   # [OMNI_OLTP] 17 tablas TRX_*
@@ -176,4 +177,4 @@ Crea los 19 sinónimos, Staging, Modelo Estrella, Calidad, Facturas JSON, las 5 
 Ejecuta los **8 controles automáticos (`B01`–`B08`)** verificando lectura de indicadores ($2,222,088.30 USD) y bloqueo efectivo de acceso a `OMNI_OLTP`, `STG_*`, `FACTURAS_JSON`, `ERRORES_*` y operaciones de escritura o DDL.
 
 ### Paso 4 — Visualización en Power BI
-Abre `bi/Retail Omnicanal.pbix` en Power BI Desktop. Para reiniciar toda la arquitectura desde cero, desconecta las sesiones `OMNI_*` y ejecuta `@database/deploy/teardown.sql` como `SYS`.
+Abre `bi/Retail Omnicanal.pbix` en Power BI Desktop. El tablero se conecta directamente a Oracle mediante `Oracle.Database` (modo *Importar*) consumiendo las **5 vistas materializadas (`MV_*`) y `V_BI_LINEAS`** (ver evidencia técnica en `bi/Conexion_PowerBI_Oracle_Evidencias.pdf`; la carpeta `data/` se conserva como muestra/respaldo CSV). En esta arquitectura multi-esquema, la actualización desde Power BI se autentica con la cuenta de solo lectura `OMNI_BI` apuntando al esquema `OMNI_DW`. Para reiniciar toda la arquitectura desde cero, desconecta las sesiones `OMNI_*` y ejecuta `@database/deploy/teardown.sql` como `SYS`.
