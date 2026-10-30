@@ -1,0 +1,39 @@
+{
+  "virtualPath": "",
+  "rdbms": {
+    "MSSQLNATIVE": {
+      "sshTunnelPort": "22",
+      "sshTunnelUsePrivateKey": false,
+      "databaseName": "OMNI_DW_SQL",
+      "instanceName": "",
+      "pluginId": "MSSQLNATIVE",
+      "sshTunnelEnabled": false,
+      "usingDoubleDigit": false,
+      "usingIntegratedSecurity": false,
+      "accessType": 0,
+      "sshTunnelUsername": "",
+      "hostname": "localhost",
+      "password": "Encrypted 2be98afc86aa7b081a71ca022da87a09b",
+      "pluginName": "MS SQL Server (Native)",
+      "port": "1433",
+      "sshTunnelHost": "",
+      "attributes": {
+        "SUPPORTS_TIMESTAMP_DATA_TYPE": "Y",
+        "QUOTE_ALL_FIELDS": "N",
+        "EXTRA_OPTION_MSSQLNATIVE.trustServerCertificate": "true",
+        "SUPPORTS_BOOLEAN_DATA_TYPE": "Y",
+        "FORCE_IDENTIFIERS_TO_LOWERCASE": "N",
+        "PRESERVE_RESERVED_WORD_CASE": "Y",
+        "SQL_CONNECT": "",
+        "FORCE_IDENTIFIERS_TO_UPPERCASE": "N",
+        "PREFERRED_SCHEMA_NAME": ""
+      },
+      "manualUrl": "",
+      "sshTunnelPassphrase": "Encrypted ",
+      "sshTunnelPassword": "Encrypted ",
+      "sshTunnelPrivateKeyFile": "",
+      "username": "sa"
+    }
+  },
+  "name": "SQLServer_Docker"
+}

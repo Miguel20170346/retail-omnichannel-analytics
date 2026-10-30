@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pipeline>
+  <info>
+    <capture_transform_performance>N</capture_transform_performance>
+    <transform_performance_capturing_delay>1000</transform_performance_capturing_delay>
+    <transform_performance_capturing_size_limit>100</transform_performance_capturing_size_limit>
+    <pipeline_type>Normal</pipeline_type>
+    <pipeline_status>-1</pipeline_status>
+    <parameters/>
+    <name>New pipeline</name>
+    <name_sync_with_filename>Y</name_sync_with_filename>
+    <created_user>-</created_user>
+    <modified_user>-</modified_user>
+    <created_date>2026/10/30 15:27:31.605</created_date>
+    <modified_date>2026/10/30 15:27:31.605</modified_date>
+  </info>
+  <transform>
+    <type>TableInput</type>
+    <name>Extraer Ventas Oracle</name>
+    <sql>WITH dim_cli AS (
+    SELECT ID_CLIENTE, CAST(ROW_NUMBER() OVER (ORDER BY ID_CLIENTE) AS NUMBER(10)) AS SK_CLIENTE
+    FROM TRX_CLIENTES
+),
+dim_can AS (
+    SELECT ID_CANAL, CODIGO_CANAL, CAST(ROW_NUMBER() OVER (ORDER BY ID_CANAL) AS NUMBER(10)) AS SK_CANAL
+    FROM TRX_CANALES
+),
+dim_emp AS (
+    SELECT ID_EMPLEADO, CAST(ROW_NUMBER() OVER (ORDER BY ID_EMPLEADO) AS NUMBER(10)) AS SK_EMPLEADO
+    FROM TRX_EMPLEADOS
+),
+dim_met AS (
+    SELECT ID_METODO_PAGO, CAST(ROW_NUMBER() OVER (ORDER BY ID_METODO_PAGO) AS NUMBER(10)) AS SK_METODO_PAGO
+    FROM TRX_METODOS_PAGO
+),
+dim_pro AS (
+    SELECT ID_PROMOCION, ID_PRODUCTO, FECHA_INICIO, FECHA_FIN, ACTIVO,
+           CAST(ROW_NUMBER() OVER (ORDER BY ID_PROMOCION) AS NUMBER(10)) AS SK_PROMOCION
+    FROM TRX_PROMOCIONES
+),
+base AS (
+    SELECT
+        v.ID_TRANSACCION,
+        d.ID_DETALLE,
+        d.ID_PRODUCTO AS ID_PRODUCTO_OLTP,
+        v.FECHA_TRANSACCION,
+        CAST(TO_NUMBER(TO_CHAR(v.FECHA_TRANSACCION, 'YYYYMMDD')) AS NUMBER(8)) AS SK_FECHA,
+        dc.SK_CLIENTE,
+        dca.SK_CANAL,
+        de.SK_EMPLEADO,
+        NVL(dpr.SK_PROMOCION, CAST(0 AS NUMBER(10))) AS SK_PROMOCION,
+        dm.SK_METODO_PAGO,
+        CAST('TX-' || dca.CODIGO_CANAL || '-' || TO_CHAR(v.FECHA_TRANSACCION, 'YYYYMMDD') || '-' || LPAD(v.ID_TRANSACCION, 6, '0') AS VARCHAR2(40)) AS CODIGO_TRANSACCION,
+        v.MONEDA_ORIGEN,
+        CAST(CASE WHEN v.MONEDA_ORIGEN = 'USD' THEN NVL(mo.TASA_USD, 1) ELSE mo.TASA_USD END AS NUMBER(18,6)) AS TASA_USD,
+        d.CANTIDAD,
+        d.PRECIO_UNITARIO AS PRECIO_UNITARIO_ORIGEN,
+        d.DESCUENTO       AS DESCUENTO_ORIGEN,
+        d.IMPUESTO        AS IMPUESTO_ORIGEN,
+        CAST(d.CANTIDAD * d.PRECIO_UNITARIO - d.DESCUENTO + d.IMPUESTO AS NUMBER(18,2)) AS TOTAL_LINEA_ORIGEN,
+        NVL(p.COSTO_UNITARIO_USD, 0) AS COSTO_UNITARIO_USD,
+        CAST(CASE WHEN d.ID_PROMOCION IS NULL THEN 'N' ELSE 'S' END AS CHAR(1)) AS FLAG_PROMOCION,
+        CASE
+            WHEN (CASE WHEN v.MONEDA_ORIGEN = 'USD' THEN NVL(mo.TASA_USD, 1) ELSE mo.TASA_USD END) IS NULL
+                THEN 'R04: Sin tasa de cambio para la fecha'
+            WHEN d.PRECIO_UNITARIO &lt; 0
+                 OR TRUNC(CAST(v.FECHA_TRANSACCION AS DATE)) &lt; NVL(p.FECHA_INICIO_PRECIO, DATE '1900-01-01')
+                 OR TRUNC(CAST(v.FECHA_TRANSACCION AS DATE)) > NVL(p.FECHA_FIN_PRECIO, DATE '9999-12-31')
+                THEN 'R06: Precio fuera de vigencia'
+            WHEN d.ID_PROMOCION IS NOT NULL
+                 AND (dpr.ID_PRODUCTO &lt;&gt; d.ID_PRODUCTO OR dpr.ACTIVO &lt;&gt; 'S'
+                      OR TRUNC(CAST(v.FECHA_TRANSACCION AS DATE)) NOT BETWEEN dpr.FECHA_INICIO AND dpr.FECHA_FIN)
+                THEN 'R07: Promocion invalida o vencida'
+            WHEN d.DESCUENTO &lt; 0 OR d.IMPUESTO &lt; 0 OR d.DESCUENTO > d.CANTIDAD * d.PRECIO_UNITARIO
+                THEN 'R08: Descuento mayor al importe'
+            WHEN ABS(v.TOTAL - SUM(d.CANTIDAD * d.PRECIO_UNITARIO - d.DESCUENTO + d.IMPUESTO) OVER (PARTITION BY v.ID_TRANSACCION)) > 0.01
+                THEN 'R09: Total cabecera no cuadra con detalle'
+        END AS ERROR_LINEA
+    FROM TRX_VENTAS v
+    JOIN TRX_DETALLE d        ON d.ID_TRANSACCION = v.ID_TRANSACCION AND d.ACTIVO = 'S'
+    JOIN TRX_ESTADOS_VENTA ev ON ev.ID_ESTADO_VENTA = v.ID_ESTADO_VENTA
+    JOIN dim_cli dc           ON dc.ID_CLIENTE = v.ID_CLIENTE
+    JOIN dim_can dca          ON dca.ID_CANAL = v.ID_CANAL
+    JOIN dim_emp de           ON de.ID_EMPLEADO = v.ID_EMPLEADO
+    JOIN dim_met dm           ON dm.ID_METODO_PAGO = v.ID_METODO_PAGO
+    JOIN TRX_PRODUCTOS p      ON p.ID_PRODUCTO = d.ID_PRODUCTO
+    LEFT JOIN dim_pro dpr     ON dpr.ID_PROMOCION = d.ID_PROMOCION
+    LEFT JOIN TRX_MONEDAS mo  ON mo.MONEDA_ORIGEN = v.MONEDA_ORIGEN
+                             AND mo.FECHA = TRUNC(CAST(v.FECHA_TRANSACCION AS DATE))
+                             AND mo.ACTIVO = 'S'
+    WHERE v.ACTIVO = 'S'
+      AND ev.NOMBRE_ESTADO IN ('Pagada', 'Facturada')
+)
+SELECT
+    CAST(ID_TRANSACCION AS NUMBER(10)) AS ID_TRANSACCION_OLTP,
+    CAST(ID_DETALLE AS NUMBER(10))     AS ID_DETALLE_OLTP,
+    ID_PRODUCTO_OLTP,
+    SK_FECHA,
+    SK_CLIENTE,
+    SK_CANAL,
+    SK_EMPLEADO,
+    SK_PROMOCION,
+    SK_METODO_PAGO,
+    CODIGO_TRANSACCION,
+    CAST(FECHA_TRANSACCION AS DATE)    AS FECHA_HORA_TRANSACCION,
+    MONEDA_ORIGEN,
+    CAST(NVL(TASA_USD, 0) AS NUMBER(18,6)) AS TASA_USD,
+    CANTIDAD,
+    PRECIO_UNITARIO_ORIGEN,
+    DESCUENTO_ORIGEN,
+    IMPUESTO_ORIGEN,
+    TOTAL_LINEA_ORIGEN,
+    CAST(ROUND(CANTIDAD * PRECIO_UNITARIO_ORIGEN * NVL(TASA_USD, 0), 2) AS NUMBER(18,2)) AS MONTO_BRUTO_USD,
+    CAST(ROUND(DESCUENTO_ORIGEN * NVL(TASA_USD, 0), 2) AS NUMBER(18,2))                  AS DESCUENTO_USD,
+    CAST(ROUND(CANTIDAD * PRECIO_UNITARIO_ORIGEN * NVL(TASA_USD, 0), 2)
+       - ROUND(DESCUENTO_ORIGEN * NVL(TASA_USD, 0), 2) AS NUMBER(18,2))                  AS MONTO_NETO_USD,
+    CAST(ROUND(IMPUESTO_ORIGEN * NVL(TASA_USD, 0), 2) AS NUMBER(18,2))                   AS IMPUESTO_USD,
+    CAST(ROUND(CANTIDAD * PRECIO_UNITARIO_ORIGEN * NVL(TASA_USD, 0), 2)
+       - ROUND(DESCUENTO_ORIGEN * NVL(TASA_USD, 0), 2)
+       + ROUND(IMPUESTO_ORIGEN * NVL(TASA_USD, 0), 2) AS NUMBER(18,2))                   AS TOTAL_LINEA_USD,
+    CAST(ROUND(CANTIDAD * COSTO_UNITARIO_USD, 2) AS NUMBER(18,2))                        AS COSTO_TOTAL_USD,
+    CAST(ROUND(CANTIDAD * PRECIO_UNITARIO_ORIGEN * NVL(TASA_USD, 0), 2)
+       - ROUND(DESCUENTO_ORIGEN * NVL(TASA_USD, 0), 2)
+       - ROUND(CANTIDAD * COSTO_UNITARIO_USD, 2) AS NUMBER(18,2))                        AS MARGEN_BRUTO_USD,
+    FLAG_PROMOCION,
+    CAST(CASE WHEN MAX(ERROR_LINEA) OVER (PARTITION BY ID_TRANSACCION) IS NOT NULL
+              THEN 'RECHAZADO' ELSE 'VALIDO' END AS VARCHAR2(15))                        AS ESTADO_CALIDAD,
+    CAST(MAX(ERROR_LINEA) OVER (PARTITION BY ID_TRANSACCION) AS VARCHAR2(100))           AS MOTIVO_RECHAZO
+FROM base</sql>
+    <limit>0</limit>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <connection>Oracle_OLTP</connection>
+    <lookup/>
+    <sql_from_file/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+    <GUI>
+      <xloc>112</xloc>
+      <yloc>96</yloc>
+    </GUI>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+  </transform>
+  <transform>
+    <type>FilterRows</type>
+    <name>Filtro Calidad</name>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <operator>-</operator>
+        <leftvalue>ESTADO_CALIDAD</leftvalue>
+        <function>=</function>
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>VALIDO</text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask/>
+        </value>
+        <conditions/>
+      </condition>
+    </compare>
+    <send_true_to>buscar SK_PRODUCTO</send_true_to>
+    <send_false_to>cargar Errores_ETL_SQLServer</send_false_to>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+    <GUI>
+      <xloc>304</xloc>
+      <yloc>96</yloc>
+    </GUI>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+  </transform>
+  <transform>
+    <type>DBLookup</type>
+    <name>buscar SK_PRODUCTO</name>
+    <connection>SQLServer_Docker</connection>
+    <cache>Y</cache>
+    <cache_size>0</cache_size>
+    <cache_load_all>N</cache_load_all>
+    <lookup>
+      <schema>dbo</schema>
+      <table>DIM_PRODUCTO</table>
+      <key>
+        <name>ID_PRODUCTO_OLTP</name>
+        <name2/>
+        <condition>=</condition>
+        <field>ID_PRODUCTO_OLTP</field>
+      </key>
+      <value>
+        <name>SK_PRODUCTO</name>
+        <rename/>
+        <default/>
+        <type>Integer</type>
+        <trim_type>none</trim_type>
+      </value>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+    </lookup>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+    <GUI>
+      <xloc>480</xloc>
+      <yloc>96</yloc>
+    </GUI>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+  </transform>
+  <transform>
+    <type>TableOutput</type>
+    <name>cargar Errores_ETL_SQLServer</name>
+    <connection>SQLServer_Docker</connection>
+    <schema>dbo</schema>
+    <table>ERRORES_ETL_VENTAS</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <only_when_have_rows>N</only_when_have_rows>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <specify_fields>N</specify_fields>
+    <auto_update_table_structure>N</auto_update_table_structure>
+    <always_drop_and_recreate>N</always_drop_and_recreate>
+    <add_columns>N</add_columns>
+    <drop_columns>N</drop_columns>
+    <change_column_types>N</change_column_types>
+    <fields/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+    <GUI>
+      <xloc>304</xloc>
+      <yloc>256</yloc>
+    </GUI>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+  </transform>
+  <transform>
+    <type>InsertUpdate</type>
+    <name>Insertar o Actualizar HECHOS_VENTAS</name>
+    <lookup>
+      <key>
+        <name>ID_DETALLE_OLTP</name>
+        <field>ID_DETALLE_OLTP</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>ID_TRANSACCION_OLTP</name>
+        <rename>ID_TRANSACCION_OLTP</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ID_DETALLE_OLTP</name>
+        <rename>ID_DETALLE_OLTP</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ID_PRODUCTO_OLTP</name>
+        <rename>ID_PRODUCTO_OLTP</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SK_FECHA</name>
+        <rename>SK_FECHA</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SK_CLIENTE</name>
+        <rename>SK_CLIENTE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SK_CANAL</name>
+        <rename>SK_CANAL</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SK_EMPLEADO</name>
+        <rename>SK_EMPLEADO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SK_PROMOCION</name>
+        <rename>SK_PROMOCION</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SK_METODO_PAGO</name>
+        <rename>SK_METODO_PAGO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CODIGO_TRANSACCION</name>
+        <rename>CODIGO_TRANSACCION</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FECHA_HORA_TRANSACCION</name>
+        <rename>FECHA_HORA_TRANSACCION</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>MONEDA_ORIGEN</name>
+        <rename>MONEDA_ORIGEN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TASA_USD</name>
+        <rename>TASA_USD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CANTIDAD</name>
+        <rename>CANTIDAD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>PRECIO_UNITARIO_ORIGEN</name>
+        <rename>PRECIO_UNITARIO_ORIGEN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DESCUENTO_ORIGEN</name>
+        <rename>DESCUENTO_ORIGEN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>IMPUESTO_ORIGEN</name>
+        <rename>IMPUESTO_ORIGEN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TOTAL_LINEA_ORIGEN</name>
+        <rename>TOTAL_LINEA_ORIGEN</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>MONTO_BRUTO_USD</name>
+        <rename>MONTO_BRUTO_USD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DESCUENTO_USD</name>
+        <rename>DESCUENTO_USD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>MONTO_NETO_USD</name>
+        <rename>MONTO_NETO_USD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>IMPUESTO_USD</name>
+        <rename>IMPUESTO_USD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TOTAL_LINEA_USD</name>
+        <rename>TOTAL_LINEA_USD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>COSTO_TOTAL_USD</name>
+        <rename>COSTO_TOTAL_USD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>MARGEN_BRUTO_USD</name>
+        <rename>MARGEN_BRUTO_USD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FLAG_PROMOCION</name>
+        <rename>FLAG_PROMOCION</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ESTADO_CALIDAD</name>
+        <rename>ESTADO_CALIDAD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>MOTIVO_RECHAZO</name>
+        <rename>MOTIVO_RECHAZO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>SK_PRODUCTO</name>
+        <rename>SK_PRODUCTO</rename>
+        <update>Y</update>
+      </value>
+      <schema>dbo</schema>
+      <table>HECHOS_VENTAS</table>
+    </lookup>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <connection>SQLServer_Docker</connection>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+    <GUI>
+      <xloc>688</xloc>
+      <yloc>96</yloc>
+    </GUI>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+  </transform>
+  <order>
+    <hop>
+      <from>Extraer Ventas Oracle</from>
+      <to>Filtro Calidad</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filtro Calidad</from>
+      <to>buscar SK_PRODUCTO</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filtro Calidad</from>
+      <to>cargar Errores_ETL_SQLServer</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>buscar SK_PRODUCTO</from>
+      <to>Insertar o Actualizar HECHOS_VENTAS</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <notepads/>
+  <attributes/>
+  <transform_error_handling/>
+</pipeline>
