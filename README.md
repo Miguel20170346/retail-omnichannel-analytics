@@ -52,7 +52,7 @@ flowchart TD
     D1 -.-> F1
     F1 --> J1
     F1 --> MV
-    MV -->|CSV| PBI
+    MV -->|Oracle.Database| PBI
 ```
 
 Todo el flujo se ejecuta con una sola llamada: `PKG_ETL_VENTAS.PR_EJECUTAR_ETL` (extrae → valida → carga dimensiones → carga hechos → refresca vistas → genera facturas → cierra auditoría). La carga es **incremental e idempotente**: re-ejecutarla no duplica datos.
@@ -83,8 +83,9 @@ Los datos incluyen **8 casos de error controlados** (venta sin tasa de cambio, t
 ├── README.md
 ├── .gitignore
 ├── bi/
-│   └── Retail Omnicanal.pbix              # Tablero Power BI (5 páginas)
-├── data/                                  # CSV que alimentan Power BI
+│   ├── Retail Omnicanal.pbix              # Tablero Power BI conectado directo a Oracle (5 páginas)
+│   └── Conexion_PowerBI_Oracle_Evidencias.pdf # Evidencia técnica de conexión Power Query -> Oracle
+├── data/                                  # Muestra/respaldo CSV exportado desde Oracle
 │   ├── bi_lineas.csv
 │   ├── mv_ventas_mensuales.csv
 │   ├── mv_top_productos.csv
@@ -234,7 +235,7 @@ Un error **crítico** rechaza la transacción completa (para que el DW siempre c
 
 `bi/Retail Omnicanal.pbix` tiene 5 páginas: **Overview Retail Omnicanal**, **Resumen de Ventas**, **Clientes y Rentabilidad**, **Promociones** y **Ventas por País**.
 
-Power BI se alimenta de los CSV de la carpeta `data/`, generados desde Oracle con `data/export_powerbi_csv.sql`. Así el archivo `.pbix` se puede abrir sin tener Oracle instalado.
+Power BI se conecta directamente a la base de datos Oracle mediante el conector `Oracle.Database` (modo *Importar*) en Power Query, consumiendo las **5 vistas materializadas (`MV_*`) y `V_BI_LINEAS`** (como se documenta paso a paso en `bi/Conexion_PowerBI_Oracle_Evidencias.pdf`). Al trabajar en modo *Importar*, el archivo `.pbix` conserva los datos cargados en el modelo para poder abrirse y explorarse de inmediato, mientras que la carpeta `data/` mantiene una exportación CSV opcional de respaldo generada con `data/export_powerbi_csv.sql`.
 
 ---
 
